@@ -1,0 +1,68 @@
+Loading db file '/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db'
+Information: Updating design information... (UID-85)
+Warning: Design 'arbiter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : arbiter
+Version: H-2013.03-SP5-2
+Date   : Thu Feb 20 21:44:12 2020
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+arbiter                ZeroWireload      tcbn65gpluswc
+allocation_buffer_0    ZeroWireload      tcbn65gpluswc
+allocation_buffer_1    ZeroWireload      tcbn65gpluswc
+allocation_buffer_2    ZeroWireload      tcbn65gpluswc
+allocation_buffer_3    ZeroWireload      tcbn65gpluswc
+allocation_buffer_4    ZeroWireload      tcbn65gpluswc
+allocation_buffer_5    ZeroWireload      tcbn65gpluswc
+allocation_buffer_6    ZeroWireload      tcbn65gpluswc
+allocation_buffer_7    ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 375.7338 uW   (92%)
+  Net Switching Power  =  31.8529 uW    (8%)
+                         ---------
+Total Dynamic Power    = 407.5867 uW  (100%)
+
+Cell Leakage Power     =  74.3107 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.3561        1.6548e-03        6.4602e+04            0.4224  (  87.65%)
+combinational  1.9629e-02        3.0198e-02        9.7070e+03        5.9534e-02  (  12.35%)
+--------------------------------------------------------------------------------------------------
+Total              0.3757 mW     3.1853e-02 mW     7.4309e+04 nW         0.4819 mW

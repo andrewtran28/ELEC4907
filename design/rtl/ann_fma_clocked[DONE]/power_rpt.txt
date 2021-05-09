@@ -1,0 +1,197 @@
+Loading db file '/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db'
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : fma_top
+Version: H-2013.03-SP5-2
+Date   : Sat Jan 11 21:39:33 2020
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /CMC/tools/synopsys/syn_vH-2013.03-SP5-2/libraries/syn/gtech.db)
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fma_top                ZeroWireload      tcbn65gpluswc
+fma_exp_diff           ZeroWireload      tcbn65gpluswc
+fma_mult_tree          ZeroWireload      tcbn65gpluswc
+fma_aligner_adder      ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder ZeroWireload      tcbn65gpluswc
+fma_lza                ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0
+                       ZeroWireload      tcbn65gpluswc
+*GT_UNS_OP_6_5_1       ZeroWireload      tcbn65gpluswc
+DW01_cmp2_width6       ZeroWireload      tcbn65gpluswc
+*ADD_UNS_OP_5_1_5      ZeroWireload      tcbn65gpluswc
+DW01_inc_width5        ZeroWireload      tcbn65gpluswc
+DW01_inc_width5        ZeroWireload      tcbn65gpluswc
+*ADD_UNS_OP_20_1_20    ZeroWireload      tcbn65gpluswc
+DW01_add_width20       ZeroWireload      tcbn65gpluswc
+*ADD_UNS_OP_18_1_18    ZeroWireload      tcbn65gpluswc
+DW01_add_width18       ZeroWireload      tcbn65gpluswc
+*ADD_UNS_OP_16_1_16    ZeroWireload      tcbn65gpluswc
+DW01_add_width16       ZeroWireload      tcbn65gpluswc
+*ADD_UNS_OP_14_1_14    ZeroWireload      tcbn65gpluswc
+DW01_add_width14       ZeroWireload      tcbn65gpluswc
+*ADD_UNS_OP_12_1_12    ZeroWireload      tcbn65gpluswc
+DW01_add_width12       ZeroWireload      tcbn65gpluswc
+*ADD_UNS_OP_1_1_2      ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+*ADD_UNS_OP_2_1_2      ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width2        ZeroWireload      tcbn65gpluswc
+DW01_add_width5        ZeroWireload      tcbn65gpluswc
+DW01_inc_width5        ZeroWireload      tcbn65gpluswc
+*ASH_UNS_UNS_OP_20_5_20
+                       ZeroWireload      tcbn65gpluswc
+DW01_ash_A_width20_SH_width5
+                       ZeroWireload      tcbn65gpluswc
+*SUB_UNS_OP_5_5_5      ZeroWireload      tcbn65gpluswc
+DW01_sub_width5        ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  18.2342 uW   (59%)
+  Net Switching Power  =  12.7527 uW   (41%)
+                         ---------
+Total Dynamic Power    =  30.9869 uW  (100%)
+
+Cell Leakage Power     =  10.1707 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000        3.1133e-04            0.0000        3.1133e-04  (   0.76%)
+combinational  1.8234e-02        1.2441e-02        1.0170e+04        4.0845e-02  (  99.24%)
+--------------------------------------------------------------------------------------------------
+Total          1.8234e-02 mW     1.2753e-02 mW     1.0170e+04 nW     4.1157e-02 mW

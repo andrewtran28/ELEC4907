@@ -1,0 +1,940 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 11.0 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.43-p003.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2012.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v11.12-s136_1 (64bit) 09/24/2012 19:26 (Linux 2.6)
+@(#)CDS: NanoRoute v11.12-s009 NR120919-1551/11_10_USR2-UB (database version 2.30, 165.4.1) {superthreading v1.16}
+@(#)CDS: CeltIC v11.12-s025_1 (64bit) 09/20/2012 05:47:24 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 11.12-s002 (64bit) 09/24/2012 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 11.12-s098_1 (64bit) Sep 12 2012 04:29:44 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v11.12-s026
+@(#)CDS: IQRC/TQRC 11.1.1-s334 (64bit) Sun May  6 19:52:51 PDT 2012 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v11.12-s136_1" on Thu Jan  9 20:18:31 2020 (mem=62.9M) ---
+--- Running on thor.doe.carleton.ca (x86_64 w/Linux 3.10.0-1062.1.1.el7.x86_64) ---
+This version was compiled on Mon Sep 24 19:26:26 PDT 2012.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Loading global variable file routing_engine.enc.dat/routing_engine.globals ...
+**WARN: (GLOBAL-100):	Global 'timing_get_pins_of_nets_compatibility' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_multiedge_genclk_support' has become obsolete. It will be removed in the next release.
+**WARN: (ENCLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.07min, fe_mem=467.8M) ***
+Loading preference file routing_engine.enc.dat/enc.pref.tcl ...
+Loading mode file routing_engine.enc.dat/routing_engine.mode ...
+**WARN: (ENCBB-3020):	Command "elaborateBlackBlob" is obsolete. With the introduction of the Prototyping Foundation flow, the support for flexModels reduces the need for using blackblobs. Even though the blackblob feature and its related commands still work in this release, they will be removed in the next major release of the software.
+loading place ...
+loading route ...
+**WARN: (GLOBAL-100):	Global 'timing_get_pins_of_nets_compatibility' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_multiedge_genclk_support' has become obsolete. It will be removed in the next release.
+**WARN: (ENCSYT-709):	The next major release of EDI (11.1) will use the
+Multi-Mode/Multi-Corner (MMMC) architecture exclusively for configuration and
+control of some software features. The current configuration will continue to
+work in this release. But for compatibility with the future releases you
+should migrate your design to an MMMC style configuration. You can refer to
+the What's New document for this release for additional information on the
+11.1 migration to MMMC. In addition, you can run restoreDesign with the
+-showEolWarnings option to identify specific command and configuration
+options that will no longer be supported.
+
+
+INFO : The design has been initialized into physical-only mode. In this mode,
+       you will not have access to any functionality requiring the activation of
+       the timing or extraction systems. For additional functionality, you will need
+       to either restart the software, or issue a freeDesign command to reset the software.
+
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+**WARN: (ENCSP-9513):	Timing constraint file does not exist
+**WARN: (ENCSP-9514):	NonTimingDriven placement will be performed
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+*** Starting "NanoPlace(TM) placement v#1 (mem=475.9M)" ...
+Options: clkGateAware ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=1105 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=469 #term=1666 #term/net=3.55, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=53
+stdCell: 1105 single + 0 double + 0 multi
+Total standard cell length = 0.7674 (mm), area = 0.0014 (mm^2)
+Average module density = 1.979.
+Density for the design = 1.979.
+       = stdcell_area 2721 (980 um^2) / alloc_area 1375 (495 um^2).
+Pin Density = 0.434.
+            = total # of pins 1666 / total Instance area 3837.
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 3.822e+03 (2.38e+03 1.44e+03)
+              Est.  stn bbox = 3.822e+03 (2.38e+03 1.44e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 477.3M
+Iteration  2: Total net bbox = 3.822e+03 (2.38e+03 1.44e+03)
+              Est.  stn bbox = 3.822e+03 (2.38e+03 1.44e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 477.3M
+Iteration  3: Total net bbox = 3.128e+03 (1.96e+03 1.17e+03)
+              Est.  stn bbox = 3.128e+03 (1.96e+03 1.17e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 477.3M
+Iteration  4: Total net bbox = 3.724e+03 (1.97e+03 1.76e+03)
+              Est.  stn bbox = 3.724e+03 (1.97e+03 1.76e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 477.3M
+Iteration  5: Total net bbox = 3.917e+03 (2.00e+03 1.92e+03)
+              Est.  stn bbox = 3.917e+03 (2.00e+03 1.92e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 477.3M
+Iteration  6: Total net bbox = 3.987e+03 (2.12e+03 1.87e+03)
+              Est.  stn bbox = 3.987e+03 (2.12e+03 1.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 478.3M
+Iteration  7: Total net bbox = 3.967e+03 (2.15e+03 1.82e+03)
+              Est.  stn bbox = 4.334e+03 (2.37e+03 1.96e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 478.1M
+Iteration  8: Total net bbox = 3.967e+03 (2.15e+03 1.82e+03)
+              Est.  stn bbox = 4.334e+03 (2.37e+03 1.96e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 478.1M
+Iteration  9: Total net bbox = 4.587e+03 (2.43e+03 2.16e+03)
+              Est.  stn bbox = 4.996e+03 (2.67e+03 2.33e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 478.1M
+Iteration 10: Total net bbox = 4.752e+03 (2.59e+03 2.17e+03)
+              Est.  stn bbox = 5.167e+03 (2.83e+03 2.34e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 484.4M
+*** cost = 4.752e+03 (2.59e+03 2.17e+03) (cpu for global=0:00:00.3) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:00.2 real: 0:00:00.0
+[CPU] RefinePlace/CRLP Init cpu time 0:00:00.0.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.3, Real Time = 0:00:00.0
+[CPU] RefinePlace/preRPlace cpu time 0:00:00.3.
+move report: preRPlace moves 431 insts, mean move: 5.76 um, max move: 24.80 um
+	max move on inst (U1129): (40.20, 43.40) --> (41.60, 20.00)
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1103' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+17 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U910' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+16 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1140' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+15 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1152' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+14 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1114' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+13 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U953' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+12 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U918' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+11 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U916' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+10 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1276' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+9 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U885' (Cell TIEH).
+Type 'man ENCSP-2020' for more detail.
+8 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1101' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+7 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U945' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+6 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U926' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+5 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1158' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+4 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1089' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+3 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U917' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+2 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U884' (Cell TIEL).
+Type 'man ENCSP-2020' for more detail.
+1 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1129' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+0 out of 437 have not processed
+wireLenOptFixPriorityInst 0 inst fixed
+Placement tweakage begins.
+wire length = 8.349e+03 = 3.534e+03 H + 4.815e+03 V
+wire length = 6.897e+03 = 3.059e+03 H + 3.839e+03 V
+Placement tweakage ends.
+move report: tweak moves 293 insts, mean move: 7.66 um, max move: 54.80 um
+	max move on inst (U885): (39.00, 72.20) --> (41.60, 20.00)
+[CPU] RefinePlace/TweakPlacement cpu time: 0:00:00.0 
+Clock gating cells determined by native netlist tracing.
+Wire length optimization begins.
+Wire length optimization ends. (0:00:00.0)
+move report: xdp moves 88 insts, mean move: 3.32 um, max move: 11.00 um
+	max move on inst (U1280): (22.60, 20.00) --> (22.80, 30.80)
+[CPU] RefinePlace/WireLenOpt cpu time: 0:00:00.0 
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1189' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+15 out of 437 have not processed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U1208' (Cell CKND0).
+Type 'man ENCSP-2020' for more detail.
+14 out of 437 have not processed
+**WARN: (EMS-63):	Message <ENCSP-2020> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessagLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use suppressMessage command.
+13 out of 437 have not processed
+12 out of 437 have not processed
+11 out of 437 have not processed
+10 out of 437 have not processed
+9 out of 437 have not processed
+8 out of 437 have not processed
+7 out of 437 have not processed
+6 out of 437 have not processed
+5 out of 437 have not processed
+4 out of 437 have not processed
+3 out of 437 have not processed
+2 out of 437 have not processed
+1 out of 437 have not processed
+0 out of 437 have not processed
+**ERROR: (ENCSP-2021):	Could not legalize <34> instances in the design.
+move report: rPlace moves 31 insts, mean move: 5.99 um, max move: 47.20 um
+	max move on inst (U920): (38.80, 59.60) --> (20.40, 30.80)
+move report: overall moves 434 insts, mean move: 6.67 um, max move: 48.40 um
+	max move on inst (U885): (40.00, 66.80) --> (41.60, 20.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        48.40 um
+  inst (U885) with max move: (40, 66.8) -> (41.6, 20)
+  mean    (X+Y) =         6.67 um
+Total instances flipped for WireLenOpt: 203
+Total instances flipped, including legalization: 3
+Total instances moved : 434
+*** cpu=0:00:00.3   mem=485.4M  mem(used)=1.0M***
+[CPU] RefinePlace/total cpu time 0:00:00.3.
+Total net length = 6.973e+03 (3.101e+03 3.871e+03) (ext = 2.014e+03)
+*** End of Placement (cpu=0:00:00.7, real=0:00:01.0, mem=485.4M) ***
+default core: bins with density >  0.75 = 62.5 % ( 5 / 8 )
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+Starting congestion repair ...
+*** Starting trialRoute (mem=485.5M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -noPinGuide
+
+
+Phase 1a-1d Overflow: 0.00% H + 0.00% V (0:00:00.0 489.7M)
+
+Overflow: 0.00% H + 0.00% V (0:00:00.0 490.4M)
+
+Phase 1l Overflow: 0.00% H + 0.00% V (0:00:00.0 490.4M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  1:	0	 0.00%	1	 0.06%
+  2:	0	 0.00%	2	 0.12%
+  3:	0	 0.00%	2	 0.12%
+  4:	0	 0.00%	6	 0.35%
+  5:	1701	100.00%	1690	99.35%
+
+
+Total length: 7.449e+03um, number of vias: 3546
+M1(H) length: 1.500e-02um, number of vias: 1613
+M2(V) length: 2.445e+03um, number of vias: 1449
+M3(H) length: 3.030e+03um, number of vias: 416
+M4(V) length: 1.616e+03um, number of vias: 46
+M5(H) length: 2.333e+02um, number of vias: 21
+M6(V) length: 1.250e+02um, number of vias: 1
+M7(H) length: 1.000e-01um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um
+
+Peak Memory Usage was 495.9M 
+*** Finished trialRoute (cpu=0:00:00.1 mem=487.0M) ***
+
+CongRepair Bin Grid Size (width, height) = ( default_value , default_value )
+Trial Route Overflow 0.000000(H) 0.000000(V).
+Skipped repairing congestion.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 1, real = 0: 0: 1, mem = 487.0M **
+<CMD> setNanoRouteMode -quiet -drouteStartIteration default
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+Begin checking placement ... (start mem=487.0M, init mem=487.0M)
+Overlapping with other instance:	26
+*info: Placed = 1105
+*info: Unplaced = 0
+Placement Density:98.27%(980/997)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=487.0M)
+Found placement violations in routeDesign. To quit routeDesign use routeDesign -placementCheck, to bypass this check use routeDesign -noPlacementCheck
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=487.0M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Thu Jan  9 20:19:44 2020
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 487.00 (Mb)
+#NanoRoute Version v11.12-s009 NR120919-1551/11_10_USR2-UB
+#Start routing data preparation.
+#WARNING (NREX-37) No permittivity value was specified in the process LEF file. Default permittivity value 3.900000 will be used.
+#WARNING (NREX-6) No Extended Cap Table was imported, an approximate Extended Cap Table database will be used.
+# M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.185
+# M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M6           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M7           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M8           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# M9           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# AP           V   Track-Pitch = 6.500    Line-2-Via Pitch = 6.500
+#Done routing data preparation.
+#cpu time = 00:00:04, elapsed time = 00:00:05, memory = 564.00 (Mb)
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#Force regenerating Ggrids.
+#Auto generating G-grids with size=15 tracks, using layer M2's pitch = 0.200.
+#Using automatically generated G-grids.
+#
+#Data preparation is done on Thu Jan  9 20:19:50 2020
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Thu Jan  9 20:19:50 2020
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         470          44         714    29.97%
+#  Metal 2        V         254          56         714    10.08%
+#  Metal 3        H         514           0         714     0.00%
+#  Metal 4        V         311           0         714     0.00%
+#  Metal 5        H         514           0         714     0.00%
+#  Metal 6        V         311           0         714     0.00%
+#  Metal 7        H         514           0         714     0.00%
+#  Metal 8        V          77           0         714     0.00%
+#  Metal 9        H         128           0         714     0.00%
+#  Metal 10       V           9           0         714    57.14%
+#  --------------------------------------------------------------
+#  Total                   3102       2.67%  7140     9.72%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 564.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 564.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 564.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 564.00 (Mb)
+#
+#start global routing iteration 4...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 564.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon          
+#                  #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)   OverCon
+#  ----------------------------------------------
+#   Metal 1      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 2      4(0.62%)      6(0.93%)   (1.56%)
+#   Metal 3      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)      0(0.00%)   (0.00%)
+#  Metal 10      0(0.00%)      0(0.00%)   (0.00%)
+#  ----------------------------------------------
+#     Total      4(0.06%)      6(0.09%)   (0.15%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 2
+#
+#Complete Global Routing.
+#Total wire length = 7678 um.
+#Total half perimeter of net bounding box = 7353 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 1729 um.
+#Total wire length on LAYER M3 = 3098 um.
+#Total wire length on LAYER M4 = 2142 um.
+#Total wire length on LAYER M5 = 520 um.
+#Total wire length on LAYER M6 = 174 um.
+#Total wire length on LAYER M7 = 15 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 2985
+#Up-Via Summary (total 2985):
+#           
+#-----------------------
+#  Metal 1         1341
+#  Metal 2         1056
+#  Metal 3          476
+#  Metal 4           91
+#  Metal 5           20
+#  Metal 6            1
+#-----------------------
+#                  2985 
+#
+#Max overcon = 2 tracks.
+#Total overcon = 0.15%.
+#Worst layer Gcell overcon rate = 0.00%.
+#start post global routing...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 564.00 (Mb)
+#Cpu time = 00:00:05
+#Elapsed time = 00:00:05
+#Increased memory = 16.00 (Mb)
+#Total memory = 564.00 (Mb)
+#Peak memory = 597.00 (Mb)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 40
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 575.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 36
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 575.00 (Mb)
+#start 2nd optimization iteration ...
+#    number of violations = 26
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 575.00 (Mb)
+#start 3rd optimization iteration ...
+#    number of violations = 33
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 575.00 (Mb)
+#start 4th optimization iteration ...
+#    number of violations = 30
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 575.00 (Mb)
+#start 5th optimization iteration ...
+#    number of violations = 35
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 575.00 (Mb)
+#start 6th optimization iteration ...
+#    number of violations = 24
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 575.00 (Mb)
+#start 7th optimization iteration ...
+#    number of violations = 25
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 575.00 (Mb)
+#start 8th optimization iteration ...
+#    number of violations = 18
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 575.00 (Mb)
+#start 9th optimization iteration ...
+#    number of violations = 17
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 575.00 (Mb)
+#start 10th optimization iteration ...
+#    number of violations = 19
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 575.00 (Mb)
+#start 11th optimization iteration ...
+#    number of violations = 22
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 575.00 (Mb)
+#start 12th optimization iteration ...
+#    number of violations = 28
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 579.00 (Mb)
+#start 13th optimization iteration ...
+#    number of violations = 26
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 579.00 (Mb)
+#start 14th optimization iteration ...
+#    number of violations = 19
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 579.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 7577 um.
+#Total half perimeter of net bounding box = 7353 um.
+#Total wire length on LAYER M1 = 73 um.
+#Total wire length on LAYER M2 = 2396 um.
+#Total wire length on LAYER M3 = 3194 um.
+#Total wire length on LAYER M4 = 1542 um.
+#Total wire length on LAYER M5 = 264 um.
+#Total wire length on LAYER M6 = 101 um.
+#Total wire length on LAYER M7 = 6 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 3758
+#Up-Via Summary (total 3758):
+#           
+#-----------------------
+#  Metal 1         1620
+#  Metal 2         1645
+#  Metal 3          431
+#  Metal 4           50
+#  Metal 5           11
+#  Metal 6            1
+#-----------------------
+#                  3758 
+#
+#Total number of DRC violations = 19
+#Total number of violations on LAYER M1 = 14
+#Total number of violations on LAYER M2 = 5
+#Total number of violations on LAYER M3 = 0
+#Total number of violations on LAYER M4 = 0
+#Total number of violations on LAYER M5 = 0
+#Total number of violations on LAYER M6 = 0
+#Total number of violations on LAYER M7 = 0
+#Total number of violations on LAYER M8 = 0
+#Total number of violations on LAYER M9 = 0
+#Total number of violations on LAYER AP = 0
+#Cpu time = 00:00:13
+#Elapsed time = 00:00:13
+#Increased memory = 8.00 (Mb)
+#Total memory = 572.00 (Mb)
+#Peak memory = 687.00 (Mb)
+#
+#Start Post Routing Optimization.
+#start 1st post routing optimization iteration ...
+#    number of DRC violations = 32
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 572.00 (Mb)
+#start 2nd post routing optimization iteration ...
+#    number of DRC violations = 32
+#cpu time = 00:00:12, elapsed time = 00:00:12, memory = 572.00 (Mb)
+#start 3rd post routing optimization iteration ...
+#    number of DRC violations = 32
+#cpu time = 00:00:15, elapsed time = 00:00:16, memory = 572.00 (Mb)
+#Complete Post Routing Optimization.
+#Cpu time = 00:00:30
+#Elapsed time = 00:00:30
+#Increased memory = 0.00 (Mb)
+#Total memory = 572.00 (Mb)
+#Peak memory = 700.00 (Mb)
+#Total wire length = 7591 um.
+#Total half perimeter of net bounding box = 7353 um.
+#Total wire length on LAYER M1 = 77 um.
+#Total wire length on LAYER M2 = 2432 um.
+#Total wire length on LAYER M3 = 3189 um.
+#Total wire length on LAYER M4 = 1524 um.
+#Total wire length on LAYER M5 = 262 um.
+#Total wire length on LAYER M6 = 101 um.
+#Total wire length on LAYER M7 = 6 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 3747
+#Up-Via Summary (total 3747):
+#           
+#-----------------------
+#  Metal 1         1615
+#  Metal 2         1646
+#  Metal 3          426
+#  Metal 4           48
+#  Metal 5           11
+#  Metal 6            1
+#-----------------------
+#                  3747 
+#
+#Total number of DRC violations = 32
+#Total number of violations on LAYER M1 = 27
+#Total number of violations on LAYER M2 = 5
+#Total number of violations on LAYER M3 = 0
+#Total number of violations on LAYER M4 = 0
+#Total number of violations on LAYER M5 = 0
+#Total number of violations on LAYER M6 = 0
+#Total number of violations on LAYER M7 = 0
+#Total number of violations on LAYER M8 = 0
+#Total number of violations on LAYER M9 = 0
+#Total number of violations on LAYER AP = 0
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:02, elapsed time = 00:00:03, memory = 574.00 (Mb)
+#
+#Total wire length = 7591 um.
+#Total half perimeter of net bounding box = 7353 um.
+#Total wire length on LAYER M1 = 77 um.
+#Total wire length on LAYER M2 = 2432 um.
+#Total wire length on LAYER M3 = 3189 um.
+#Total wire length on LAYER M4 = 1524 um.
+#Total wire length on LAYER M5 = 262 um.
+#Total wire length on LAYER M6 = 101 um.
+#Total wire length on LAYER M7 = 6 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 3747
+#Up-Via Summary (total 3747):
+#           
+#-----------------------
+#  Metal 1         1615
+#  Metal 2         1646
+#  Metal 3          426
+#  Metal 4           48
+#  Metal 5           11
+#  Metal 6            1
+#-----------------------
+#                  3747 
+#
+#Total number of DRC violations = 32
+#Total number of net violated process antenna rule = 0
+#Total number of violations on LAYER M1 = 27
+#Total number of violations on LAYER M2 = 5
+#Total number of violations on LAYER M3 = 0
+#Total number of violations on LAYER M4 = 0
+#Total number of violations on LAYER M5 = 0
+#Total number of violations on LAYER M6 = 0
+#Total number of violations on LAYER M7 = 0
+#Total number of violations on LAYER M8 = 0
+#Total number of violations on LAYER M9 = 0
+#Total number of violations on LAYER AP = 0
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:45
+#Elapsed time = 00:00:46
+#Increased memory = 8.00 (Mb)
+#Total memory = 572.00 (Mb)
+#Peak memory = 700.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:51
+#Elapsed time = 00:00:53
+#Increased memory = 83.00 (Mb)
+#Total memory = 570.00 (Mb)
+#Peak memory = 700.00 (Mb)
+#Number of warnings = 2
+#Total number of warnings = 2
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu Jan  9 20:20:37 2020
+#
+<CMD> setNanoRouteMode -quiet -drouteStartIteration default
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+Begin checking placement ... (start mem=570.2M, init mem=570.2M)
+Overlapping with other instance:	26
+*info: Placed = 1105
+*info: Unplaced = 0
+Placement Density:98.27%(980/997)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=570.2M)
+Found placement violations in routeDesign. To quit routeDesign use routeDesign -placementCheck, to bypass this check use routeDesign -noPlacementCheck
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=570.2M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Thu Jan  9 20:21:27 2020
+#
+#NanoRoute Version v11.12-s009 NR120919-1551/11_10_USR2-UB
+#Start routing data preparation.
+#WARNING (NREX-37) No permittivity value was specified in the process LEF file. Default permittivity value 3.900000 will be used.
+#WARNING (NREX-6) No Extended Cap Table was imported, an approximate Extended Cap Table database will be used.
+# M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.185
+# M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M6           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M7           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M8           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# M9           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# AP           V   Track-Pitch = 6.500    Line-2-Via Pitch = 6.500
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 572.00 (Mb)
+#Merging special wires...
+#WARNING (NRGR-22) Design is already detail routed.
+#start post global routing...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 572.00 (Mb)
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.00 (Mb)
+#Total memory = 572.00 (Mb)
+#Peak memory = 700.00 (Mb)
+#
+#Start Detail Routing..
+#start 1st optimization iteration ...
+#    number of violations = 25
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 574.00 (Mb)
+#start 2nd optimization iteration ...
+#    number of violations = 22
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 574.00 (Mb)
+#start 3rd optimization iteration ...
+#    number of violations = 26
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 574.00 (Mb)
+#start 4th optimization iteration ...
+#    number of violations = 21
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 574.00 (Mb)
+#start 5th optimization iteration ...
+#    number of violations = 18
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 574.00 (Mb)
+#start 6th optimization iteration ...
+#    number of violations = 23
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 574.00 (Mb)
+#start 7th optimization iteration ...
+#    number of violations = 19
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 574.00 (Mb)
+#start 8th optimization iteration ...
+#    number of violations = 19
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 574.00 (Mb)
+#start 9th optimization iteration ...
+#    number of violations = 19
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 574.00 (Mb)
+#start 10th optimization iteration ...
+#    number of violations = 19
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 574.00 (Mb)
+#start 11th optimization iteration ...
+#    number of violations = 35
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 575.00 (Mb)
+#start 12th optimization iteration ...
+#    number of violations = 22
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 576.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 7582 um.
+#Total half perimeter of net bounding box = 7353 um.
+#Total wire length on LAYER M1 = 73 um.
+#Total wire length on LAYER M2 = 2432 um.
+#Total wire length on LAYER M3 = 3187 um.
+#Total wire length on LAYER M4 = 1519 um.
+#Total wire length on LAYER M5 = 263 um.
+#Total wire length on LAYER M6 = 101 um.
+#Total wire length on LAYER M7 = 6 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 3746
+#Up-Via Summary (total 3746):
+#           
+#-----------------------
+#  Metal 1         1615
+#  Metal 2         1651
+#  Metal 3          422
+#  Metal 4           46
+#  Metal 5           11
+#  Metal 6            1
+#-----------------------
+#                  3746 
+#
+#Total number of DRC violations = 22
+#Total number of violations on LAYER M1 = 16
+#Total number of violations on LAYER M2 = 6
+#Total number of violations on LAYER M3 = 0
+#Total number of violations on LAYER M4 = 0
+#Total number of violations on LAYER M5 = 0
+#Total number of violations on LAYER M6 = 0
+#Total number of violations on LAYER M7 = 0
+#Total number of violations on LAYER M8 = 0
+#Total number of violations on LAYER M9 = 0
+#Total number of violations on LAYER AP = 0
+#Cpu time = 00:00:07
+#Elapsed time = 00:00:07
+#Increased memory = 0.00 (Mb)
+#Total memory = 572.00 (Mb)
+#Peak memory = 700.00 (Mb)
+#
+#Start Post Routing Optimization.
+#start 1st post routing optimization iteration ...
+#    number of DRC violations = 30
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 572.00 (Mb)
+#start 2nd post routing optimization iteration ...
+#    number of DRC violations = 15
+#cpu time = 00:00:12, elapsed time = 00:00:13, memory = 572.00 (Mb)
+#start 3rd post routing optimization iteration ...
+#    number of DRC violations = 15
+#cpu time = 00:00:16, elapsed time = 00:00:16, memory = 572.00 (Mb)
+#Complete Post Routing Optimization.
+#Cpu time = 00:00:30
+#Elapsed time = 00:00:31
+#Increased memory = 0.00 (Mb)
+#Total memory = 572.00 (Mb)
+#Peak memory = 704.00 (Mb)
+#Total wire length = 7578 um.
+#Total half perimeter of net bounding box = 7353 um.
+#Total wire length on LAYER M1 = 75 um.
+#Total wire length on LAYER M2 = 2432 um.
+#Total wire length on LAYER M3 = 3183 um.
+#Total wire length on LAYER M4 = 1519 um.
+#Total wire length on LAYER M5 = 260 um.
+#Total wire length on LAYER M6 = 101 um.
+#Total wire length on LAYER M7 = 6 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 3742
+#Up-Via Summary (total 3742):
+#           
+#-----------------------
+#  Metal 1         1618
+#  Metal 2         1648
+#  Metal 3          420
+#  Metal 4           44
+#  Metal 5           11
+#  Metal 6            1
+#-----------------------
+#                  3742 
+#
+#Total number of DRC violations = 15
+#Total number of violations on LAYER M1 = 13
+#Total number of violations on LAYER M2 = 2
+#Total number of violations on LAYER M3 = 0
+#Total number of violations on LAYER M4 = 0
+#Total number of violations on LAYER M5 = 0
+#Total number of violations on LAYER M6 = 0
+#Total number of violations on LAYER M7 = 0
+#Total number of violations on LAYER M8 = 0
+#Total number of violations on LAYER M9 = 0
+#Total number of violations on LAYER AP = 0
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 574.00 (Mb)
+#
+#Total wire length = 7578 um.
+#Total half perimeter of net bounding box = 7353 um.
+#Total wire length on LAYER M1 = 75 um.
+#Total wire length on LAYER M2 = 2432 um.
+#Total wire length on LAYER M3 = 3183 um.
+#Total wire length on LAYER M4 = 1519 um.
+#Total wire length on LAYER M5 = 260 um.
+#Total wire length on LAYER M6 = 101 um.
+#Total wire length on LAYER M7 = 6 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 3742
+#Up-Via Summary (total 3742):
+#           
+#-----------------------
+#  Metal 1         1618
+#  Metal 2         1648
+#  Metal 3          420
+#  Metal 4           44
+#  Metal 5           11
+#  Metal 6            1
+#-----------------------
+#                  3742 
+#
+#Total number of DRC violations = 15
+#Total number of net violated process antenna rule = 0
+#Total number of violations on LAYER M1 = 13
+#Total number of violations on LAYER M2 = 2
+#Total number of violations on LAYER M3 = 0
+#Total number of violations on LAYER M4 = 0
+#Total number of violations on LAYER M5 = 0
+#Total number of violations on LAYER M6 = 0
+#Total number of violations on LAYER M7 = 0
+#Total number of violations on LAYER M8 = 0
+#Total number of violations on LAYER M9 = 0
+#Total number of violations on LAYER AP = 0
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:40
+#Elapsed time = 00:00:41
+#Increased memory = 0.00 (Mb)
+#Total memory = 572.00 (Mb)
+#Peak memory = 704.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:40
+#Elapsed time = 00:00:41
+#Increased memory = 0.00 (Mb)
+#Total memory = 570.00 (Mb)
+#Peak memory = 704.00 (Mb)
+#Number of warnings = 3
+#Total number of warnings = 5
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu Jan  9 20:22:08 2020
+#
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postRoute
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+**DIAG[opUtil.c:10496:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10501:update]: Assert "powerViewTlc"
+**DIAG[opUtil.c:10496:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10501:update]: Assert "powerViewTlc"
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 570.2M, totSessionCpu=0:01:48 **
+Begin checking placement ... (start mem=570.2M, init mem=570.3M)
+Overlapping with other instance:	26
+*info: Placed = 437
+*info: Unplaced = 0
+Placement Density:98.27%(980/997)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=570.3M)
+**WARN: (ENCOPT-306):	Found placement violations in postRoute mode
+**INFO: It is recommended to fix the placement violations and reroute the design
+**INFO: Command refinePlace may be used to fix the placement violations
+**ERROR: (ENCOPT-6029):	Timing Library is not loaded yetRemoving temporary dont_use automatically set for cells with technology sites with no row.
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postRoute
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+**DIAG[opUtil.c:10496:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10501:update]: Assert "powerViewTlc"
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 570.3M, totSessionCpu=0:01:48 **
+Begin checking placement ... (start mem=570.3M, init mem=570.3M)
+Overlapping with other instance:	26
+*info: Placed = 437
+*info: Unplaced = 0
+Placement Density:98.27%(980/997)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=570.3M)
+**WARN: (ENCOPT-306):	Found placement violations in postRoute mode
+**INFO: It is recommended to fix the placement violations and reroute the design
+**INFO: Command refinePlace may be used to fix the placement violations
+**ERROR: (ENCOPT-6029):	Timing Library is not loaded yetRemoving temporary dont_use automatically set for cells with technology sites with no row.
+
+*** Memory Usage v#1 (Current mem = 570.418M, initial mem = 62.922M) ***
+--- Ending "Encounter" (totcpu=0:01:49, real=0:05:16, mem=570.4M) ---

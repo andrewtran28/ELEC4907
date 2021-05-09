@@ -1,0 +1,92 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 11.0 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.43-p003.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2012.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v11.12-s136_1 (64bit) 09/24/2012 19:26 (Linux 2.6)
+@(#)CDS: NanoRoute v11.12-s009 NR120919-1551/11_10_USR2-UB (database version 2.30, 165.4.1) {superthreading v1.16}
+@(#)CDS: CeltIC v11.12-s025_1 (64bit) 09/20/2012 05:47:24 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 11.12-s002 (64bit) 09/24/2012 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 11.12-s098_1 (64bit) Sep 12 2012 04:29:44 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v11.12-s026
+@(#)CDS: IQRC/TQRC 11.1.1-s334 (64bit) Sun May  6 19:52:51 PDT 2012 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v11.12-s136_1" on Thu Jan  9 18:24:56 2020 (mem=62.9M) ---
+--- Running on thor.doe.carleton.ca (x86_64 w/Linux 3.10.0-1062.1.1.el7.x86_64) ---
+This version was compiled on Mon Sep 24 19:26:26 PDT 2012.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef
+<CMD> set init_verilog routing_engine.v
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading Lef file /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef...
+Set DBUPerIGU to M2 pitch 400.
+**WARN: (ENCLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Thu Jan  9 18:27:37 2020
+viaInitial ends at Thu Jan  9 18:27:37 2020
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+**ERROR: (ENCVL-209):	[routing_engine.v:9]: syntax error at -1.
+**ERROR: (ENCVL-209):	[routing_engine.v:9]: syntax error at :.
+**ERROR: (ENCVL-209):	[routing_engine.v:9]: syntax error at 0.
+**ERROR: (ENCVL-209):	[routing_engine.v:9]: syntax error at ].
+**ERROR: (ENCVL-209):	[routing_engine.v:9]: syntax error at port_dest.
+**ERROR: (ENCVL-209):	[routing_engine.v:9]: syntax error at ,.
+**ERROR: (ENCVL-209):	[routing_engine.v:10]: syntax error at output.
+**ERROR: (ENCVL-209):	[routing_engine.v:10]: syntax error at [.
+**ERROR: (ENCVL-209):	[routing_engine.v:10]: syntax error at 20.
+**ERROR: (ENCVL-209):	[routing_engine.v:10]: syntax error at -1.
+**ERROR: (ENCVL-209):	[routing_engine.v:10]: syntax error at :.
+**ERROR: (ENCVL-209):	[routing_engine.v:10]: syntax error at 0.
+**ERROR: (ENCVL-209):	[routing_engine.v:10]: syntax error at ].
+**ERROR: (ENCVL-209):	[routing_engine.v:10]: syntax error at control.
+**ERROR: (ENCVL-209):	[routing_engine.v:10]: syntax error at ,.
+**ERROR: (ENCVL-209):	[routing_engine.v:11]: syntax error at output.
+**ERROR: (ENCVL-209):	[routing_engine.v:11]: syntax error at reg.
+**ERROR: (ENCVL-209):	[routing_engine.v:11]: syntax error at done.
+**ERROR: (ENCVL-209):	[routing_engine.v:12]: syntax error at ).
+**ERROR: (ENCVL-209):	[routing_engine.v:12]: syntax error at ;.
+**WARN: (EMS-63):	Message <ENCVL-209> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessagLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use suppressMessage command.
+**FATAL ERROR: [vlVerilogLex.l:932:vlVerilog_yyerror]: Too many errors in verilog file routing_engine.v ... aborting

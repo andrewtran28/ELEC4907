@@ -1,0 +1,7 @@
+setAnalysisMode -analysisType bcwc -checkType setup -clkSrcPath true -clockPropagation sdcControl -virtualIPO false
+setTrialRouteMode -fixAirConnect true
+setExtractRCMode  -engine preRoute
+setDelayCalMode -engine default -ignoreNetLoad false
+setCTSMode -moveGateLimit 25
+setPlaceMode -congRepairForceTrialRoute false -fp false -ignoreScan true -relaxSoftBlockageMode 2 -timingDriven true
+setIlmMode -highFanoutPort true -loopBack false 

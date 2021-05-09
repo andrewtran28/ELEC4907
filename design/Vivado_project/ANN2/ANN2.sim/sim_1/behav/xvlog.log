@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/rtl/intrc/crossbar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/rtl/intrc/benes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module benes
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/rtl/intrc/routing_engine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module routing_engine
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/rtl/arb/arb_dut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/rtl/neuron/neuron_fma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fma
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/rtl/neuron/neuron.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/rtl/neuron/layer_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layer_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/ANN/ANN/ANN.srcs/sources_1/new/host_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module host_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/rtl/cache/l1_cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module l1_cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/rtl/arb/arb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ANN/design/ANN/ANN/ANN.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

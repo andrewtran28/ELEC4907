@@ -1,0 +1,340 @@
+Loading db file '/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db'
+Information: Updating design information... (UID-85)
+Warning: Design 'layer_controller' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : layer_controller
+Version: H-2013.03-SP5-2
+Date   : Sat Jan 18 18:59:42 2020
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+layer_controller       ZeroWireload      tcbn65gpluswc
+neuron_0               ZeroWireload      tcbn65gpluswc
+routing_engine         ZeroWireload      tcbn65gpluswc
+fma_top_0              ZeroWireload      tcbn65gpluswc
+fma_exp_diff_0         ZeroWireload      tcbn65gpluswc
+fma_mult_tree_0        ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_0    ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_0
+                       ZeroWireload      tcbn65gpluswc
+fma_lza_0              ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_0
+                       ZeroWireload      tcbn65gpluswc
+neuron_1               ZeroWireload      tcbn65gpluswc
+neuron_2               ZeroWireload      tcbn65gpluswc
+neuron_3               ZeroWireload      tcbn65gpluswc
+neuron_4               ZeroWireload      tcbn65gpluswc
+neuron_5               ZeroWireload      tcbn65gpluswc
+neuron_6               ZeroWireload      tcbn65gpluswc
+neuron_7               ZeroWireload      tcbn65gpluswc
+fma_top_1              ZeroWireload      tcbn65gpluswc
+fma_top_2              ZeroWireload      tcbn65gpluswc
+fma_top_3              ZeroWireload      tcbn65gpluswc
+fma_top_4              ZeroWireload      tcbn65gpluswc
+fma_top_5              ZeroWireload      tcbn65gpluswc
+fma_top_6              ZeroWireload      tcbn65gpluswc
+fma_top_7              ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_1    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_2    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_3    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_4    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_5    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_6    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_7    ZeroWireload      tcbn65gpluswc
+fma_exp_diff_1         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_2         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_3         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_4         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_5         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_6         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_7         ZeroWireload      tcbn65gpluswc
+fma_lza_1              ZeroWireload      tcbn65gpluswc
+fma_lza_2              ZeroWireload      tcbn65gpluswc
+fma_lza_3              ZeroWireload      tcbn65gpluswc
+fma_lza_4              ZeroWireload      tcbn65gpluswc
+fma_lza_5              ZeroWireload      tcbn65gpluswc
+fma_lza_6              ZeroWireload      tcbn65gpluswc
+fma_lza_7              ZeroWireload      tcbn65gpluswc
+fma_mult_tree_1        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_2        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_3        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_4        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_5        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_6        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_7        ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_1
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_2
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_3
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_4
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_5
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_6
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_7
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_1
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_2
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_3
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_4
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_5
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_6
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_7
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_1_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_1_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_2_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_2_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_3_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_3_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_4_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_4_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_5_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_5_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_6_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_6_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_7_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_7_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_0_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_0_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.5148 mW   (69%)
+  Net Switching Power  = 666.2036 uW   (31%)
+                         ---------
+Total Dynamic Power    =   2.1810 mW  (100%)
+
+Cell Leakage Power     = 466.5625 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         1.5077        4.9503e-04        2.8059e+05            1.7887  (  67.56%)
+combinational  7.1983e-03            0.6657        1.8594e+05            0.8588  (  32.44%)
+--------------------------------------------------------------------------------------------------
+Total              1.5149 mW         0.6662 mW     4.6652e+05 nW         2.6476 mW
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : layer_controller
+Version: H-2013.03-SP5-2
+Date   : Sat Jan 18 18:59:51 2020
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+layer_controller       ZeroWireload      tcbn65gpluswc
+neuron_0               ZeroWireload      tcbn65gpluswc
+routing_engine         ZeroWireload      tcbn65gpluswc
+fma_top_0              ZeroWireload      tcbn65gpluswc
+fma_exp_diff_0         ZeroWireload      tcbn65gpluswc
+fma_mult_tree_0        ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_0    ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_0
+                       ZeroWireload      tcbn65gpluswc
+fma_lza_0              ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_0
+                       ZeroWireload      tcbn65gpluswc
+neuron_1               ZeroWireload      tcbn65gpluswc
+neuron_2               ZeroWireload      tcbn65gpluswc
+neuron_3               ZeroWireload      tcbn65gpluswc
+neuron_4               ZeroWireload      tcbn65gpluswc
+neuron_5               ZeroWireload      tcbn65gpluswc
+neuron_6               ZeroWireload      tcbn65gpluswc
+neuron_7               ZeroWireload      tcbn65gpluswc
+fma_top_1              ZeroWireload      tcbn65gpluswc
+fma_top_2              ZeroWireload      tcbn65gpluswc
+fma_top_3              ZeroWireload      tcbn65gpluswc
+fma_top_4              ZeroWireload      tcbn65gpluswc
+fma_top_5              ZeroWireload      tcbn65gpluswc
+fma_top_6              ZeroWireload      tcbn65gpluswc
+fma_top_7              ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_1    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_2    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_3    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_4    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_5    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_6    ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_7    ZeroWireload      tcbn65gpluswc
+fma_exp_diff_1         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_2         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_3         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_4         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_5         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_6         ZeroWireload      tcbn65gpluswc
+fma_exp_diff_7         ZeroWireload      tcbn65gpluswc
+fma_lza_1              ZeroWireload      tcbn65gpluswc
+fma_lza_2              ZeroWireload      tcbn65gpluswc
+fma_lza_3              ZeroWireload      tcbn65gpluswc
+fma_lza_4              ZeroWireload      tcbn65gpluswc
+fma_lza_5              ZeroWireload      tcbn65gpluswc
+fma_lza_6              ZeroWireload      tcbn65gpluswc
+fma_lza_7              ZeroWireload      tcbn65gpluswc
+fma_mult_tree_1        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_2        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_3        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_4        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_5        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_6        ZeroWireload      tcbn65gpluswc
+fma_mult_tree_7        ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_1
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_2
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_3
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_4
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_5
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_6
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_7
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_1
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_2
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_3
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_4
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_5
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_6
+                       ZeroWireload      tcbn65gpluswc
+fma_aligner_adder_DW_rash_0_7
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_1_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_1_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_2_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_2_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_3_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_3_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_4_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_4_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_5_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_5_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_6_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_6_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_7_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_7_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_0_DW01_ash_0
+                       ZeroWireload      tcbn65gpluswc
+fma_normalizer_rounder_0_DW01_addsub_0
+                       ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.5148 mW   (69%)
+  Net Switching Power  = 666.2036 uW   (31%)
+                         ---------
+Total Dynamic Power    =   2.1810 mW  (100%)
+
+Cell Leakage Power     = 466.5625 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         1.5077        4.9503e-04        2.8059e+05            1.7887  (  67.56%)
+combinational  7.1983e-03            0.6657        1.8594e+05            0.8588  (  32.44%)
+--------------------------------------------------------------------------------------------------
+Total              1.5149 mW         0.6662 mW     4.6652e+05 nW         2.6476 mW

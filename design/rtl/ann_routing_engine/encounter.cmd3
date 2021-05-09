@@ -1,0 +1,125 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Thu Jan  9 18:47:26 2020                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v11.12-s136_1 (64bit) 09/24/2012 19:26 (Linux 2.6)
+#@(#)CDS: NanoRoute v11.12-s009 NR120919-1551/11_10_USR2-UB (database version 2.30, 165.4.1) {superthreading v1.16}
+#@(#)CDS: CeltIC v11.12-s025_1 (64bit) 09/20/2012 05:47:24 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 11.12-s002 (64bit) 09/24/2012 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 11.12-s098_1 (64bit) Sep 12 2012 04:29:44 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v11.12-s026
+#@(#)CDS: IQRC/TQRC 11.1.1-s334 (64bit) Sun May  6 19:52:51 PDT 2012 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_gnd_net VSS
+set init_lef_file /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef
+set init_verilog synthesized/routing_engine.v
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -r 0.926045016077 0.699936 20 20 20 20
+uiSetTool select
+getIoFlowFlag
+fit
+saveDesign routing_engine.enc
+set sprCreateIeRingNets {}
+set sprCreateIeRingLayers {}
+set sprCreateIeRingWidth 1.0
+set sprCreateIeRingSpacing 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+addRing -stacked_via_top_layer AP -around core -jog_distance 0.1 -threshold 0.1 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer {bottom M9 top M9 right M8 left M8} -width 5 -spacing 1.5
+addRing -stacked_via_top_layer AP -around core -jog_distance 0.1 -threshold 0.1 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer {bottom M9 top M9 right M8 left M8} -width 5 -spacing 1.5
+sroute -connect { blockPin padPin padRing corePin } -layerChangeRange { M1 AP } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer AP -crossoverViaTopLayer AP -targetViaBottomLayer M1 -nets { VSS VDD }
+clearGlobalNets
+clearGlobalNets
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+globalNetConnect VDD -type pgpin -pin TIEHI -inst *
+globalNetConnect VSS -type pgpin -pin TIELO -inst *
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+globalNetConnect VDD -type tiehi -inst *
+globalNetConnect VSS -type tielo -inst *
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+globalNetConnect VDD -type tiehi -inst *
+globalNetConnect VSS -type tielo -inst *
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+getFillerMode -quiet
+addFiller -cell DCAP FILL1 -prefix FILLER -markFixed
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000 -warning 50
+verifyGeometry
+summaryReport -outdir . -browser
+summaryReport -outdir . -browser
+saveDesign routing_engine.enc
+selectWire 37.6500 46.3500 40.7500 46.4500 3 n1226
+setResizeLine -clearAll
+setResizeFPlanMode -ioProportional true -honorHalo true -shrinkFence false -snapToTrack true -shiftBased true
+resizeFP -xPercent -50
+fit
+setResizeLine -clearAll
+setResizeFPlanMode -ioProportional true -honorHalo true -shrinkFence false -snapToTrack true -shiftBased true
+resizeFP -xPercent -50
+fit
+win
+setPlanDesignMode -effort medium
+planDesign
+selectInst FILLER_L0N1_40
+deselectAll
+selectInst FILLER_L0N1_46
+addRing -stacked_via_top_layer AP -around core -jog_distance 0.1 -threshold 0.1 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer {bottom M9 top M9 right M8 left M8} -width 2 -spacing 0.5
+addRing -stacked_via_top_layer AP -around core -jog_distance 0.1 -threshold 0.1 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer {bottom M9 top M9 right M8 left M8} -width 2 -spacing 0.5
+sroute -connect { blockPin padPin padRing corePin } -layerChangeRange { M1 AP } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer AP -crossoverViaTopLayer AP -targetViaBottomLayer M1 -nets { VSS VDD }
+sroute -connect { blockPin padPin padRing corePin } -layerChangeRange { M1 AP } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer AP -crossoverViaTopLayer AP -targetViaBottomLayer M1 -nets { VSS VDD }
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+globalNetConnect VDD -type tiehi -inst *
+globalNetConnect VSS -type tielo -inst *
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+deselectAll
+selectMarker 50.2000 52.4000 52.0000 54.2000 -1 12 91
+violationBrowser -all -no_display_false
+deselectAll

@@ -1,0 +1,157 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 11.0 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.43-p003.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2012.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v11.12-s136_1 (64bit) 09/24/2012 19:26 (Linux 2.6)
+@(#)CDS: NanoRoute v11.12-s009 NR120919-1551/11_10_USR2-UB (database version 2.30, 165.4.1) {superthreading v1.16}
+@(#)CDS: CeltIC v11.12-s025_1 (64bit) 09/20/2012 05:47:24 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 11.12-s002 (64bit) 09/24/2012 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 11.12-s098_1 (64bit) Sep 12 2012 04:29:44 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v11.12-s026
+@(#)CDS: IQRC/TQRC 11.1.1-s334 (64bit) Sun May  6 19:52:51 PDT 2012 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v11.12-s136_1" on Tue Jan 14 19:49:34 2020 (mem=62.9M) ---
+--- Running on thor.doe.carleton.ca (x86_64 w/Linux 3.10.0-1062.1.1.el7.x86_64) ---
+This version was compiled on Mon Sep 24 19:26:26 PDT 2012.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Loading global variable file router.enc.dat/router.globals ...
+**WARN: (GLOBAL-100):	Global 'timing_get_pins_of_nets_compatibility' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_multiedge_genclk_support' has become obsolete. It will be removed in the next release.
+**WARN: (ENCLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.27min, fe_mem=590.6M) ***
+Loading preference file router.enc.dat/enc.pref.tcl ...
+Loading mode file router.enc.dat/router.mode ...
+**WARN: (ENCEXT-2773):	Unable to find a via resistance from LEF technology file;
+**WARN: (ENCEXT-2775):	Via resistance between layer M0 and M1 is assigned 4. Ohms.
+**WARN: (ENCEXT-2777):	Via resistance between layer M1 and M2 is not defined in cap table, LEF value 1.5 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M2 and M3 is not defined in cap table, LEF value 1.5 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M3 and M4 is not defined in cap table, LEF value 1.5 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M4 and M5 is not defined in cap table, LEF value 1.5 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M5 and M6 is not defined in cap table, LEF value 1.5 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M6 and M7 is not defined in cap table, LEF value 1.5 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M7 and M8 is not defined in cap table, LEF value 0.22 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M8 and M9 is not defined in cap table, LEF value 0.22 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M9 and M10 is not defined in cap table, LEF value 0.041 Ohms will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in cap table, LEF value 0.16 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in cap table, LEF value 0.0218 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in cap table, LEF value 0.0218 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in cap table, LEF value 0.021 will be used.
+router
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AN2D0 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AN3D0 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AN3D1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AN4D0 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AN4D1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO211D0 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO211D1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO211D4 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO21D0 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO21D1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO221D0 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO221D1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO222D0 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO222D1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO222D4 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO22D0 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO22D1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO22D2 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO31D0 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell tcbn65gpluswc/AO31D1 has already a dont_use attribute false.
+**WARN: (EMS-63):	Message <ENCOPT-3058> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessagLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use suppressMessage command.
+**WARN: (ENCBB-3020):	Command "elaborateBlackBlob" is obsolete. With the introduction of the Prototyping Foundation flow, the support for flexModels reduces the need for using blackblobs. Even though the blackblob feature and its related commands still work in this release, they will be removed in the next major release of the software.
+loading place ...
+loading route ...
+**WARN: (GLOBAL-100):	Global 'timing_get_pins_of_nets_compatibility' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_multiedge_genclk_support' has become obsolete. It will be removed in the next release.
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> selectObject Module u_fwd_benes
+<CMD> deselectAll
+<CMD> selectObject Module u_fwd_benes
+<CMD> deselectAll
+<CMD> reportGateCount -level 5 -limit 100 -outfile router.gateCount
+Gate area 1.0800 um^2
+[0] router Gates=4361 Cells=2037 Area=4709.9 um^2
+[1] u_fwd_routing_engine Gates=1049 Cells=417 Area=1133.6 um^2
+[1] u_fwd_benes Gates=3216 Cells=1606 Area=3474.0 um^2
+<CMD> view_dynamic_movie
+**ERROR: (ENCLIC-83):	Option license 'epsxl' (Encounter_Power_System_XL 11.0) did not exist in license server.
+**ERROR: (ENCLIC-90):	This command does not have the necessary license to run, you must get access to one of the following licenses (and their prerequisite licenses) before you can run the command:  epsxl.
+Use 'setLicenseCheck -status' to see the current licenses in use and for more information.
+<CMD> view_dynamic_waveform
+**ERROR: (ENCLIC-83):	Option license 'epsxl' (Encounter_Power_System_XL 11.0) did not exist in license server.
+**ERROR: (ENCLIC-90):	This command does not have the necessary license to run, you must get access to one of the following licenses (and their prerequisite licenses) before you can run the command:  epsxl.
+Use 'setLicenseCheck -status' to see the current licenses in use and for more information.
+<CMD> setLayerPreference stdCell -isVisible 0
+<CMD> setLayerPreference stdCell -isVisible 1

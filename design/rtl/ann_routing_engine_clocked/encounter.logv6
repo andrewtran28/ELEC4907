@@ -1,0 +1,1282 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 11.0 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.43-p003.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2012.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v11.12-s136_1 (64bit) 09/24/2012 19:26 (Linux 2.6)
+@(#)CDS: NanoRoute v11.12-s009 NR120919-1551/11_10_USR2-UB (database version 2.30, 165.4.1) {superthreading v1.16}
+@(#)CDS: CeltIC v11.12-s025_1 (64bit) 09/20/2012 05:47:24 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 11.12-s002 (64bit) 09/24/2012 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 11.12-s098_1 (64bit) Sep 12 2012 04:29:44 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v11.12-s026
+@(#)CDS: IQRC/TQRC 11.1.1-s334 (64bit) Sun May  6 19:52:51 PDT 2012 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v11.12-s136_1" on Thu Jan  9 19:55:46 2020 (mem=62.9M) ---
+--- Running on thor.doe.carleton.ca (x86_64 w/Linux 3.10.0-1062.1.1.el7.x86_64) ---
+This version was compiled on Mon Sep 24 19:26:26 PDT 2012.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef
+<CMD> set init_verilog synthesized/routing_engine.v
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading Lef file /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef...
+Set DBUPerIGU to M2 pitch 400.
+**WARN: (ENCLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Thu Jan  9 19:57:21 2020
+viaInitial ends at Thu Jan  9 19:57:21 2020
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'synthesized/routing_engine.v'
+Inserting temporary buffers to remove assignment statements.
+
+*** Memory Usage v#1 (Current mem = 466.879M, initial mem = 62.922M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=466.9M) ***
+Top level cell is routing_engine.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.17min, fe_mem=466.9M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell routing_engine ...
+*** Netlist is unique.
+** info: there are 856 modules.
+** info: there are 437 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 472.055M, initial mem = 62.922M) ***
+*info - Done with setDoAssign with 3 assigns removed and 0 assigns could not be removed.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+**WARN: (ENCSYT-7328):	Active setup and hold analysis views were not provided by the -setup and -hold arguments to initDesign. The system requires at least one active setup and hold analysis view to be declared before any timing commands can be run. If you need to run timing commands, you can add the -setup and -hold options to your init_design invocation.  You can use the all_analysis_view command to identify the currently available views.
+<CMD> init_design
+**WARN: (ENCSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+<CMD> fit
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site core -r 3 0.699936 20 20 20 20
+**WARN: (ENCFP-325):	After proportional resize, all pre-routed wires will be removed.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> saveDesign routing_engine.enc
+**WARN: (ENCSYT-3036):	Design directory routing_engine.enc.dat exists, rename it to routing_engine.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "routing_engine.enc.dat/routing_engine.v.gz" ...
+Saving configuration ...
+Saving preference file routing_engine.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=473.9M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=473.9M) ***
+Writing DEF file 'routing_engine.enc.dat/routing_engine.def.gz', current time is Thu Jan  9 20:08:18 2020 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'routing_engine.enc.dat/routing_engine.def.gz' is written, current time is Thu Jan  9 20:08:18 2020 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+<CMD> set sprCreateIeRingNets {}
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingWidth 1.0
+<CMD> set sprCreateIeRingSpacing 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> addRing -stacked_via_top_layer AP -around core -jog_distance 0.1 -threshold 0.1 -nets {VSS VDD} -stacked_via_bottom_layer M1 -layer {bottom M1 top M1 right M2 left M2} -width 3 -spacing 0.5 -offset 0.1
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 475.7M) ***
+<CMD> sroute -connect { blockPin padPin padRing corePin } -layerChangeRange { M1 AP } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer AP -crossoverViaTopLayer AP -targetViaBottomLayer M1 -nets { VDD VSS }
+*** Begin SPECIAL ROUTE on Thu Jan  9 20:09:21 2020 ***
+SPECIAL ROUTE ran on directory: /home/vladimirmilicevic/ann_routing_engine
+SPECIAL ROUTE ran on machine: thor.doe.carleton.ca (Linux 3.10.0-1062.1.1.el7.x86_64 Xeon 3.40Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLefConvention"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to true
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteLevelShifterMaxGap set to 1
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 931.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 22 layers, 10 routing layers, 1 overlap layer
+Read in 855 macros, 54 used
+Read in 54 components
+  54 core components: 54 unplaced, 0 placed, 0 fixed
+Read in 53 logical pins
+Read in 51 nets
+Read in 2 special nets, 2 routed
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VDD. Check net list, or change option to include pin in given range.
+**WARN: (ENCSR-1255):	Cannot find any pad pin of net VDD to create pad ring. Check net list, or remove "CLASS CORE" from PORT definition in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VSS. Check net list, or change option to include pin in given range.
+**WARN: (ENCSR-1255):	Cannot find any pad pin of net VSS to create pad ring. Check net list, or remove "CLASS CORE" from PORT definition in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VSS. Check net list, or change port class in LEF file, or change option to include pin in given range.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use "setSrouteMode -corePinReferenceMacro <standard cell>" to specify a reference macro for followpin connection, or run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use "setSrouteMode -corePinReferenceMacro <standard cell>" to specify a reference macro for followpin connection, or run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use "setSrouteMode -corePinReferenceMacro <standard cell>" to specify a reference macro for followpin connection, or run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use "setSrouteMode -corePinReferenceMacro <standard cell>" to specify a reference macro for followpin connection, or run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Core ports routed: 68
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 35
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 973.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 120 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Thu Jan  9 20:09:21 2020
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Thu Jan  9 20:09:21 2020
+
+sroute post-processing starts at Thu Jan  9 20:09:21 2020
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Thu Jan  9 20:09:21 2020
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 7.39 megs
+sroute: Total Peak Memory used = 484.15 megs
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst *
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst *
+<CMD> globalNetConnect VSS -type tielo -inst *
+<CMD> globalNetConnect VDD -type tiehi -inst *
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+**WARN: (ENCSP-9513):	Timing constraint file does not exist
+**WARN: (ENCSP-9514):	NonTimingDriven placement will be performed
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+*** Starting "NanoPlace(TM) placement v#1 (mem=484.1M)" ...
+Options: clkGateAware ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=437 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=469 #term=1666 #term/net=3.55, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=53
+stdCell: 437 single + 0 double + 0 multi
+Total standard cell length = 0.5442 (mm), area = 0.0010 (mm^2)
+Core basic site is core
+Average module density = 0.700.
+Density for the design = 0.700.
+       = stdcell_area 2721 (980 um^2) / alloc_area 3885 (1399 um^2).
+Pin Density = 0.612.
+            = total # of pins 1666 / total Instance area 2721.
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 9.008e-12 (0.00e+00 9.01e-12)
+              Est.  stn bbox = 9.008e-12 (0.00e+00 9.01e-12)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 484.1M
+Iteration  2: Total net bbox = 9.008e-12 (0.00e+00 9.01e-12)
+              Est.  stn bbox = 9.008e-12 (0.00e+00 9.01e-12)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 484.1M
+Iteration  3: Total net bbox = 2.902e+01 (1.26e+01 1.64e+01)
+              Est.  stn bbox = 2.902e+01 (1.26e+01 1.64e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 484.1M
+Iteration  4: Total net bbox = 1.783e+03 (1.11e+00 1.78e+03)
+              Est.  stn bbox = 1.783e+03 (1.11e+00 1.78e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 484.1M
+Iteration  5: Total net bbox = 2.912e+03 (8.53e+02 2.06e+03)
+              Est.  stn bbox = 2.912e+03 (8.53e+02 2.06e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 484.1M
+Iteration  6: Total net bbox = 3.515e+03 (1.26e+03 2.25e+03)
+              Est.  stn bbox = 3.515e+03 (1.26e+03 2.25e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 484.1M
+Iteration  7: Total net bbox = 3.843e+03 (1.39e+03 2.45e+03)
+              Est.  stn bbox = 3.843e+03 (1.39e+03 2.45e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 484.1M
+Iteration  8: Total net bbox = 3.897e+03 (1.43e+03 2.47e+03)
+              Est.  stn bbox = 3.897e+03 (1.43e+03 2.47e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 484.1M
+Iteration  9: Total net bbox = 5.104e+03 (2.52e+03 2.59e+03)
+              Est.  stn bbox = 5.549e+03 (2.76e+03 2.79e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 484.1M
+Iteration 10: Total net bbox = 5.249e+03 (2.64e+03 2.61e+03)
+              Est.  stn bbox = 5.699e+03 (2.89e+03 2.81e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 490.5M
+*** cost = 5.249e+03 (2.64e+03 2.61e+03) (cpu for global=0:00:00.4) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:00.4 real: 0:00:00.0
+Core basic site is core
+[CPU] RefinePlace/CRLP Init cpu time 0:00:00.0.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.0, Real Time = 0:00:00.0
+[CPU] RefinePlace/preRPlace cpu time 0:00:00.0.
+move report: preRPlace moves 48 insts, mean move: 0.62 um, max move: 2.60 um
+	max move on inst (dst_reg[5][0]): (28.20, 65.00) --> (29.00, 66.80)
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+wireLenOptFixPriorityInst 0 inst fixed
+Placement tweakage begins.
+wire length = 5.133e+03 = 2.555e+03 H + 2.578e+03 V
+wire length = 5.056e+03 = 2.502e+03 H + 2.554e+03 V
+Placement tweakage ends.
+move report: tweak moves 95 insts, mean move: 2.13 um, max move: 8.00 um
+	max move on inst (U895): (38.20, 72.20) --> (33.80, 75.80)
+[CPU] RefinePlace/TweakPlacement cpu time: 0:00:00.0 
+Clock gating cells determined by native netlist tracing.
+Wire length optimization begins.
+Wire length optimization ends. (0:00:00.0)
+move report: xdp moves 199 insts, mean move: 2.57 um, max move: 15.60 um
+	max move on inst (U884): (37.60, 79.40) --> (38.80, 65.00)
+[CPU] RefinePlace/WireLenOpt cpu time: 0:00:00.1 
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 259 insts, mean move: 2.33 um, max move: 15.60 um
+	max move on inst (U884): (37.60, 79.40) --> (38.80, 65.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        15.60 um
+  inst (U884) with max move: (37.6, 79.4) -> (38.8, 65)
+  mean    (X+Y) =         2.33 um
+Total instances flipped for WireLenOpt: 171
+Total instances flipped, including legalization: 124
+Total instances moved : 259
+*** cpu=0:00:00.1   mem=490.5M  mem(used)=0.0M***
+[CPU] RefinePlace/total cpu time 0:00:00.1.
+Total net length = 4.929e+03 (2.391e+03 2.538e+03) (ext = 1.751e+03)
+*** End of Placement (cpu=0:00:00.7, real=0:00:01.0, mem=490.5M) ***
+Core basic site is core
+default core: bins with density >  0.75 = 12.5 % ( 1 / 8 )
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+Starting congestion repair ...
+*** Starting trialRoute (mem=490.5M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -noPinGuide
+
+routingBox: (0 0) (124430 206000)
+coreBox:    (40000 40000) (84430 166000)
+Number of multi-gpin terms=76, multi-gpins=152, moved blk term=0/0
+
+Phase 1a route (0:00:00.0 490.5M):
+Est net length = 5.066e+03um = 2.459e+03H + 2.608e+03V
+Usage: (4.8%H 4.5%V) = (2.978e+03um 4.901e+03um) = (2156 2734)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1b route (0:00:00.0 492.5M):
+Usage: (4.8%H 4.5%V) = (2.972e+03um 4.901e+03um) = (2150 2734)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1c route (0:00:00.0 492.5M):
+Usage: (4.8%H 4.5%V) = (2.968e+03um 4.892e+03um) = (2146 2729)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1d route (0:00:00.0 492.5M):
+Usage: (4.8%H 4.5%V) = (2.968e+03um 4.892e+03um) = (2146 2729)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1a-1d Overflow: 0.00% H + 0.00% V (0:00:00.0 492.5M)
+
+
+Phase 1e route (0:00:00.0 493.0M):
+Usage: (4.8%H 4.5%V) = (2.968e+03um 4.892e+03um) = (2146 2729)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Overflow: 0.00% H + 0.00% V (0:00:00.0 493.0M)
+
+Usage: (4.8%H 4.5%V) = (2.968e+03um 4.892e+03um) = (2146 2729)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  5:	1701	100.00%	1701	100.00%
+
+Global route (cpu=0.0s real=0.0s 491.0M)
+Phase 1l route (0:00:00.0 491.0M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (5.0%H 9.5%V) = (3.159e+03um 9.835e+03um) = (2252 5757)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1l Overflow: 0.00% H + 0.00% V (0:00:00.0 493.0M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  5:	1701	100.00%	1701	100.00%
+
+
+*** Completed Phase 1 route (0:00:00.0 490.5M) ***
+
+
+Total length: 5.355e+03um, number of vias: 3161
+M1(H) length: 1.500e-02um, number of vias: 1613
+M2(V) length: 2.031e+03um, number of vias: 1309
+M3(H) length: 2.307e+03um, number of vias: 220
+M4(V) length: 8.392e+02um, number of vias: 15
+M5(H) length: 1.700e+02um, number of vias: 3
+M6(V) length: 8.200e+00um, number of vias: 1
+M7(H) length: 1.150e-01um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 490.5M) ***
+
+*** Finished all Phases (cpu=0:00:00.1 mem=490.5M) ***
+Peak Memory Usage was 499.0M 
+*** Finished trialRoute (cpu=0:00:00.1 mem=490.5M) ***
+
+CongRepair Bin Grid Size (width, height) = ( default_value , default_value )
+Trial Route Overflow 0.000000(H) 0.000000(V).
+Skipped repairing congestion.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 1, real = 0: 0: 1, mem = 490.5M **
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setNanoRouteMode -quiet -drouteStartIteration default
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+Core basic site is core
+Begin checking placement ... (start mem=500.3M, init mem=500.3M)
+*info: Placed = 437
+*info: Unplaced = 0
+Placement Density:70.04%(980/1399)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=500.3M)
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=500.3M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Thu Jan  9 20:14:15 2020
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 500.00 (Mb)
+#NanoRoute Version v11.12-s009 NR120919-1551/11_10_USR2-UB
+#Start routing data preparation.
+#WARNING (NREX-37) No permittivity value was specified in the process LEF file. Default permittivity value 3.900000 will be used.
+#WARNING (NREX-6) No Extended Cap Table was imported, an approximate Extended Cap Table database will be used.
+# M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.185
+# M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M6           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M7           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M8           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# M9           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# AP           V   Track-Pitch = 6.500    Line-2-Via Pitch = 6.500
+#Done routing data preparation.
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 576.00 (Mb)
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#Force regenerating Ggrids.
+#Auto generating G-grids with size=15 tracks, using layer M2's pitch = 0.200.
+#Using automatically generated G-grids.
+#
+#Data preparation is done on Thu Jan  9 20:14:19 2020
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Thu Jan  9 20:14:19 2020
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         470          44         714    25.91%
+#  Metal 2        V         254          56         714    10.08%
+#  Metal 3        H         514           0         714     0.00%
+#  Metal 4        V         311           0         714     0.00%
+#  Metal 5        H         514           0         714     0.00%
+#  Metal 6        V         311           0         714     0.00%
+#  Metal 7        H         514           0         714     0.00%
+#  Metal 8        V          77           0         714     0.00%
+#  Metal 9        H         128           0         714     0.00%
+#  Metal 10       V           9           0         714    57.14%
+#  --------------------------------------------------------------
+#  Total                   3102       2.67%  7140     9.31%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 576.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 576.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 576.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 576.00 (Mb)
+#
+#start global routing iteration 4...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 576.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon          
+#                  #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)   OverCon
+#  ----------------------------------------------
+#   Metal 1      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 2     12(1.87%)      7(1.09%)   (2.96%)
+#   Metal 3      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)      0(0.00%)   (0.00%)
+#  Metal 10      0(0.00%)      0(0.00%)   (0.00%)
+#  ----------------------------------------------
+#     Total     12(0.18%)      7(0.11%)   (0.29%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 2
+#
+#Complete Global Routing.
+#Total wire length = 5350 um.
+#Total half perimeter of net bounding box = 5391 um.
+#Total wire length on LAYER M1 = 6 um.
+#Total wire length on LAYER M2 = 1561 um.
+#Total wire length on LAYER M3 = 2337 um.
+#Total wire length on LAYER M4 = 1095 um.
+#Total wire length on LAYER M5 = 295 um.
+#Total wire length on LAYER M6 = 33 um.
+#Total wire length on LAYER M7 = 24 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 2258
+#Up-Via Summary (total 2258):
+#           
+#-----------------------
+#  Metal 1         1173
+#  Metal 2          781
+#  Metal 3          271
+#  Metal 4           29
+#  Metal 5            2
+#  Metal 6            2
+#-----------------------
+#                  2258 
+#
+#Max overcon = 2 tracks.
+#Total overcon = 0.29%.
+#Worst layer Gcell overcon rate = 0.00%.
+#start post global routing...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 576.00 (Mb)
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:03
+#Increased memory = 16.00 (Mb)
+#Total memory = 576.00 (Mb)
+#Peak memory = 609.00 (Mb)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 1
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 586.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 586.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 5356 um.
+#Total half perimeter of net bounding box = 5391 um.
+#Total wire length on LAYER M1 = 53 um.
+#Total wire length on LAYER M2 = 2007 um.
+#Total wire length on LAYER M3 = 2391 um.
+#Total wire length on LAYER M4 = 664 um.
+#Total wire length on LAYER M5 = 215 um.
+#Total wire length on LAYER M6 = 27 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 3220
+#Up-Via Summary (total 3220):
+#           
+#-----------------------
+#  Metal 1         1577
+#  Metal 2         1411
+#  Metal 3          210
+#  Metal 4           18
+#  Metal 5            3
+#  Metal 6            1
+#-----------------------
+#                  3220 
+#
+#Total number of DRC violations = 0
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 585.00 (Mb)
+#
+#Total wire length = 5356 um.
+#Total half perimeter of net bounding box = 5391 um.
+#Total wire length on LAYER M1 = 53 um.
+#Total wire length on LAYER M2 = 2007 um.
+#Total wire length on LAYER M3 = 2391 um.
+#Total wire length on LAYER M4 = 664 um.
+#Total wire length on LAYER M5 = 215 um.
+#Total wire length on LAYER M6 = 27 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 3220
+#Up-Via Summary (total 3220):
+#           
+#-----------------------
+#  Metal 1         1577
+#  Metal 2         1411
+#  Metal 3          210
+#  Metal 4           18
+#  Metal 5            3
+#  Metal 6            1
+#-----------------------
+#                  3220 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:05
+#Elapsed time = 00:00:05
+#Increased memory = 7.00 (Mb)
+#Total memory = 583.00 (Mb)
+#Peak memory = 630.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:09
+#Elapsed time = 00:00:09
+#Increased memory = 81.00 (Mb)
+#Total memory = 581.00 (Mb)
+#Peak memory = 630.00 (Mb)
+#Number of warnings = 2
+#Total number of warnings = 2
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu Jan  9 20:14:24 2020
+#
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postRoute
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+**DIAG[opUtil.c:10496:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10501:update]: Assert "powerViewTlc"
+**DIAG[opUtil.c:10496:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10501:update]: Assert "powerViewTlc"
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 581.6M, totSessionCpu=0:01:31 **
+#Created 856 library cell signatures
+#Created 474 NETS and 0 SPECIALNETS signatures
+#Created 438 instance signatures
+Core basic site is core
+Begin checking placement ... (start mem=581.8M, init mem=581.8M)
+*info: Placed = 437
+*info: Unplaced = 0
+Placement Density:70.04%(980/1399)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=581.8M)
+**ERROR: (ENCOPT-6029):	Timing Library is not loaded yetRemoving temporary dont_use automatically set for cells with technology sites with no row.
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postRoute
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+**DIAG[opUtil.c:10496:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10501:update]: Assert "powerViewTlc"
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 581.8M, totSessionCpu=0:01:31 **
+Core basic site is core
+Begin checking placement ... (start mem=581.8M, init mem=581.8M)
+*info: Placed = 437
+*info: Unplaced = 0
+Placement Density:70.04%(980/1399)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=581.8M)
+**ERROR: (ENCOPT-6029):	Timing Library is not loaded yetRemoving temporary dont_use automatically set for cells with technology sites with no row.
+**ERROR: (ENCQTF-4044):	Tcl Error in Command '::Rda_Timing::Opt::apply': .
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postRoute
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+**DIAG[opUtil.c:10496:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10501:update]: Assert "powerViewTlc"
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 581.8M, totSessionCpu=0:01:31 **
+Core basic site is core
+Begin checking placement ... (start mem=581.8M, init mem=581.8M)
+*info: Placed = 437
+*info: Unplaced = 0
+Placement Density:70.04%(980/1399)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=581.8M)
+**ERROR: (ENCOPT-6029):	Timing Library is not loaded yetRemoving temporary dont_use automatically set for cells with technology sites with no row.
+<CMD> getFillerMode -quiet
+<CMD> addFiller -cell DCAP FILL1 -prefix FILLER -markFixed
+**WARN: (ENCSP-9057):	Fillers being added in a FIXED mode to the whole design. Some subsequent
+operations, such as antenna fixing, may fail due to fillers being marked
+as 'FIXED'. If this was not intended, use deleteFiller command to undo.
+Core basic site is core
+*INFO: Adding fillers to top-module.
+*INFO:   Added 292 filler insts (cell DCAP / prefix FILLER).
+*INFO:   Added 288 filler insts (cell FILL1 / prefix FILLER).
+*INFO: Total 580 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+For 580 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+*INFO: Checking for DRC violations on added fillers.
+*INFO: Iteration 0-#1, Found 300 DRC violations (real: 0:00:00.0).
+For 165 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+*INFO: Iteration 0-#2, Found 0 DRC violation  (real: 0:00:00.0).
+*INFO: Adding fillers to top-module.
+*INFO:   Added 48 filler insts (cell FILL1 / prefix FILLER).
+For 48 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+*INFO: Iteration 1-#1, Found 48 DRC violations (real: 0:00:01.0).
+For 0 new insts, *** Applied 0 GNC rules.
+*INFO: Iteration 1-#2, Found 0 DRC violation  (real: 0:00:00.0).
+*INFO: End DRC Checks. (real: 0:00:01.0 ).
+*INFO: Replaced 125 fillers which had DRC vio's, with 165 new fillers.
+<CMD> addFiller -cell DCAP FILL1 -prefix FILLER -markFixed
+**WARN: (ENCSP-9057):	Fillers being added in a FIXED mode to the whole design. Some subsequent
+operations, such as antenna fixing, may fail due to fillers being marked
+as 'FIXED'. If this was not intended, use deleteFiller command to undo.
+Core basic site is core
+*INFO: Adding fillers to top-module.
+*INFO:   Added 13 filler insts (cell DCAP / prefix FILLER).
+*INFO:   Added 9 filler insts (cell FILL1 / prefix FILLER).
+*INFO: Total 22 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+For 22 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+*INFO: Checking for DRC violations on added fillers.
+*INFO: Iteration 0-#1, Found 50 DRC violations (real: 0:00:00.0).
+For 0 new insts, *** Applied 0 GNC rules.
+*INFO: Iteration 0-#2, Found 0 DRC violation  (real: 0:00:00.0).
+*INFO: Adding fillers to top-module.
+*INFO:   Added 48 filler insts (cell FILL1 / prefix FILLER).
+For 48 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+*INFO: Iteration 1-#1, Found 48 DRC violations (real: 0:00:00.0).
+For 0 new insts, *** Applied 0 GNC rules.
+*INFO: Iteration 1-#2, Found 0 DRC violation  (real: 0:00:01.0).
+*INFO: End DRC Checks. (real: 0:00:01.0 ).
+*INFO: Deleted 70 fillers which had DRC vio's.
+<CMD> saveDesign routing_engine.enc
+**WARN: (ENCSYT-3036):	Design directory routing_engine.enc.dat exists, rename it to routing_engine.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "routing_engine.enc.dat/routing_engine.v.gz" ...
+Saving configuration ...
+Saving preference file routing_engine.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=582.1M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=582.1M) ***
+Writing DEF file 'routing_engine.enc.dat/routing_engine.def.gz', current time is Thu Jan  9 20:15:38 2020 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'routing_engine.enc.dat/routing_engine.def.gz' is written, current time is Thu Jan  9 20:15:38 2020 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library cdsDefTechLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdsDefTechLib: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library basic at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/basic: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library analogLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/artist/analogLib: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library cdsDefTechLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdsDefTechLib: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library basic at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/basic: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library analogLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/artist/analogLib: Invalid Lib Path.
+<CMD> saveDesign -cellview {routing_engine_library routing_engine layout}
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library cdsDefTechLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdsDefTechLib: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library basic at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/basic: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library analogLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/artist/analogLib: Invalid Lib Path.
+----- oaOut ---------------------------
+Saving OA database: Lib: routing_engine_library, Cell: routing_engine, View: layout
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library cdsDefTechLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdsDefTechLib: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library basic at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/basic: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library analogLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/artist/analogLib: Invalid Lib Path.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U872' of cell 'XOR2D2'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U884' of cell 'TIEL'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U885' of cell 'TIEH'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1100' of cell 'OAI32D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1139' of cell 'OAI31D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1062' of cell 'OAI22D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U949' of cell 'OAI222D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1128' of cell 'OAI221D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1236' of cell 'OAI21D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1088' of cell 'OAI211D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U960' of cell 'OA31D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1090' of cell 'OA21D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U990' of cell 'NR4D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1246' of cell 'NR3D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1279' of cell 'NR2D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1247' of cell 'ND4D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U1219' of cell 'ND3D0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U883' of cell 'MUX4ND2'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U896' of cell 'MUX3ND0'. Refer to any earlier error messages.
+**ERROR: (ENCOAX-1049):	Failed to create logical instance 'U886' of cell 'MUX3D0'. Refer to any earlier error messages.
+**WARN: (EMS-63):	Message <ENCOAX-1049> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessagLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use suppressMessage command.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library cdsDefTechLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdsDefTechLib: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library basic at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/basic: Invalid Lib Path.
+**WARN: (ENCOAX-793):	Problem reading library definition file /home/vladimirmilicevic/ann_routing_engine/cds.lib : Unable to open library analogLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdslib/artist/analogLib: Invalid Lib Path.
+FE units: 0.0005 microns/dbu, OA units: 0.001 microns/dbu, Conversion factor: 0.5
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[0\]\[1\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[0\]\[1\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[0\]\[0\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[0\]\[0\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[1\]\[1\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[1\]\[1\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[2\]\[2\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[2\]\[2\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[2\]\[1\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[2\]\[1\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[2\]\[0\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[2\]\[0\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[3\]\[2\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[3\]\[2\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[3\]\[0\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[3\]\[0\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[4\]\[2\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[4\]\[2\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[4\]\[1\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[4\]\[1\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[4\]\[0\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[4\]\[0\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[5\]\[2\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[5\]\[2\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[5\]\[1\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[5\]\[1\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[5\]\[0\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[5\]\[0\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[6\]\[2\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[6\]\[2\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[6\]\[1\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[6\]\[1\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[6\]\[0\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[6\]\[0\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[7\]\[1\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[7\]\[1\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[7\]\[0\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[7\]\[0\]' in OA. Refer to any earlier messages.
+**ERROR: (ENCOAX-1092):	Logical instance 'dst_reg\[1\]\[2\]' is not created correctly in OA. It could be a problem in EMH data creation. Contact Cadence customer support.
+**ERROR: (ENCOAX-347):	Could not create instance 'dst_reg\[1\]\[2\]' in OA. Refer to any earlier messages.
+**WARN: (EMS-63):	Message <ENCOAX-1092> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessagLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use suppressMessage command.
+**WARN: (EMS-63):	Message <ENCOAX-347> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessagLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use suppressMessage command.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_23' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_24' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_26' in OA, as abstract for its cell 'FILL1' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_27' in OA, as abstract for its cell 'FILL1' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_28' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_31' in OA, as abstract for its cell 'FILL1' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_32' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_35' in OA, as abstract for its cell 'FILL1' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_40' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_41' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_42' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_43' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_44' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_45' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_46' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_47' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_48' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_49' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_50' in OA, as abstract for its cell 'DCAP' could not be found in any of the OA reference libraries.
+**ERROR: (ENCOAX-45):	Can not create instance 'FILLER_51' in OA, as abstract for its cell 'FILL1' could not be found in any of the OA reference libraries.
+**WARN: (EMS-63):	Message <ENCOAX-45> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessagLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use suppressMessage command.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_1' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_1'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_1' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_1' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_1'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_1' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**ERROR: (ENCOAX-1307):	While saving design found std via 'VIAGEN12_3' in EDI database, but there is no corresponding std via defined in OA technology database with which design is being saved. This is a serious issue and needs immediate attention. Possible reason could be that this design has been read or created using a different OA technology database or LEF and these two database are out of sync. This issue should be fixed before proceeding further. In order to save the design EDI is creating custom via in current OA technology database for the std via 'VIAGEN12_3'.
+**ERROR: (ENCOAX-618):	Custom via definition for via 'VIAGEN12_3' can not be created in OA, because the technology database is read-only. Connectivity will be broken in the saved OA database for these missing vias.
+**WARN: (EMS-63):	Message <ENCOAX-1307> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessagLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use suppressMessage command.
+**WARN: (EMS-63):	Message <ENCOAX-618> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessagLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use suppressMessage command.
+Special routes: 111 strips, 0 vias
+Encounter terminated by internal (SEGV) error/signal...
+*** Stack trace:
+*** Stack trace:
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x8622ba6]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(syStackTrace+0x70)[0x8622cd5]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x16bd11a]
+/usr/lib64/libpthread.so.0(+0xf5f0)[0x7fd22ebc65f0]
+/CMC/tools/cadence/EDI11.12.001_lnx86/share/oa/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so(_ZN12OpenAccess_47oaRoute12setBeginConnEPNS_13oaBlockObjectE+0x7a)[0x7fd219e247ea]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so(+0x19d479)[0x7fd21a3d2479]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so(+0x19e307)[0x7fd21a3d3307]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so(_Z15fe2gnMakeRoutesPN12OpenAccess_46oaTechEPNS_8oaDesignEP6dbsNetPNS_17oaConstraintGroupEP7dbsCell+0x3a0)[0x7fd21a3d55f0]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so(_Z12oaxiCreateOAPN12OpenAccess_48oaDesignEcRNS_7oaArrayIPNS_6oaTechEEEcPc+0x39ce)[0x7fd21a48977e]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so(oaG2Out+0x2130)[0x7fd21a48c6c0]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x566cf06]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(_ZN10tcmBaseCmd7executeEP10Tcl_InterpiPPc+0x128)[0x968ffe8]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(_ZN6tcmMgr9cmdParserEPvP10Tcl_InterpiPPc+0xc2)[0x9686512]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclInvokeStringCommand+0x58)[0x9dad4f8]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x9daecee]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x65)[0x9daf185]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalObjCmd+0x3f)[0x9db356f]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x9dd041d]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x9dcf82b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x9daf2ff]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_CatchObjCmd+0x46)[0x9db3036]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x9dd041d]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x9dcf82b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x9daf2ff]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9db5af5]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x9dd041d]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x9dcf82b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x9df9ac8]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x9daecee]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x65)[0x9daf185]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalObjCmd+0x3f)[0x9db356f]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x9dd041d]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x9dcf82b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x9daf2ff]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_CatchObjCmd+0x46)[0x9db3036]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x9dd041d]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x9dcf82b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x9daf2ff]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9db5af5]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x9dd041d]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x9dcf82b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x9df9ac8]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x9dd041d]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x9dcf82b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x9daf2ff]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_CatchObjCmd+0x46)[0x9db3036]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x9dae2fd]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x9daecee]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalTokensStandard+0x2c3)[0x9daead3]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalEx+0x13f)[0x9daec8f]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_Eval+0x1d)[0x9daf09d]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(_Z10qtfTclEvalPc+0x93)[0x621c783]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(_ZN8qtfsItem10fUpdateVarEv+0x374)[0x61bc2e4]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(_ZN8qtfsItem11qt_metacallEN11QMetaObject4CallEiPPv+0x134)[0x626ec14]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN11QMetaObject8activateEP7QObjectiiPPv+0x25c)[0x7fd22ac1e14c]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton7clickedEb+0x37)[0x7fd22b72eb87]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate11emitClickedEv+0x3b)[0x7fd22b4c310b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate5clickEv+0x8b)[0x7fd22b4c471b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent+0x85)[0x7fd22b4c4975]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN7QWidget5eventEP6QEvent+0x8a8)[0x7fd22b1d3688]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent+0xac)[0x7fd22b18f6bc]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication6notifyEP7QObjectP6QEvent+0x1d5)[0x7fd22b196555]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent+0x8c)[0x7fd22ac0a5cc]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_E+0x112)[0x7fd22b195e22]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN9QETWidget19translateMouseEventEPK7_XEvent+0x597)[0x7fd22b1efe17]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication15x11ProcessEventEP7_XEvent+0xc16)[0x7fd22b1eee46]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN19QEventDispatcherX1113processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x2ab)[0x7fd22b21422b]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x5e)[0x7fd2293ded5a]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x2f)[0x7fd22ac0b3cf]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so(+0x1cce9)[0x7fd2293dece9]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(Tcl_DoOneEvent+0x178)[0x9df23c8]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0xb6)[0x7fd2293dedb2]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE+0x32)[0x7fd22ac08fd2]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE+0xd4)[0x7fd22ac09294]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication4execEv+0xb9)[0x7fd22ac0b269]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so(_ZN13TqApplication4execEv+0x2c1)[0x7fd2293e136f]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(_Z7fe_mainiPPc+0x206)[0x15dccd6]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter(main+0x60)[0x15dcea0]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fd22796f505]
+/CMC/tools/cadence/EDI11.12.001_lnx86/tools/fe/bin/64bit/encounter[0x15dc929]
+========================================
+               pstack
+========================================
+Thread 5 (Thread 0x7fd224039700 (LWP 14253)):
+#0  0x00007fd22ebc5e5d in nanosleep () from /usr/lib64/libpthread.so.0
+#1  0x000000000249c1ca in rdaiLicRecheck(void*) ()
+#2  0x00007fd22ebbee65 in start_thread () from /usr/lib64/libpthread.so.0
+#3  0x00007fd227a4b88d in clone () from /usr/lib64/libc.so.6
+Thread 4 (Thread 0x7fd221b49700 (LWP 14660)):
+#0  0x00007fd227a1280d in nanosleep () from /usr/lib64/libc.so.6
+#1  0x00007fd227a126a4 in sleep () from /usr/lib64/libc.so.6
+#2  0x00000000086395ed in syiPeakMem(void*) ()
+#3  0x00007fd22ebbee65 in start_thread () from /usr/lib64/libpthread.so.0
+#4  0x00007fd227a4b88d in clone () from /usr/lib64/libc.so.6
+Thread 3 (Thread 0x7fd220f34700 (LWP 14662)):
+#0  0x00007fd227a42953 in select () from /usr/lib64/libc.so.6
+#1  0x0000000009e1014d in NotifierThreadProc ()
+#2  0x00007fd22ebbee65 in start_thread () from /usr/lib64/libpthread.so.0
+#3  0x00007fd227a4b88d in clone () from /usr/lib64/libc.so.6
+Thread 2 (Thread 0x7fd21bfff700 (LWP 14665)):
+#0  0x00007fd22ebc6381 in sigwait () from /usr/lib64/libpthread.so.0
+#1  0x00000000016bd6fb in ctrlCHandle(void*) ()
+#2  0x00007fd22ebbee65 in start_thread () from /usr/lib64/libpthread.so.0
+#3  0x00007fd227a4b88d in clone () from /usr/lib64/libc.so.6
+Thread 1 (Thread 0x7fd22eeb7340 (LWP 13775)):
+#0  0x00007fd227a12469 in waitpid () from /usr/lib64/libc.so.6
+#1  0x00007fd22798ff12 in do_system () from /usr/lib64/libc.so.6
+#2  0x00007fd2279902c1 in system () from /usr/lib64/libc.so.6
+#3  0x0000000008622bfe in syStackTraceDump(_IO_FILE*, bool) ()
+#4  0x0000000008622cd5 in syStackTrace ()
+#5  0x00000000016bd11a in rdaiErrorHandler(int, siginfo*, void*) ()
+#6  <signal handler called>
+#7  0x00007fd219e247ea in OpenAccess_4::oaRoute::setBeginConn(OpenAccess_4::oaBlockObject*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/share/oa/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+#8  0x00007fd21a3d2479 in oaxiRouteCreateOARouteObject(oaxsNetInformation*, oaxsContinueousNetPath*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#9  0x00007fd21a3d3307 in oaxiRouteStartPathTraversal(oaxsNetInformation*, dbsWire*, dbsWire*, unsigned int) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#10 0x00007fd21a3d55f0 in fe2gnMakeRoutes(OpenAccess_4::oaTech*, OpenAccess_4::oaDesign*, dbsNet*, OpenAccess_4::oaConstraintGroup*, dbsCell*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#11 0x00007fd21a48977e in oaxiCreateOA(OpenAccess_4::oaDesign*, char, OpenAccess_4::oaArray<OpenAccess_4::oaTech*>&, char, char*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#12 0x00007fd21a48c6c0 in oaG2Out () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#13 0x000000000566cf06 in oaiG2OutCmd ()
+#14 0x000000000968ffe8 in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#15 0x0000000009686512 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#16 0x0000000009dad4f8 in TclInvokeStringCommand ()
+#17 0x0000000009dae2fd in TclEvalObjvInternal ()
+#18 0x0000000009daecee in Tcl_EvalEx ()
+#19 0x0000000009daf185 in Tcl_EvalObjEx ()
+#20 0x0000000009db356f in Tcl_EvalObjCmd ()
+#21 0x0000000009dae2fd in TclEvalObjvInternal ()
+#22 0x0000000009dd041d in TclExecuteByteCode ()
+#23 0x0000000009dcf82b in TclCompEvalObj ()
+#24 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#25 0x0000000009db3036 in Tcl_CatchObjCmd ()
+#26 0x0000000009dae2fd in TclEvalObjvInternal ()
+#27 0x0000000009dd041d in TclExecuteByteCode ()
+#28 0x0000000009dcf82b in TclCompEvalObj ()
+#29 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#30 0x0000000009db5af5 in Tcl_IfObjCmd ()
+#31 0x0000000009dae2fd in TclEvalObjvInternal ()
+#32 0x0000000009dd041d in TclExecuteByteCode ()
+#33 0x0000000009dcf82b in TclCompEvalObj ()
+#34 0x0000000009df9ac8 in TclObjInterpProc ()
+#35 0x0000000009dae2fd in TclEvalObjvInternal ()
+#36 0x0000000009daecee in Tcl_EvalEx ()
+#37 0x0000000009daf185 in Tcl_EvalObjEx ()
+#38 0x0000000009db356f in Tcl_EvalObjCmd ()
+#39 0x0000000009dae2fd in TclEvalObjvInternal ()
+#40 0x0000000009dd041d in TclExecuteByteCode ()
+#41 0x0000000009dcf82b in TclCompEvalObj ()
+#42 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#43 0x0000000009db3036 in Tcl_CatchObjCmd ()
+#44 0x0000000009dae2fd in TclEvalObjvInternal ()
+#45 0x0000000009dd041d in TclExecuteByteCode ()
+#46 0x0000000009dcf82b in TclCompEvalObj ()
+#47 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#48 0x0000000009db5af5 in Tcl_IfObjCmd ()
+#49 0x0000000009dae2fd in TclEvalObjvInternal ()
+#50 0x0000000009dd041d in TclExecuteByteCode ()
+#51 0x0000000009dcf82b in TclCompEvalObj ()
+#52 0x0000000009df9ac8 in TclObjInterpProc ()
+#53 0x0000000009dae2fd in TclEvalObjvInternal ()
+#54 0x0000000009dd041d in TclExecuteByteCode ()
+#55 0x0000000009dcf82b in TclCompEvalObj ()
+#56 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#57 0x0000000009db3036 in Tcl_CatchObjCmd ()
+#58 0x0000000009dae2fd in TclEvalObjvInternal ()
+#59 0x0000000009daecee in Tcl_EvalEx ()
+#60 0x0000000009daead3 in Tcl_EvalTokensStandard ()
+#61 0x0000000009daec8f in Tcl_EvalEx ()
+#62 0x0000000009daf09d in Tcl_Eval ()
+#63 0x000000000621c783 in qtfTclEval(char*) ()
+#64 0x00000000061bc2e4 in qtfsItem::fUpdateVar() ()
+#65 0x000000000626ec14 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#66 0x00007fd22ac1e14c in QMetaObject::activate(QObject*, int, int, void**) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#67 0x00007fd22b72eb87 in QAbstractButton::clicked(bool) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#68 0x00007fd22b4c310b in QAbstractButtonPrivate::emitClicked() () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#69 0x00007fd22b4c471b in QAbstractButtonPrivate::click() () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#70 0x00007fd22b4c4975 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#71 0x00007fd22b1d3688 in QWidget::event(QEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#72 0x00007fd22b18f6bc in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#73 0x00007fd22b196555 in QApplication::notify(QObject*, QEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#74 0x00007fd22ac0a5cc in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#75 0x00007fd22b195e22 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#76 0x00007fd22b1efe17 in QETWidget::translateMouseEvent(_XEvent const*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#77 0x00007fd22b1eee46 in QApplication::x11ProcessEvent(_XEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#78 0x00007fd22b21422b in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#79 0x00007fd2293ded5a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so
+#80 0x00007fd22ac0b3cf in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#81 0x00007fd2293dece9 in tcl_dispatch_qt () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so
+#82 0x0000000009df23c8 in Tcl_DoOneEvent ()
+#83 0x00007fd2293dedb2 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so
+#84 0x00007fd22ac08fd2 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#85 0x00007fd22ac09294 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#86 0x00007fd22ac0b269 in QCoreApplication::exec() () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#87 0x00007fd2293e136f in TqApplication::exec() () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so
+#88 0x00000000015dccd6 in fe_main(int, char**) ()
+#89 0x00000000015dcea0 in main ()
+========================================
+                gdb
+========================================
+Using: gdb
+[New LWP 14665]
+[New LWP 14662]
+[New LWP 14660]
+[New LWP 14253]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+0x00007fd227a12469 in waitpid () from /usr/lib64/libc.so.6
+
+Thread 5 (Thread 0x7fd224039700 (LWP 14253)):
+#0  0x00007fd22ebc5e5d in nanosleep () from /usr/lib64/libpthread.so.0
+#1  0x000000000249c1ca in rdaiLicRecheck(void*) ()
+#2  0x00007fd22ebbee65 in start_thread () from /usr/lib64/libpthread.so.0
+#3  0x00007fd227a4b88d in clone () from /usr/lib64/libc.so.6
+
+Thread 4 (Thread 0x7fd221b49700 (LWP 14660)):
+#0  0x00007fd227a1280d in nanosleep () from /usr/lib64/libc.so.6
+#1  0x00007fd227a126a4 in sleep () from /usr/lib64/libc.so.6
+#2  0x00000000086395ed in syiPeakMem(void*) ()
+#3  0x00007fd22ebbee65 in start_thread () from /usr/lib64/libpthread.so.0
+#4  0x00007fd227a4b88d in clone () from /usr/lib64/libc.so.6
+
+Thread 3 (Thread 0x7fd220f34700 (LWP 14662)):
+#0  0x00007fd227a42953 in select () from /usr/lib64/libc.so.6
+#1  0x0000000009e1014d in NotifierThreadProc ()
+#2  0x00007fd22ebbee65 in start_thread () from /usr/lib64/libpthread.so.0
+#3  0x00007fd227a4b88d in clone () from /usr/lib64/libc.so.6
+
+Thread 2 (Thread 0x7fd21bfff700 (LWP 14665)):
+#0  0x00007fd22ebc6381 in sigwait () from /usr/lib64/libpthread.so.0
+#1  0x00000000016bd6fb in ctrlCHandle(void*) ()
+#2  0x00007fd22ebbee65 in start_thread () from /usr/lib64/libpthread.so.0
+#3  0x00007fd227a4b88d in clone () from /usr/lib64/libc.so.6
+
+Thread 1 (Thread 0x7fd22eeb7340 (LWP 13775)):
+#0  0x00007fd227a12469 in waitpid () from /usr/lib64/libc.so.6
+#1  0x00007fd22798ff12 in do_system () from /usr/lib64/libc.so.6
+#2  0x00007fd2279902c1 in system () from /usr/lib64/libc.so.6
+#3  0x0000000008622bfe in syStackTraceDump(_IO_FILE*, bool) ()
+#4  0x0000000008622cd5 in syStackTrace ()
+#5  0x00000000016bd11a in rdaiErrorHandler(int, siginfo*, void*) ()
+#6  <signal handler called>
+#7  0x00007fd219e247ea in OpenAccess_4::oaRoute::setBeginConn(OpenAccess_4::oaBlockObject*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/share/oa/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+#8  0x00007fd21a3d2479 in oaxiRouteCreateOARouteObject(oaxsNetInformation*, oaxsContinueousNetPath*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#9  0x00007fd21a3d3307 in oaxiRouteStartPathTraversal(oaxsNetInformation*, dbsWire*, dbsWire*, unsigned int) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#10 0x00007fd21a3d55f0 in fe2gnMakeRoutes(OpenAccess_4::oaTech*, OpenAccess_4::oaDesign*, dbsNet*, OpenAccess_4::oaConstraintGroup*, dbsCell*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#11 0x00007fd21a48977e in oaxiCreateOA(OpenAccess_4::oaDesign*, char, OpenAccess_4::oaArray<OpenAccess_4::oaTech*>&, char, char*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#12 0x00007fd21a48c6c0 in oaG2Out () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libfeoax22.so
+#13 0x000000000566cf06 in oaiG2OutCmd ()
+#14 0x000000000968ffe8 in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#15 0x0000000009686512 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#16 0x0000000009dad4f8 in TclInvokeStringCommand ()
+#17 0x0000000009dae2fd in TclEvalObjvInternal ()
+#18 0x0000000009daecee in Tcl_EvalEx ()
+#19 0x0000000009daf185 in Tcl_EvalObjEx ()
+#20 0x0000000009db356f in Tcl_EvalObjCmd ()
+#21 0x0000000009dae2fd in TclEvalObjvInternal ()
+#22 0x0000000009dd041d in TclExecuteByteCode ()
+#23 0x0000000009dcf82b in TclCompEvalObj ()
+#24 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#25 0x0000000009db3036 in Tcl_CatchObjCmd ()
+#26 0x0000000009dae2fd in TclEvalObjvInternal ()
+#27 0x0000000009dd041d in TclExecuteByteCode ()
+#28 0x0000000009dcf82b in TclCompEvalObj ()
+#29 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#30 0x0000000009db5af5 in Tcl_IfObjCmd ()
+#31 0x0000000009dae2fd in TclEvalObjvInternal ()
+#32 0x0000000009dd041d in TclExecuteByteCode ()
+#33 0x0000000009dcf82b in TclCompEvalObj ()
+#34 0x0000000009df9ac8 in TclObjInterpProc ()
+#35 0x0000000009dae2fd in TclEvalObjvInternal ()
+#36 0x0000000009daecee in Tcl_EvalEx ()
+#37 0x0000000009daf185 in Tcl_EvalObjEx ()
+#38 0x0000000009db356f in Tcl_EvalObjCmd ()
+#39 0x0000000009dae2fd in TclEvalObjvInternal ()
+#40 0x0000000009dd041d in TclExecuteByteCode ()
+#41 0x0000000009dcf82b in TclCompEvalObj ()
+#42 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#43 0x0000000009db3036 in Tcl_CatchObjCmd ()
+#44 0x0000000009dae2fd in TclEvalObjvInternal ()
+#45 0x0000000009dd041d in TclExecuteByteCode ()
+#46 0x0000000009dcf82b in TclCompEvalObj ()
+#47 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#48 0x0000000009db5af5 in Tcl_IfObjCmd ()
+#49 0x0000000009dae2fd in TclEvalObjvInternal ()
+#50 0x0000000009dd041d in TclExecuteByteCode ()
+#51 0x0000000009dcf82b in TclCompEvalObj ()
+#52 0x0000000009df9ac8 in TclObjInterpProc ()
+#53 0x0000000009dae2fd in TclEvalObjvInternal ()
+#54 0x0000000009dd041d in TclExecuteByteCode ()
+#55 0x0000000009dcf82b in TclCompEvalObj ()
+#56 0x0000000009daf2ff in Tcl_EvalObjEx ()
+#57 0x0000000009db3036 in Tcl_CatchObjCmd ()
+#58 0x0000000009dae2fd in TclEvalObjvInternal ()
+#59 0x0000000009daecee in Tcl_EvalEx ()
+#60 0x0000000009daead3 in Tcl_EvalTokensStandard ()
+#61 0x0000000009daec8f in Tcl_EvalEx ()
+#62 0x0000000009daf09d in Tcl_Eval ()
+#63 0x000000000621c783 in qtfTclEval(char*) ()
+#64 0x00000000061bc2e4 in qtfsItem::fUpdateVar() ()
+#65 0x000000000626ec14 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#66 0x00007fd22ac1e14c in QMetaObject::activate(QObject*, int, int, void**) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#67 0x00007fd22b72eb87 in QAbstractButton::clicked(bool) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#68 0x00007fd22b4c310b in QAbstractButtonPrivate::emitClicked() () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#69 0x00007fd22b4c471b in QAbstractButtonPrivate::click() () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#70 0x00007fd22b4c4975 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#71 0x00007fd22b1d3688 in QWidget::event(QEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#72 0x00007fd22b18f6bc in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#73 0x00007fd22b196555 in QApplication::notify(QObject*, QEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#74 0x00007fd22ac0a5cc in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#75 0x00007fd22b195e22 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#76 0x00007fd22b1efe17 in QETWidget::translateMouseEvent(_XEvent const*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#77 0x00007fd22b1eee46 in QApplication::x11ProcessEvent(_XEvent*) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#78 0x00007fd22b21422b in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#79 0x00007fd2293ded5a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so
+#80 0x00007fd22ac0b3cf in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#81 0x00007fd2293dece9 in tcl_dispatch_qt () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so
+#82 0x0000000009df23c8 in Tcl_DoOneEvent ()
+#83 0x00007fd2293dedb2 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so
+#84 0x00007fd22ac08fd2 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#85 0x00007fd22ac09294 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#86 0x00007fd22ac0b269 in QCoreApplication::exec() () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#87 0x00007fd2293e136f in TqApplication::exec() () from /CMC/tools/cadence/EDI11.12.001_lnx86/tools/lib/64bit/libtq.so
+#88 0x00000000015dccd6 in fe_main(int, char**) ()
+#89 0x00000000015dcea0 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 13775] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
+*** Memory Usage v#1 (Current mem = 598.812M, initial mem = 62.922M) ***
+--- Ending "Encounter" (totcpu=0:01:39, real=0:20:44, mem=598.8M) ---

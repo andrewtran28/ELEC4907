@@ -1,0 +1,80 @@
+Loading db file '/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db'
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : router
+Version: H-2013.03-SP5-2
+Date   : Sat Jan 11 18:58:47 2020
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+router                 ZeroWireload      tcbn65gpluswc
+routing_engine_CLOCKED ZeroWireload      tcbn65gpluswc
+benes                  ZeroWireload      tcbn65gpluswc
+crossbar_0             ZeroWireload      tcbn65gpluswc
+crossbar_4             ZeroWireload      tcbn65gpluswc
+crossbar_1             ZeroWireload      tcbn65gpluswc
+crossbar_2             ZeroWireload      tcbn65gpluswc
+crossbar_3             ZeroWireload      tcbn65gpluswc
+crossbar_5             ZeroWireload      tcbn65gpluswc
+crossbar_6             ZeroWireload      tcbn65gpluswc
+crossbar_7             ZeroWireload      tcbn65gpluswc
+crossbar_8             ZeroWireload      tcbn65gpluswc
+crossbar_9             ZeroWireload      tcbn65gpluswc
+crossbar_10            ZeroWireload      tcbn65gpluswc
+crossbar_11            ZeroWireload      tcbn65gpluswc
+crossbar_12            ZeroWireload      tcbn65gpluswc
+crossbar_13            ZeroWireload      tcbn65gpluswc
+crossbar_14            ZeroWireload      tcbn65gpluswc
+crossbar_15            ZeroWireload      tcbn65gpluswc
+crossbar_16            ZeroWireload      tcbn65gpluswc
+crossbar_17            ZeroWireload      tcbn65gpluswc
+crossbar_18            ZeroWireload      tcbn65gpluswc
+crossbar_19            ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 156.6840 uW   (49%)
+  Net Switching Power  = 163.6168 uW   (51%)
+                         ---------
+Total Dynamic Power    = 320.3008 uW  (100%)
+
+Cell Leakage Power     =  25.6432 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential     4.1077e-02        4.8549e-03        2.1901e+03        4.8122e-02  (  13.91%)
+combinational      0.1156            0.1588        2.3450e+04            0.2978  (  86.09%)
+--------------------------------------------------------------------------------------------------
+Total              0.1567 mW         0.1636 mW     2.5640e+04 nW         0.3459 mW

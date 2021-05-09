@@ -1,0 +1,41 @@
+$date
+	Sun Oct 20 17:27:16 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module dut $end
+$scope module dut $end
+$var wire 1 ! RE $end
+$var wire 1 " WE $end
+$var wire 8 # addr [7:0] $end
+$var wire 128 $ data_in [127:0] $end
+$var wire 4 % len [3:0] $end
+$var reg 128 & data_out [127:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx &
+b0 %
+b0 $
+b0 #
+0"
+0!
+$end
+#20
+b10 %
+1"
+b11111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 $
+b1010 #
+#40
+b11111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 &
+b1 %
+1!
+0"
+b0 $
+#60

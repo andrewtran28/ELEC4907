@@ -1,0 +1,3 @@
+INCLUDE tech.lib
+DEFINE router /home/vladimirmilicevic/ann_router/virtuoso/router
+DEFINE router_library /home/vladimirmilicevic/ann_router/router_library

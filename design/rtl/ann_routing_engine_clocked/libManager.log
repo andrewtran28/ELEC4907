@@ -1,0 +1,14 @@
+\o Program:		@(#)$CDS: libManager version 32.10 11/11/2011 13:43 (cat91amd) $
+\o Sub version:		sub-version  s008 
+\o Arguments:		-mpssession virtuoso8005 -mpshost thor.doe.carleton.ca 
+\o Working Directory:	thor.doe.carleton.ca:/home/vladimirmilicevic/ann_routing_engine
+\o 64-bit offsets
+\o Qt version: 		4.5.3
+\o Log file is "/home/vladimirmilicevic/ann_routing_engine/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 26 930 448))
+\o LibManager can't import the connection from "DFII-LibMan".
+\o libManager is exiting.
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a exit(0)

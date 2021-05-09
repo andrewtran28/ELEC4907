@@ -1,0 +1,1 @@
+-wto "bcc75bd51c614637b965eb74bf1102b2" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "layer_controller_dut_behav" "xil_defaultlib.layer_controller_dut" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,0 +1,4 @@
+setAnalysisMode -analysisType bcwc
+setExtractRCMode  -engine preRoute
+setDelayCalMode -engine default
+setIlmMode -highFanoutPort true -loopBack false 

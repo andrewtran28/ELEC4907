@@ -1,0 +1,4 @@
+Gate area 1.0800 um^2
+Level 0 Module router                                   Gates=      4361 Cells=    2037 Area=    4709.9 um^2
+Level 1 Module u_fwd_routing_engine                     Gates=1049       Cells=417      Area=    1133.6 um^2
+Level 1 Module u_fwd_benes                              Gates=3216       Cells=1606     Area=    3474.0 um^2

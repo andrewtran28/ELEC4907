@@ -1,0 +1,8 @@
+Gate area 1.0800 um^2
+Level 0 Module fma_top                                  Gates=      4539 Cells=    1967 Area=    4902.1 um^2
+Level 1 Module fma_exp_diff_i                           Gates=217        Cells=93       Area=     234.7 um^2
+Level 1 Module fma_mult_tree_i                          Gates=1439       Cells=600      Area=    1554.1 um^2
+Level 1 Module fma_aligner_adder_i                      Gates=1868       Cells=924      Area=    2017.4 um^2
+Level 2 Module fma_aligner_adder_i/fma_lza_i            Gates=366        Cells=184      Area=     396.0 um^2
+Level 2 Module fma_aligner_adder_i/srl_62               Gates=221        Cells=105      Area=     239.0 um^2
+Level 1 Module fma_normalizer_rounder_i                 Gates=506        Cells=201      Area=     546.5 um^2

@@ -1,0 +1,137 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 11.0 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.43-p003.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2012.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v11.12-s136_1 (64bit) 09/24/2012 19:26 (Linux 2.6)
+@(#)CDS: NanoRoute v11.12-s009 NR120919-1551/11_10_USR2-UB (database version 2.30, 165.4.1) {superthreading v1.16}
+@(#)CDS: CeltIC v11.12-s025_1 (64bit) 09/20/2012 05:47:24 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 11.12-s002 (64bit) 09/24/2012 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 11.12-s098_1 (64bit) Sep 12 2012 04:29:44 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v11.12-s026
+@(#)CDS: IQRC/TQRC 11.1.1-s334 (64bit) Sun May  6 19:52:51 PDT 2012 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v11.12-s136_1" on Thu Jan 30 23:19:48 2020 (mem=62.9M) ---
+--- Running on thor.doe.carleton.ca (x86_64 w/Linux 3.10.0-1062.1.1.el7.x86_64) ---
+This version was compiled on Mon Sep 24 19:26:26 PDT 2012.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/le
+f/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef}
+<CMD> set init_design_settop 0
+<CMD> set init_verilog interconnect_network_clocked.v
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+**ERROR: (ENCSYT-16038):	'/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/le' not found.
+**ERROR: (ENCSYT-16038):	'f/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef' not found.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'interconnect_network_clocked.v'
+Module MUX2ND0 not defined.  Created automatically.
+Module CKND0 not defined.  Created automatically.
+Module DFQD1 not defined.  Created automatically.
+Module DFQD2 not defined.  Created automatically.
+Module TIEH not defined.  Created automatically.
+
+*** Memory Usage v#1 (Current mem = 468.234M, initial mem = 62.922M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=468.2M) ***
+Top level cell is benes.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.11min, fe_mem=468.2M) ***
+**WARN: (ENCDB-2504):	Cell CKND0 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell MUX2ND0 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell TIEH is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell DFQD2 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell DFQD1 is instantiated in the Verilog netlist, but is not defined.
+Mark pin ZN of cell MUX2ND0 output for net out_upper[19] in module crossbar_0 
+Mark pin Q of cell DFQD2 output for net out_output[159] in module benes 
+Mark pin Z of cell TIEH output for net \*Logic1*  in module benes 
+Mark pin Q of cell DFQD1 output for net \port_en_n[7]  in module benes 
+Mark pin ZN of cell CKND0 output for net n1 in module crossbar_0.
+Found empty module (CKND0).
+Found empty module (MUX2ND0).
+Found empty module (TIEH).
+Found empty module (DFQD2).
+Found empty module (DFQD1).
+Starting recursive module instantiation check.
+No recursion found.
+Term dir updated for 0 vinsts of 5 cells.
+Building hierarchical netlist for Cell benes ...
+*** Netlist is unique.
+**WARN: (ENCTRN-1100):	Cannot determine standard cell height.  Assume it 10 IGU.
+**WARN: (ENCTRN-1101):	Could not determine power-rail locations in cells, using GNDOnBtm
+**WARN: (ENCTRN-1102):	Could not determine power-rail locations of some cells.
+	Forcing all single height cell pwr-rail setting to GND-on-bottom.
+** info: there are 26 modules.
+** info: there are 0 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 473.590M, initial mem = 62.922M) ***
+**ERROR: (ENCSYC-1594):	No site specified. Please check the lef file to make sure a site is specified for core cell.
+**ERROR: (ENCSYC-1595):	NO ROW CREATED.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+
+**WARN: (ENCSYT-7328):	Active setup and hold analysis views were not provided by the -setup and -hold arguments to initDesign. The system requires at least one active setup and hold analysis view to be declared before any timing commands can be run. If you need to run timing commands, you can add the -setup and -hold options to your init_design invocation.  You can use the all_analysis_view command to identify the currently available views.
+<CMD> fit
+<CMD> fit
+<CMD> fit
+
+
+
+
+
+
+<CMD> create_rc_corner -name rc -T {25} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+<CMD> create_library_set -name worst_case -timing {/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/t iming_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.lib}
+**ERROR: (TCLCMD-995):	Can not open file '/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/t' for library set
+**ERROR: (TCLCMD-995):	Can not open file 'iming_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.lib' for library set
+<CMD> create_constraint_mode -name constraint -sdc_files {constraint.sdc}
+<CMD> create_delay_corner -name worst_delay -library_set {worst_case} -rc_corner {rc}
+**ERROR: (TCLCMD-994):	Can not find 'library set' object of name 'worst_case'
+<CMD> create_analysis_view -name worst_analysis -constraint_mode {constraint} -delay_corner {worst_delay}
+**ERROR: (TCLCMD-994):	Can not find 'delay corner' object of name 'worst_delay'
+<CMD> set_analysis_view -setup {worst_analysis} -hold {worst_analysis}
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object of name 'worst_analysis'
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object of name 'worst_analysis'
+**ERROR: (TCLCMD-1032):	No timing library definition in conf file. MMMC mode is disallowed.
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -r 1.0 1.79769313486e+308 10 10 10 10
+**ERROR: (ENCSYC-1594):	No site specified. Please check the lef file to make sure a site is specified for core cell.
+**ERROR: (ENCSYC-1595):	NO ROW CREATED.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+
+*** Memory Usage v#1 (Current mem = 477.129M, initial mem = 62.922M) ***
+--- Ending "Encounter" (totcpu=0:00:21.7, real=0:03:32, mem=477.1M) ---

@@ -1,0 +1,29 @@
+****************************************
+Report : area
+Design : benes
+Version: H-2013.03-SP5-2
+Date   : Sun Dec 29 22:50:32 2019
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+Number of ports:                          316
+Number of nets:                           957
+Number of cells:                           21
+Number of combinational cells:              1
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                      21
+
+Combinational area:               3169.080126
+Buf/Inv area:                      864.000034
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  3169.080126
+Total area:                 undefined

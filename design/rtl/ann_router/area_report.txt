@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : area
+Design : router
+Version: H-2013.03-SP5-2
+Date   : Sat Jan 11 18:58:25 2020
+****************************************
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+Number of ports:                          195
+Number of nets:                           213
+Number of cells:                            4
+Number of combinational cells:              2
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       4
+
+Combinational area:               4269.240098
+Buf/Inv area:                      937.440037
+Noncombinational area:             291.600001
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  4560.840099
+Total area:                 undefined

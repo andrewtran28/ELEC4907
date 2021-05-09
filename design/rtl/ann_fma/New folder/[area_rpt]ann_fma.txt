@@ -1,0 +1,31 @@
+****************************************
+Report : area
+Design : fma_top
+Version: H-2013.03-SP5-2
+Date   : Sun Dec 29 23:44:54 2019
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+Number of ports:                           64
+Number of nets:                           137
+Number of cells:                           12
+Number of combinational cells:              8
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       7
+
+Combinational area:               3712.680035
+Buf/Inv area:                      244.080010
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  3712.680035
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)

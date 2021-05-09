@@ -1,0 +1,398 @@
+Design 40000 40000 121850 108400 
+   DEFAULTWIRE 200 200
+   Inst BEGIN
+      Group PartInstGrp_0 94980 96980 113620 104800  0.000000 123840000.000000 
+      END Group
+      Group PartInstGrp_1 91100 92280 113280 99850  0.000000 142560000.000000 
+      END Group
+      Group PartInstGrp_2 77780 96630 94590 104800  0.000000 116640000.000000 
+      END Group
+      Group PartInstGrp_3 61270 94910 77390 104800  0.000000 135360000.000000 
+      END Group
+      Group PartInstGrp_4 41850 95850 60610 104800  0.000000 142560000.000000 
+      END Group
+      Group PartInstGrp_5 40400 83580 51250 94830  0.000000 103680000.000000 
+      END Group
+      Group PartInstGrp_6 58590 85160 77670 97690  0.000000 203040000.000000 
+      END Group
+      Group PartInstGrp_7 57430 70530 67860 85500  0.000000 132480000.000000 
+      END Group
+      Group PartInstGrp_8 40400 57570 52610 69790  0.000000 126720000.000000 
+      END Group
+      Group PartInstGrp_9 51000 71940 57440 93840  0.000000 119520000.000000 
+      END Group
+      Group PartInstGrp_10 40400 69920 51010 83510  0.000000 122400000.000000 
+      END Group
+      Group PartInstGrp_11 52610 57200 73620 63820  0.000000 118080000.000000 
+      END Group
+      Group PartInstGrp_12 52890 63820 73340 70540  0.000000 116640000.000000 
+      END Group
+      Group PartInstGrp_13 41240 43600 52940 57380  0.000000 136800000.000000 
+      END Group
+      Group PartInstGrp_14 53890 48550 72980 56640  0.000000 131040000.000000 
+      END Group
+      Group PartInstGrp_15 105540 49930 113900 64960  0.000000 106560000.000000 
+      END Group
+      Group PartInstGrp_16 94060 50480 105170 63450  0.000000 122400000.000000 
+      END Group
+      Group PartInstGrp_17 113890 53530 121450 75520  0.000000 141120000.000000 
+      END Group
+      Group PartInstGrp_18 113930 85850 121450 104800  0.000000 120960000.000000 
+      END Group
+      Group PartInstGrp_19 83800 48360 93600 63770  0.000000 128160000.000000 
+      END Group
+      Group PartInstGrp_20 106750 64950 113480 87640  0.000000 129600000.000000 
+      END Group
+      Group PartInstGrp_21 87570 43600 110280 49950  0.000000 122400000.000000 
+      END Group
+      Group PartInstGrp_22 79030 73410 89920 85260  0.000000 109440000.000000 
+      END Group
+      Group PartInstGrp_23 90290 83200 106560 92170  0.000000 123840000.000000 
+      END Group
+      Group PartInstGrp_24 91070 63870 105550 73000  0.000000 112320000.000000 
+      END Group
+      Group PartInstGrp_25 78730 63870 91000 73000  0.000000 95040000.000000 
+      END Group
+      Group PartInstGrp_26 90480 73050 106340 83100  0.000000 135360000.000000 
+      END Group
+      Group PartInstGrp_27 67850 70800 78660 85230  0.000000 132480000.000000 
+      END Group
+      Group PartInstGrp_28 73610 48560 83670 63580  0.000000 128160000.000000 
+      END Group
+      Group PartInstGrp_29 58430 43600 83960 49450  0.000000 126720000.000000 
+      END Group
+      Group PartInstGrp_30 77860 85660 90110 96470  0.000000 112320000.000000 
+      END Group
+      IO port_dest[31] 161850 86000
+      END IO
+      IO port_dest[30] 161850 88800
+      END IO
+      IO port_dest[29] 89400 148400
+      END IO
+      IO port_dest[28] 95000 148400
+      END IO
+      IO port_dest[27] 161850 70000
+      END IO
+      IO port_dest[26] 161850 70800
+      END IO
+      IO port_dest[25] 85800 148400
+      END IO
+      IO port_dest[24] 86600 148400
+      END IO
+      IO port_dest[23] 103400 0
+      END IO
+      IO port_dest[22] 101400 0
+      END IO
+      IO port_dest[21] 161850 75600
+      END IO
+      IO port_dest[20] 161850 68800
+      END IO
+      IO port_dest[19] 82200 0
+      END IO
+      IO port_dest[18] 78200 0
+      END IO
+      IO port_dest[17] 79800 0
+      END IO
+      IO port_dest[16] 79000 0
+      END IO
+      IO port_dest[15] 58600 0
+      END IO
+      IO port_dest[14] 71800 0
+      END IO
+      IO port_dest[13] 78600 0
+      END IO
+      IO port_dest[12] 76200 0
+      END IO
+      IO port_dest[11] 0 64000
+      END IO
+      IO port_dest[10] 73000 0
+      END IO
+      IO port_dest[9] 0 64800
+      END IO
+      IO port_dest[8] 0 70400
+      END IO
+      IO port_dest[7] 0 82400
+      END IO
+      IO port_dest[6] 70200 148400
+      END IO
+      IO port_dest[5] 81800 148400
+      END IO
+      IO port_dest[4] 72200 148400
+      END IO
+      IO port_dest[3] 51000 148400
+      END IO
+      IO port_dest[2] 71000 0
+      END IO
+      IO port_dest[1] 0 94400
+      END IO
+      IO port_dest[0] 0 72000
+      END IO
+      IO control[19] 116600 148400
+      END IO
+      IO control[18] 93400 148400
+      END IO
+      IO control[17] 71800 148400
+      END IO
+      IO control[16] 66200 148400
+      END IO
+      IO control[15] 117400 148400
+      END IO
+      IO control[14] 72200 148400
+      END IO
+      IO control[13] 118200 148400
+      END IO
+      IO control[12] 77800 148400
+      END IO
+      IO control[11] 91400 148400
+      END IO
+      IO control[10] 85800 148400
+      END IO
+      IO control[9] 98600 148400
+      END IO
+      IO control[8] 91000 148400
+      END IO
+      IO control[7] 84600 148400
+      END IO
+      IO control[6] 93800 148400
+      END IO
+      IO control[5] 101400 148400
+      END IO
+      IO control[4] 102600 148400
+      END IO
+      IO control[3] 81000 148400
+      END IO
+      IO control[2] 90200 148400
+      END IO
+      IO control[1] 91000 148400
+      END IO
+      IO control[0] 100200 148400
+      END IO
+      IO done 0 88800
+      END IO
+   END Inst
+   Net BEGIN
+   END Net
+   PathNet BEGIN
+   END PathNet
+   FenceCandidate 
+   END FenceCandidate 
+   HardGroup 
+   END HardGroup 
+   Guide PartInstGrp_0  94980 96980 113620 104800 
+      Group:
+        PartInstGrp_0
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_1  91100 92280 113280 99850 
+      Group:
+        PartInstGrp_1
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_2  77780 96630 94590 104800 
+      Group:
+        PartInstGrp_2
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_3  61270 94910 77390 104800 
+      Group:
+        PartInstGrp_3
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_4  41850 95850 60610 104800 
+      Group:
+        PartInstGrp_4
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_5  40400 83580 51250 94830 
+      Group:
+        PartInstGrp_5
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_6  58590 85160 77670 97690 
+      Group:
+        PartInstGrp_6
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_7  57430 70530 67860 85500 
+      Group:
+        PartInstGrp_7
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_8  40400 57570 52610 69790 
+      Group:
+        PartInstGrp_8
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_9  51000 71940 57440 93840 
+      Group:
+        PartInstGrp_9
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_10  40400 69920 51010 83510 
+      Group:
+        PartInstGrp_10
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_11  52610 57200 73620 63820 
+      Group:
+        PartInstGrp_11
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_12  52890 63820 73340 70540 
+      Group:
+        PartInstGrp_12
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_13  41240 43600 52940 57380 
+      Group:
+        PartInstGrp_13
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_14  53890 48550 72980 56640 
+      Group:
+        PartInstGrp_14
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_15  105540 49930 113900 64960 
+      Group:
+        PartInstGrp_15
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_16  94060 50480 105170 63450 
+      Group:
+        PartInstGrp_16
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_17  113890 53530 121450 75520 
+      Group:
+        PartInstGrp_17
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_18  113930 85850 121450 104800 
+      Group:
+        PartInstGrp_18
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_19  83800 48360 93600 63770 
+      Group:
+        PartInstGrp_19
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_20  106750 64950 113480 87640 
+      Group:
+        PartInstGrp_20
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_21  87570 43600 110280 49950 
+      Group:
+        PartInstGrp_21
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_22  79030 73410 89920 85260 
+      Group:
+        PartInstGrp_22
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_23  90290 83200 106560 92170 
+      Group:
+        PartInstGrp_23
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_24  91070 63870 105550 73000 
+      Group:
+        PartInstGrp_24
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_25  78730 63870 91000 73000 
+      Group:
+        PartInstGrp_25
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_26  90480 73050 106340 83100 
+      Group:
+        PartInstGrp_26
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_27  67850 70800 78660 85230 
+      Group:
+        PartInstGrp_27
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_28  73610 48560 83670 63580 
+      Group:
+        PartInstGrp_28
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_29  58430 43600 83960 49450 
+      Group:
+        PartInstGrp_29
+      END Group
+      Macro:
+      END Macro
+   END Guide
+   Guide PartInstGrp_30  77860 85660 90110 96470 
+      Group:
+        PartInstGrp_30
+      END Group
+      Macro:
+      END Macro
+   END Guide
+END Design

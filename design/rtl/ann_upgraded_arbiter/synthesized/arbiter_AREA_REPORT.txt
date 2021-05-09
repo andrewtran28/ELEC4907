@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : arbiter
+Version: H-2013.03-SP5-2
+Date   : Thu Mar 19 01:01:06 2020
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+Number of ports:                         1250
+Number of nets:                          3487
+Number of cells:                         2910
+Number of combinational cells:           2339
+Number of sequential cells:               571
+Number of macros/black boxes:               0
+Number of buf/inv:                        260
+Number of references:                      55
+
+Combinational area:               5087.520101
+Buf/Inv area:                      280.800011
+Noncombinational area:            4792.319824
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  9879.839925
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)

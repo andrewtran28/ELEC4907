@@ -1,0 +1,18 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/vladimirmilicevic/Desktop/ANN/ANN/design/rtl/cache/memory_map.vh,1574332042,verilog,,,,,,,,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/benes/imports/intrc/benes.v,1574332042,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/routing_engine/imports/intrc/routing_engine.v,,benes,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/benes/imports/intrc/crossbar.v,1574332042,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/benes/imports/intrc/benes.v,,crossbar,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/neuron/imports/neuron/neuron.v,1574332042,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/benes/imports/intrc/crossbar.v,,neuron,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/neuron/imports/neuron/neuron_fma.v,1574332042,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/neuron/imports/neuron/neuron.v,,neuron_fma,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/routing_engine/imports/intrc/routing_engine.v,1574332042,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/new/arb_v2.v,,routing_engine,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/arb/arb_dut.v,1574574655,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/neuron/layer_controller.v,,top,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/cache/l1_cache.v,1574580103,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/neuron/imports/neuron/neuron_fma.v,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/cache/memory_map.vh,l1_cache,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/cache/memory_map.vh,1574583119,verilog,,,,,,,,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/layer/layer_controller_dut.v,1574582915,verilog,,,,layer_controller_dut,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/neuron/layer_controller.v,1574582288,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/layer/layer_controller_dut.v,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/cache/memory_map.vh,layer_controller,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/new/arb_v2.v,1574576077,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/imports/design/rtl/neuron/layer_controller.v,,arb_v2,,,../../../../ANN2.srcs/sources_1/imports/design/rtl/cache,,,,,
+C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.srcs/sources_1/new/host_controller.v,1574576277,verilog,,C:/Users/vladimirmilicevic/Desktop/ANN/ANN/design/rtl/cache/l1_cache.v,,host_controller,,,../../../../../ANN/ANN/design/rtl/cache,,,,,

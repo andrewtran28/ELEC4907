@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="neuron_synth_1" LaunchPart="xc7a100tcsg324-2L" LaunchTime="1574332268">
+  <File Type="PA-TCL" Name="neuron.tcl"/>
+  <File Type="REPORTS-TCL" Name="neuron_reports.tcl"/>
+  <File Type="RDS-RDS" Name="neuron.vds"/>
+  <File Type="RDS-UTIL" Name="neuron_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="neuron_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="neuron.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/neuron">
+    <File Path="$PSRCDIR/neuron/imports/neuron/neuron_fma.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/neuron/neuron_fma.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/neuron/imports/neuron/neuron.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/neuron/neuron.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/neuron/new/neuron_ooc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/ANN/ANN/ANN.srcs/neuron/new/neuron_ooc.xdc"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="neuron"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/neuron/imports/neuron/neuron.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/neuron">
+    <File Path="$PSRCDIR/neuron/imports/neuron/neuron_fma.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/neuron/neuron_fma.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/neuron/imports/neuron/neuron.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/neuron/neuron.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/neuron/new/neuron_ooc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/ANN/ANN/ANN.srcs/neuron/new/neuron_ooc.xdc"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="neuron"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/neuron/imports/neuron/neuron.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

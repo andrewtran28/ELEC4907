@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ANN2.srcs/sources_1/imports/design/rtl/cache" \
+"../../../../ANN2.srcs/sources_1/imports/design/rtl/cache/l1_cache.v" \
+"../../../../ANN2.srcs/neuron/imports/neuron/neuron_fma.v" \
+"../../../../ANN2.srcs/neuron/imports/neuron/neuron.v" \
+"../../../../ANN2.srcs/benes/imports/intrc/crossbar.v" \
+"../../../../ANN2.srcs/benes/imports/intrc/benes.v" \
+"../../../../ANN2.srcs/routing_engine/imports/intrc/routing_engine.v" \
+"../../../../ANN2.srcs/sources_1/new/arb_v2.v" \
+"../../../../ANN2.srcs/sources_1/imports/design/rtl/neuron/layer_controller.v" \
+"../../../../ANN2.srcs/sources_1/imports/design/rtl/layer/layer_controller_dut.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

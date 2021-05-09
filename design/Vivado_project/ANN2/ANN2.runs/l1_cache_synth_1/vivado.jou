@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov 24 03:16:46 2019
+# Process ID: 75392
+# Current directory: C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.runs/l1_cache_synth_1
+# Command line: vivado.exe -log l1_cache.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source l1_cache.tcl
+# Log file: C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.runs/l1_cache_synth_1/l1_cache.vds
+# Journal file: C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.runs/l1_cache_synth_1\vivado.jou
+#-----------------------------------------------------------
+source l1_cache.tcl -notrace

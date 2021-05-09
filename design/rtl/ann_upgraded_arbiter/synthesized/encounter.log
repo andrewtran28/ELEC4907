@@ -1,0 +1,3364 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 11.0 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.43-p003.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2012.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v11.12-s136_1 (64bit) 09/24/2012 19:26 (Linux 2.6)
+@(#)CDS: NanoRoute v11.12-s009 NR120919-1551/11_10_USR2-UB (database version 2.30, 165.4.1) {superthreading v1.16}
+@(#)CDS: CeltIC v11.12-s025_1 (64bit) 09/20/2012 05:47:24 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 11.12-s002 (64bit) 09/24/2012 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 11.12-s098_1 (64bit) Sep 12 2012 04:29:44 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v11.12-s026
+@(#)CDS: IQRC/TQRC 11.1.1-s334 (64bit) Sun May  6 19:52:51 PDT 2012 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v11.12-s136_1" on Thu Mar 19 00:44:11 2020 (mem=63.0M) ---
+--- Running on thor.doe.carleton.ca (x86_64 w/Linux 3.10.0-1062.12.1.el7.x86_64) ---
+This version was compiled on Mon Sep 24 19:26:26 PDT 2012.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef
+<CMD> set init_design_settop 0
+<CMD> set init_verilog arbiter.v
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading Lef file /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef...
+Set DBUPerIGU to M2 pitch 400.
+**WARN: (ENCLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Thu Mar 19 00:45:00 2020
+viaInitial ends at Thu Mar 19 00:45:00 2020
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'arbiter.v'
+Module \**SEQGEN**  not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module \**SEQGEN**  is not defined in LEF files.  It will be treated as an empty module.
+Inserting temporary buffers to remove assignment statements.
+
+*** Memory Usage v#1 (Current mem = 482.828M, initial mem = 62.953M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=482.8M) ***
+Top level cell is arbiter.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.16min, fe_mem=483.0M) ***
+**WARN: (ENCDB-2504):	Cell \**SEQGEN**  is instantiated in the Verilog netlist, but is not defined.
+Mark pin Q of cell \**SEQGEN**  output for net \port_map[7][6]  in module arbiter 
+Found empty module (\**SEQGEN** ).
+Starting recursive module instantiation check.
+No recursion found.
+Term dir updated for 0 vinsts of 1 cells.
+Building hierarchical netlist for Cell arbiter ...
+*** Netlist is unique.
+** info: there are 857 modules.
+** info: there are 2851 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 490.500M, initial mem = 62.953M) ***
+*info - Done with setDoAssign with 544 assigns removed and 0 assigns could not be removed.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+
+**WARN: (ENCSYT-7328):	Active setup and hold analysis views were not provided by the -setup and -hold arguments to initDesign. The system requires at least one active setup and hold analysis view to be declared before any timing commands can be run. If you need to run timing commands, you can add the -setup and -hold options to your init_design invocation.  You can use the all_analysis_view command to identify the currently available views.
+<CMD> fit
+
+
+
+
+
+
+<CMD> create_rc_corner -name rc -T {25} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+<CMD> create_library_set -name worst_Case -timing {/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.lib}
+Reading worst_Case timing library '/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+No function defined for cell 'OD18DCAP64'. The cell will only be used for analysis.
+No function defined for cell 'OD18DCAP32'. The cell will only be used for analysis.
+No function defined for cell 'OD18DCAP16'. The cell will only be used for analysis.
+No function defined for cell 'DCAP8'. The cell will only be used for analysis.
+No function defined for cell 'DCAP64'. The cell will only be used for analysis.
+No function defined for cell 'DCAP4'. The cell will only be used for analysis.
+No function defined for cell 'DCAP32'. The cell will only be used for analysis.
+No function defined for cell 'DCAP16'. The cell will only be used for analysis.
+No function defined for cell 'DCAP'. The cell will only be used for analysis.
+No function defined for cell 'ANTENNA'. The cell will only be used for analysis.
+ read 816 cells in library 'tcbn65gpluswc' 
+<CMD> create_constraint_mode -name cosntraint -sdc_files {constraint.sdc}
+<CMD> create_delay_corner -name worst_corner -library_set {worst_Case} -rc_corner {rc}
+<CMD> create_analysis_view -name worst_analysis -constraint_mode {cosntraint} -delay_corner {worst_corner}
+<CMD> set_analysis_view -setup {worst_analysis} -hold {worst_analysis}
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (ENCEXT-2773):	Unable to find a via resistance from LEF technology file;
+**WARN: (ENCEXT-2775):	Via resistance between layer M0 and M1 is assigned 4. Ohms.
+**WARN: (ENCEXT-2777):	Via resistance between layer M1 and M2 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M2 and M3 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M3 and M4 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M4 and M5 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M5 and M6 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M6 and M7 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M7 and M8 is not defined in cap table, LEF value 0.22 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M8 and M9 is not defined in cap table, LEF value 0.22 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M9 and M10 is not defined in cap table, LEF value 0.041 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in cap table, LEF value 0.16 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in cap table, LEF value 0.0218 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in cap table, LEF value 0.0218 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in cap table, LEF value 0.021 will be used.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_analysis
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+CTE reading timing constraint file 'constraint.sdc' ...
+Number of path exceptions in the constraint file = 1
+Number of paths exceptions after getting compressed = 1
+INFO (CTE): constraints read successfully
+WARNING (CTE-25): Line: 1 of File constraint.sdc : Skipped unsupported command: -e
+
+
+Total number of combinational cells: 497
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD12 BUFFD16 BUFFD3 BUFFD4 BUFFD6 BUFFD8 CKBD1 CKBD0 CKBD2 CKBD12 CKBD16 CKBD3 CKBD4 CKBD6 CKBD8
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND12 CKND16 CKND3 CKND4 CKND6 CKND8 INVD1 INVD0 INVD2 INVD12 INVD16 INVD3 INVD4 INVD6 INVD8
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified usable delay cells: 9
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site core -r 0.999957914229 0.700001 3 3 3 3
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> saveDesign arbiter.enc
+Writing Netlist "arbiter.enc.dat/arbiter.v.gz" ...
+Saving configuration ...
+Saving preference file arbiter.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=634.5M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=634.5M) ***
+Writing DEF file 'arbiter.enc.dat/arbiter.def.gz', current time is Thu Mar 19 00:46:53 2020 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'arbiter.enc.dat/arbiter.def.gz' is written, current time is Thu Mar 19 00:46:53 2020 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+<CMD> set sprCreateIeRingNets {}
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingWidth 1.0
+<CMD> set sprCreateIeRingSpacing 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> addRing -stacked_via_top_layer AP -around core -jog_distance 0.1 -threshold 0.1 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer {bottom M1 top M1 right M2 left M2} -width 1 -spacing 0.16 -offset 0.1
+
+**WARN: (ENCPP-193):	The currently specified top spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer M1 is 0.2000. To correct the violation, please increase the spacing to around 0.4972
+**WARN: (ENCPP-193):	The currently specified bottom spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer M1 is 0.2000. To correct the violation, please increase the spacing to around 0.4972
+**WARN: (ENCPP-193):	The currently specified left spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer M2 is 0.2000. To correct the violation, please increase the spacing to around 0.4972
+**WARN: (ENCPP-193):	The currently specified right spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer M2 is 0.2000. To correct the violation, please increase the spacing to around 0.4972
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 635.3M) ***
+<CMD> sroute -connect { blockPin padPin padRing corePin } -layerChangeRange { M1 AP } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer AP -crossoverViaTopLayer AP -targetViaBottomLayer M1 -nets { VDD VSS }
+*** Begin SPECIAL ROUTE on Thu Mar 19 00:47:43 2020 ***
+SPECIAL ROUTE ran on directory: /home/vladimirmilicevic/ann_upgraded_arbiter/synthesized
+SPECIAL ROUTE ran on machine: thor.doe.carleton.ca (Linux 3.10.0-1062.12.1.el7.x86_64 Xeon 1.81Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLefConvention"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to true
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteLevelShifterMaxGap set to 1
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1091.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 22 layers, 10 routing layers, 1 overlap layer
+Read in 855 macros, 54 used
+Read in 54 components
+  54 core components: 54 unplaced, 0 placed, 0 fixed
+Read in 1250 logical pins
+Read in 1156 nets
+Read in 2 special nets, 2 routed
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VDD. Check net list, or change option to include pin in given range.
+**WARN: (ENCSR-1255):	Cannot find any pad pin of net VDD to create pad ring. Check net list, or remove "CLASS CORE" from PORT definition in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VSS. Check net list, or change option to include pin in given range.
+**WARN: (ENCSR-1255):	Cannot find any pad pin of net VSS to create pad ring. Check net list, or remove "CLASS CORE" from PORT definition in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VSS. Check net list, or change port class in LEF file, or change option to include pin in given range.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use "setSrouteMode -corePinReferenceMacro <standard cell>" to specify a reference macro for followpin connection, or run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use "setSrouteMode -corePinReferenceMacro <standard cell>" to specify a reference macro for followpin connection, or run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use "setSrouteMode -corePinReferenceMacro <standard cell>" to specify a reference macro for followpin connection, or run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use "setSrouteMode -corePinReferenceMacro <standard cell>" to specify a reference macro for followpin connection, or run "globalNetConnect" command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GNROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Core ports routed: 130
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 67
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1135.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 120 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Thu Mar 19 00:47:43 2020
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Thu Mar 19 00:47:43 2020
+
+sroute post-processing starts at Thu Mar 19 00:47:43 2020
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Thu Mar 19 00:47:43 2020
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 8.59 megs
+sroute: Total Peak Memory used = 644.91 megs
+<CMD> saveDesign arbiter.enc
+**WARN: (ENCSYT-3036):	Design directory arbiter.enc.dat exists, rename it to arbiter.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "arbiter.enc.dat/arbiter.v.gz" ...
+Saving configuration ...
+Saving preference file arbiter.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=644.9M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=644.9M) ***
+Writing DEF file 'arbiter.enc.dat/arbiter.def.gz', current time is Thu Mar 19 00:47:47 2020 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'arbiter.enc.dat/arbiter.def.gz' is written, current time is Thu Mar 19 00:47:47 2020 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst *
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst *
+<CMD> globalNetConnect VSS -type tielo -inst *
+<CMD> globalNetConnect VDD -type tiehi -inst *
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+*** Starting placeDesign default flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (ENCDC-1629):	The variable rdagUseDefaultDelayLimit was set to 101. This is less than the default 1000 and may result in inaccurate results for high fanout nets. To change the variable, run command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.16631 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 659.2M, InitMEM = 659.2M)
+Start delay calculation (mem=659.238M)...
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation.  You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man ENCTS-403' for more detail.
+Delay calculation completed. (cpu=0:00:00.1 real=0:00:01.0 mem=663.629M 0)
+*** CDM Built up (cpu=0:00:00.2  real=0:00:01.0  mem= 663.6M) ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+*** Starting "NanoPlace(TM) placement v#1 (mem=663.6M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:06.5 mem=700.8M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:07.3 mem=753.0M) ***
+Options: timingDriven clkGateAware ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+***Info:set default view from current views (1 active views)****
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (ENCEXT-2773):	Unable to find a via resistance from LEF technology file;
+**WARN: (ENCEXT-2775):	Via resistance between layer M0 and M1 is assigned 4. Ohms.
+**WARN: (ENCEXT-2777):	Via resistance between layer M1 and M2 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M2 and M3 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M3 and M4 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M4 and M5 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M5 and M6 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M6 and M7 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M7 and M8 is not defined in cap table, LEF value 0.22 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M8 and M9 is not defined in cap table, LEF value 0.22 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M9 and M10 is not defined in cap table, LEF value 0.041 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in cap table, LEF value 0.16 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in cap table, LEF value 0.0218 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in cap table, LEF value 0.0218 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in cap table, LEF value 0.021 will be used.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_analysis
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+CTE reading timing constraint file 'constraint.sdc' ...
+Number of path exceptions in the constraint file = 1
+Number of paths exceptions after getting compressed = 1
+INFO (CTE): constraints read successfully
+WARNING (CTE-25): Line: 1 of File constraint.sdc : Skipped unsupported command: -e
+
+
+Total number of combinational cells: 497
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD12 BUFFD16 BUFFD3 BUFFD4 BUFFD6 BUFFD8 CKBD1 CKBD0 CKBD2 CKBD12 CKBD16 CKBD3 CKBD4 CKBD6 CKBD8
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND12 CKND16 CKND3 CKND4 CKND6 CKND8 INVD1 INVD0 INVD2 INVD12 INVD16 INVD3 INVD4 INVD6 INVD8
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified usable delay cells: 9
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#std cell=2851 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=3400 #term=12033 #term/net=3.54, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=737
+stdCell: 2851 single + 0 double + 0 multi
+Total standard cell length = 5.4888 (mm), area = 0.0099 (mm^2)
+Average module density = 0.700.
+Density for the design = 0.700.
+       = stdcell_area 27444 (9880 um^2) / alloc_area 39204 (14113 um^2).
+Pin Density = 0.438.
+            = total # of pins 12033 / total Instance area 27444.
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 4.051e-10 (0.00e+00 4.05e-10)
+              Est.  stn bbox = 4.051e-10 (0.00e+00 4.05e-10)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 758.5M
+Iteration  2: Total net bbox = 4.051e-10 (0.00e+00 4.05e-10)
+              Est.  stn bbox = 4.051e-10 (0.00e+00 4.05e-10)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 758.5M
+Iteration  3: Total net bbox = 5.333e+02 (2.94e+02 2.39e+02)
+              Est.  stn bbox = 5.333e+02 (2.94e+02 2.39e+02)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 758.5M
+Iteration  4: Total net bbox = 3.036e+03 (1.56e+03 1.47e+03)
+              Est.  stn bbox = 3.036e+03 (1.56e+03 1.47e+03)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 758.5M
+Iteration  5: Total net bbox = 2.127e+04 (1.08e+04 1.05e+04)
+              Est.  stn bbox = 2.127e+04 (1.08e+04 1.05e+04)
+              cpu = 0:00:00.7 real = 0:00:01.0 mem = 758.5M
+Iteration  6: Total net bbox = 2.770e+04 (1.31e+04 1.46e+04)
+              Est.  stn bbox = 2.770e+04 (1.31e+04 1.46e+04)
+              cpu = 0:00:00.5 real = 0:00:01.0 mem = 758.5M
+Iteration  7: Total net bbox = 4.616e+04 (2.50e+04 2.11e+04)
+              Est.  stn bbox = 5.141e+04 (2.76e+04 2.38e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 758.5M
+Iteration  8: Total net bbox = 4.616e+04 (2.50e+04 2.11e+04)
+              Est.  stn bbox = 5.141e+04 (2.76e+04 2.38e+04)
+              cpu = 0:00:00.7 real = 0:00:00.0 mem = 758.5M
+Iteration  9: Total net bbox = 4.257e+04 (2.23e+04 2.03e+04)
+              Est.  stn bbox = 4.257e+04 (2.23e+04 2.03e+04)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 758.5M
+Iteration 10: Total net bbox = 4.108e+04 (2.18e+04 1.93e+04)
+              Est.  stn bbox = 4.712e+04 (2.50e+04 2.21e+04)
+              cpu = 0:00:01.0 real = 0:00:01.0 mem = 759.5M
+Iteration 11: Total net bbox = 4.108e+04 (2.18e+04 1.93e+04)
+              Est.  stn bbox = 4.712e+04 (2.50e+04 2.21e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 759.5M
+Iteration 12: Total net bbox = 4.307e+04 (2.35e+04 1.96e+04)
+              Est.  stn bbox = 4.923e+04 (2.68e+04 2.25e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 759.5M
+*** cost = 4.307e+04 (2.35e+04 1.96e+04) (cpu for global=0:00:03.5) real=0:00:03.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:02.8 real: 0:00:03.0
+[CPU] RefinePlace/CRLP Init cpu time 0:00:00.0.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.2, Real Time = 0:00:00.0
+[CPU] RefinePlace/preRPlace cpu time 0:00:00.2.
+move report: preRPlace moves 1044 insts, mean move: 0.64 um, max move: 3.60 um
+	max move on inst (U9958): (9.80, 12.00) --> (13.40, 12.00)
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+wireLenOptFixPriorityInst 0 inst fixed
+Placement tweakage begins.
+wire length = 4.146e+04 = 2.162e+04 H + 1.984e+04 V
+wire length = 4.085e+04 = 2.113e+04 H + 1.971e+04 V
+Placement tweakage ends.
+move report: tweak moves 580 insts, mean move: 2.66 um, max move: 13.20 um
+	max move on inst (U10112): (56.20, 30.00) --> (50.20, 37.20)
+[CPU] RefinePlace/TweakPlacement cpu time: 0:00:00.1 
+Clock gating cells determined by native netlist tracing.
+Wire length optimization begins.
+Wire length optimization ends. (0:00:00.0)
+move report: xdp moves 1570 insts, mean move: 5.51 um, max move: 53.40 um
+	max move on inst (U10137): (55.80, 3.00) --> (54.60, 55.20)
+[CPU] RefinePlace/WireLenOpt cpu time: 0:00:00.5 
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 2267 insts, mean move: 4.31 um, max move: 54.40 um
+	max move on inst (U10163): (54.60, 3.00) --> (50.60, 53.40)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        54.40 um
+  inst (U10163) with max move: (54.6, 3) -> (50.6, 53.4)
+  mean    (X+Y) =         4.31 um
+Total instances flipped for WireLenOpt: 1469
+Total instances flipped, including legalization: 436
+Total instances moved : 2267
+*** cpu=0:00:00.8   mem=739.3M  mem(used)=0.0M***
+[CPU] RefinePlace/total cpu time 0:00:00.8.
+Total net length = 4.527e+04 (2.031e+04 2.496e+04) (ext = 1.433e+04)
+*** End of Placement (cpu=0:00:12.6, real=0:00:12.0, mem=739.3M) ***
+default core: bins with density >  0.75 = 28.6 % ( 14 / 49 )
+*** Free Virtual Timing Model ...(mem=652.9M)
+Starting IO pin assignment...
+Completed IO pin assignment.
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (ENCEXT-2773):	Unable to find a via resistance from LEF technology file;
+**WARN: (ENCEXT-2775):	Via resistance between layer M0 and M1 is assigned 4. Ohms.
+**WARN: (ENCEXT-2777):	Via resistance between layer M1 and M2 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M2 and M3 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M3 and M4 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M4 and M5 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M5 and M6 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M6 and M7 is not defined in cap table, LEF value 1.5 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M7 and M8 is not defined in cap table, LEF value 0.22 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M8 and M9 is not defined in cap table, LEF value 0.22 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M9 and M10 is not defined in cap table, LEF value 0.041 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in cap table, LEF value 0.16 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in cap table, LEF value 0.1399 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in cap table, LEF value 0.0218 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in cap table, LEF value 0.0218 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in cap table, LEF value 0.021 will be used.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_analysis
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+CTE reading timing constraint file 'constraint.sdc' ...
+Number of path exceptions in the constraint file = 1
+Number of paths exceptions after getting compressed = 1
+INFO (CTE): constraints read successfully
+WARNING (CTE-25): Line: 1 of File constraint.sdc : Skipped unsupported command: -e
+
+
+Total number of combinational cells: 497
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD12 BUFFD16 BUFFD3 BUFFD4 BUFFD6 BUFFD8 CKBD1 CKBD0 CKBD2 CKBD12 CKBD16 CKBD3 CKBD4 CKBD6 CKBD8
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND12 CKND16 CKND3 CKND4 CKND6 CKND8 INVD1 INVD0 INVD2 INVD12 INVD16 INVD3 INVD4 INVD6 INVD8
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified usable delay cells: 9
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+***Info:reseting back to current views is done ****
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+Starting congestion repair ...
+*** Starting trialRoute (mem=652.9M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -noPinGuide
+
+
+Phase 1a-1d Overflow: 0.00% H + 0.38% V (0:00:00.1 656.7M)
+
+Phase 1e-1f Overflow: 0.00% H + 0.11% V (0:00:00.0 657.4M)
+
+Phase 1l Overflow: 0.02% H + 0.03% V (0:00:00.0 657.4M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -2:	1	 0.01%	1	 0.01%
+ -1:	0	 0.00%	1	 0.01%
+--------------------------------------
+  0:	0	 0.00%	2	 0.03%
+  1:	0	 0.00%	6	 0.08%
+  2:	0	 0.00%	8	 0.10%
+  3:	0	 0.00%	31	 0.39%
+  4:	1	 0.01%	34	 0.43%
+  5:	7879	99.97%	7798	98.95%
+
+
+Total length: 5.341e+04um, number of vias: 24400
+M1(H) length: 2.276e+02um, number of vias: 11305
+M2(V) length: 1.710e+04um, number of vias: 9992
+M3(H) length: 2.036e+04um, number of vias: 1939
+M4(V) length: 8.116e+03um, number of vias: 590
+M5(H) length: 3.587e+03um, number of vias: 311
+M6(V) length: 2.676e+03um, number of vias: 171
+M7(H) length: 1.239e+03um, number of vias: 56
+M8(V) length: 8.360e+01um, number of vias: 35
+M9(H) length: 1.547e+01um, number of vias: 1
+M10(V) length: 6.000e-01um
+
+Peak Memory Usage was 662.9M 
+*** Finished trialRoute (cpu=0:00:00.3 mem=652.9M) ***
+
+CongRepair Bin Grid Size (width, height) = ( default_value , default_value )
+Trial Route Overflow 0.017945(H) 0.030633(V).
+Skipped repairing congestion.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:14, real = 0: 0:14, mem = 652.9M **
+<CMD> saveDesign arbiter.enc
+**WARN: (ENCSYT-3036):	Design directory arbiter.enc.dat exists, rename it to arbiter.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "arbiter.enc.dat/arbiter.v.gz" ...
+Saving configuration ...
+Saving preference file arbiter.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=653.0M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=653.0M) ***
+Writing DEF file 'arbiter.enc.dat/arbiter.def.gz', current time is Thu Mar 19 00:49:04 2020 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'arbiter.enc.dat/arbiter.def.gz' is written, current time is Thu Mar 19 00:49:04 2020 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+<CMD> clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+-engine ck                              # enums={ck ccopt}, default=ck
+**clockDesign ... cpu = 0:00:00, real = 0:00:00, mem = 653.0M **
+setCTSMode -moveGateLimit 25
+<clockDesign INFO> 'setCTSMode -routeClkNet true' is set inside clockDesign.
+
+<clockDesign CMD> cleanupSpecifyClockTree
+<clockDesign CMD> specifyClockTree -file Clock.ctstch
+Checking spec file integrity...
+
+Reading clock tree spec file 'Clock.ctstch' ...
+
+Initializing multi-corner resistance tables ...
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+RC Information for View worst_analysis :
+Est. Cap                : 0.142531(V=0.142531 H=0.142531) (ff/um) [7.12653e-05]
+Est. Res                : 1.399(V=1.399 H=1.399)(ohm/um) [0.0006995]
+Est. Via Res            : 1.20536(ohm) [2.28624]
+Est. Via Cap            : 0.0785954(ff)
+M1(H) w=0.09(um) s=0.09(um) p=0.2(um) es=0.31(um) cap=0.13(ff/um) res=1.78(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.08088(ohm) viaCap=0.0811044(ff)
+M3(H) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0785954(ff)
+M4(V) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0785954(ff)
+M5(H) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0785954(ff)
+M6(V) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0785954(ff)
+M7(H) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.14844(ohm) viaCap=0.0833804(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.183(ff/um) res=0.0545(ohm/um) viaRes=0.169583(ohm) viaCap=0.26322(ff)
+M9(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.183(ff/um) res=0.0545(ohm/um) viaRes=0.168437(ohm) viaCap=0.323863(ff)
+M10(V) w=3(um) s=2(um) p=6.5(um) es=10(um) cap=0.249(ff/um) res=0.007(ohm/um) viaRes=0.041(ohm) viaCap=2.60923(ff)
+
+RouteType               : FE_CTS_DEFAULT_LEAF
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+RC Information for View worst_analysis :
+Est. Cap                : 0.142531(V=0.142531 H=0.142531) (ff/um) [7.12653e-05]
+Est. Res                : 1.399(V=1.399 H=1.399)(ohm/um) [0.0006995]
+Est. Via Res            : 1.20536(ohm) [2.28624]
+Est. Via Cap            : 0.0785954(ff)
+M1(H) w=0.09(um) s=0.09(um) p=0.2(um) es=0.31(um) cap=0.13(ff/um) res=1.78(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.08088(ohm) viaCap=0.0811044(ff)
+M3(H) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0785954(ff)
+M4(V) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0785954(ff)
+M5(H) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0785954(ff)
+M6(V) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0785954(ff)
+M7(H) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.14844(ohm) viaCap=0.0833804(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.183(ff/um) res=0.0545(ohm/um) viaRes=0.169583(ohm) viaCap=0.26322(ff)
+M9(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.183(ff/um) res=0.0545(ohm/um) viaRes=0.168437(ohm) viaCap=0.323863(ff)
+M10(V) w=3(um) s=2(um) p=6.5(um) es=10(um) cap=0.249(ff/um) res=0.007(ohm/um) viaRes=0.041(ohm) viaCap=2.60923(ff)
+
+Total Macromodels Extracted = 0
+Active Analysis Views for CTS are,
+#1 worst_analysis
+Default Analysis Views is worst_analysis
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: clk
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      YES
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=663.0M) ***
+<clockDesign CMD> changeClockStatus -all -fixedBuffers
+Redoing specifyClockTree ...
+Checking spec file integrity...
+*** Changed status on (513) instances, and (0) nets in Clock clk.
+*** End changeClockStatus (cpu=0:00:00.1, real=0:00:00.0, mem=663.1M) ***
+<clockDesign CMD> deleteClockTree -all
+Redoing specifyClockTree ...
+Checking spec file integrity...
+
+deleteClockTree Option :  -all 
+List of dont use cells: GTIEL GTIEH BHD GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 BUFFD20 CKBD20 CKBD24 BUFFD24 BUFTD20 BUFTD24 CKLHQD20 CKLHQD24 CKLNQD24 CKLNQD20 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 CKND20 INVD20 INVD24 CKND24 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GDCAP GDCAP10 GDCAP2 GDCAP3 GDCAP4 GDFCNQD1 GDFQD1 GFILL GFILL10 GFILL2 GFILL3 GFILL4 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 
+List of dont touch cells: GTIEL GTIEH BHD GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 BUFFD20 CKBD20 CKBD24 BUFFD24 BUFTD20 BUFTD24 CKLHQD20 CKLHQD24 CKLNQD24 CKLNQD20 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 CKND20 INVD20 INVD24 CKND24 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GDCAP GDCAP10 GDCAP2 GDCAP3 GDCAP4 GDFCNQD1 GDFQD1 GFILL GFILL10 GFILL2 GFILL3 GFILL4 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 
+List of valid cells: CKBD1 CKBD8 CKBD16 CKBD20 CKBD24 
+**WARN: (ENCCK-157):	Cell CKBD20 is set as dont_touch in the timing libraries. May have to use 'set_dont_touch [get_lib_cells CKBD20] false' in order to delete the buffers in clock tree.
+Type 'man ENCCK-157' for more detail.
+**WARN: (ENCCK-157):	Cell CKBD24 is set as dont_touch in the timing libraries. May have to use 'set_dont_touch [get_lib_cells CKBD24] false' in order to delete the buffers in clock tree.
+Type 'man ENCCK-157' for more detail.
+
+Inst :: U9463, Is buf 0, Is inv 1..
+*** 1 Buffers found to be either having FIXED attribute or constraints on it. deleteClockTree may not delete them.*** 
+*** Use changeClockStatus to change the FIXED status. ***
+*** Removed (0) buffers and (0) inverters in Clock clk.
+***** Delete Clock Tree Finished (CPU Time: 0:00:00.0  MEM: 664.012M)
+*** End deleteClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=663.2M) ***
+<clockDesign CMD> ckSynthesis -report clock_report/clock.report -forceReconvergent -breakLoop
+Redoing specifyClockTree ...
+Checking spec file integrity...
+List of dont use cells: GTIEL GTIEH BHD GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 BUFFD20 CKBD20 CKBD24 BUFFD24 BUFTD20 BUFTD24 CKLHQD20 CKLHQD24 CKLNQD24 CKLNQD20 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 CKND20 INVD20 INVD24 CKND24 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GDCAP GDCAP10 GDCAP2 GDCAP3 GDCAP4 GDFCNQD1 GDFQD1 GFILL GFILL10 GFILL2 GFILL3 GFILL4 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 
+List of dont touch cells: GTIEL GTIEH BHD GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 BUFFD20 CKBD20 CKBD24 BUFFD24 BUFTD20 BUFTD24 CKLHQD20 CKLHQD24 CKLNQD24 CKLNQD20 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 CKND20 INVD20 INVD24 CKND24 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GDCAP GDCAP10 GDCAP2 GDCAP3 GDCAP4 GDFCNQD1 GDFQD1 GFILL GFILL10 GFILL2 GFILL3 GFILL4 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 
+List of valid cells: CKBD1 CKBD8 CKBD16 CKBD20 CKBD24 
+***** Allocate Placement Memory Finished (MEM: 664.582M)
+
+Start to trace clock trees ...
+*** Begin Tracer (mem=664.6M) ***
+Tracing Clock clk ...
+
+Reconvergent mux Check for spec:clk 
+============================================================
+
+Reconvergent mux Checks Finished, CPU=0:00:00.0 
+============================================================
+*** End Tracer (mem=670.2M) ***
+***** Allocate Obstruction Memory  Finished (MEM: 670.230M)
+
+#############################################################################
+#
+# Pre-Synthesis Checks and Parameters
+#
+#############################################################################
+
+
+Types of Check                                    :          Enabled|Disabled
+----------------------------------------------------------------------------
+
+Check cell drive strength                         :          enabled
+Check root input transition                       :          enabled
+Check pin capacitance                             :          enabled
+Check multiple path through MUX                   :          enabled
+Check gating depth                                :          enabled
+Check placement near clock pins                   :          enabled
+Check route blockages over clock pins             :          enabled
+Report FIXED, DontUse and DontTouch               :          enabled
+clock gating checks                               :          enabled
+MacroModel checks                                 :          enabled
+
+Parameters of checking :
+CTS uses following values to determine if diagnostic checks are successful.
+Use setCTSMode to change default values.
+----------------------------------------------------------------------------
+
+1) Pin capacitance check
+   Threshold for MaxCap check                     :          90% of constraint (default)
+2) Gating depth check
+   Maximum gating depth                           :          10 levels (default)
+3) Placement near clock pin check
+   Threshold distance for placeable location      :          5.4(um) (default)
+4) Clock gating location check
+   Allowed clock gate detour                      :          290(um) (default)
+   Allowed clock gate sinks' BBOx overlap ratio   :          0.5 (default)
+5) Macromodel check
+   MacroModel max delay threshold                 :          0.9 (default)
+   MacroModel max skew threshold                  :          0.9 (default)
+   MacroModel variance step size                  :          100ps  (default)
+
+
+****** Clock (clk) Diagnostic check Parameters
+Assumed driver input transition                   :          17.4(ps) (derived from CKBD24)
+Threshold for MaxBufTran check                    :          360(ps) derived from 90% (default) MaxBufTran constraint
+Threshold for MaxSinkTran check                   :          360(ps) derived from 90% (default) MaxSinkTran constraint
+Root Input Transition                             :          [0.1(ps) 0.1(ps)]
+
+
+
+Max Cap Limit Checks
+============================================================
+
+Max Cap Limit Checks Finished, CPU=0:00:00.0 
+============================================================
+
+Deep Gating Level Checks
+============================================================
+** INFO Clock clk has a maximum of 0 levels of logic before synthesis.
+
+Deep Gating Level Checks Finished, CPU=0:00:00.0 
+============================================================
+
+Max placement distance Checks
+============================================================
+
+Max placement distance Checks Finished, CPU=0:00:00.0 
+============================================================
+
+Root input tran Checks
+============================================================
+
+Root input tran Checks Finished, CPU=0:00:00.0 
+============================================================
+
+Attribute settings check 
+============================================================
+
+Following standard cells instances have FIXED placement
+---------------------------------------------------------
+
+Following instances are marked as DontTouch
++------------------------------------------------------------------------------------------+---------------------------------------+
+| Instance                                                                                 | Analysis Views                        |
++------------------------------------------------------------------------------------------+---------------------------------------+
++------------------------------------------------------------------------------------------+---------------------------------------+
+
+Following Cells are marked as DontUse in library 
++-----------------------------------+----------------------------------------------------------------------------------------------+
+| Cell                              | Analysis Views                                                                               |
++-----------------------------------+----------------------------------------------------------------------------------------------+
+
+Following Cells are marked as DontUse in SDC
++-----------------------------------+----------------------------------------------------------------------------------------------+
+| Cell                              | Analysis Views                                                                               |
++-----------------------------------+----------------------------------------------------------------------------------------------+
+
+Following Cells are marked as DontTouch in library 
++-----------------------------------+----------------------------------------------------------------------------------------------+
+| Cell                              | Analysis Views                                                                               |
++-----------------------------------+----------------------------------------------------------------------------------------------+
+
+Following Cells are marked as DontTouch in SDC
++-----------------------------------+----------------------------------------------------------------------------------------------+
+| Cell                              | Analysis Views                                                                               |
++-----------------------------------+----------------------------------------------------------------------------------------------+
+
+Attribute settings check Finished, CPU=0:00:00.0 
+============================================================
+
+Routing OBS checks
+============================================================
+
+Routing OBS Checks Finished, CPU=0:00:00.0 
+============================================================
+
+Weak Cell Checks
+============================================================
+
+
+Weak Cell Checks Finished, CPU=0:00:00.0 
+============================================================
+
+MacroModel Debugging Check
+==========================
+
+MacroModel Debugging Check Finished, CPU=0:00:00.0 
+============================================================
+
+Clock gating checks
+============================================================
+
+Clock gating Checks Finished, CPU=0:00:00.0 
+============================================================
+
+#############################################################################
+#
+# Summary of Pre-Synthesis Checks
+#
+#############################################################################
+
+
+Types of Check                                    :          Number of warnings
+----------------------------------------------------------------------------
+
+Check cell drive strength                         :          0
+Check root input transition                       :          0
+Check pin capacitance                             :          0
+Check multiple path through MUX                   :          0
+Check gating depth                                :          0
+Check placement near clock pins                   :          0
+Check route blockages over clock pins             :          0
+Report FIXED, DontUse and DontTouch               :          0
+clock gating checks                               :          0
+MacroModel checks                                 :          0
+
+
+#############################################################################
+#
+# During-Synthesis Checks and Parameters
+#
+#############################################################################
+
+
+Types of Check                                    :          Enabled|Disabled
+----------------------------------------------------------------------------
+
+Check RefinePlacement move distance               :          enabled
+Check route layer follows preference              :          enabled
+Check route follows guide                         :          enabled
+clock gating checks                               :          enabled
+Wire resistance check                             :          enabled
+
+Parameters of checking :
+CTS uses following values to determine if diagnostic checks are successful.
+Use setCTSMode to change default values.
+----------------------------------------------------------------------------
+
+1) Route layer follows preference check
+   Minimum preferred layer utilization            :          80% (default)
+   Minimum length to check threshold              :          40(um) (default)
+2) Route follows guide check
+   Deviation in length from route guide           :          50% (user set)
+   Minimum length to check threshold              :          40(um) (default)
+   Delay threshold                                :          10(ps) (default)
+3) Saving intermediate database
+   Save long-running subtrees time                :          0(min) (default)
+   Maximum number of saved databases              :          1 (default)
+4) Clock gating location check
+   Allowed clock gate detour                      :          290(um) (default)
+5) Wire resistance check
+   Allowed resistance deviation                   :          0.2 (default)
+   Resistance threshold                           :          24.1071 Ohm (user set)
+   Net length threshold for resistance checks     :          40 um (derived 200*M2 layer pitch)
+
+
+****** Clock (clk) Diagnostic check Parameters
+Assumed driver input transition                   :          17.4(ps) (derived from CKBD24)
+Threshold for MaxBufTran check                    :          360(ps) derived from 90% (default) MaxBufTran constraint
+Threshold for MaxSinkTran check                   :          360(ps) derived from 90% (default) MaxSinkTran constraint
+Movement threshold                                :          3.120000(um) (derived 5% of MaxBuf strength)
+Root Input Transition                             :          [0.1(ps) 0.1(ps)]
+
+
+
+****** Clock Tree (clk) Structure
+Max. Skew           : 300(ps)
+Max. Sink Transition: 400(ps)
+Max. Buf Transition : 400(ps)
+Max. Delay          : 10000(ps)
+Min. Delay          : 0(ps)
+Buffer              : (CKBD1) (CKBD8) (CKBD16) (CKBD20) (CKBD24) 
+Nr. Subtrees                    : 1
+Nr. Sinks                       : 512
+Nr.          Rising  Sync Pins  : 512
+Nr. Inverter Rising  Sync Pins  : 0
+Nr.          Falling Sync Pins  : 0
+Nr. Inverter Falling Sync Pins  : 0
+Nr. Unsync Pins                 : 0
+***********************************************************
+SubTree No: 0
+
+Input_Pin:  (NULL)
+Output_Pin: (clk)
+Output_Net: (clk)   
+*** Find 1 Excluded Nodes.
+**** CK_START: TopDown Tree Construction for clk (512-leaf) (mem=670.2M)
+
+Find 0 route_obs, 0 place_obs, 0 cut_obs  1 fence channel(s), 
+ 1 channel(s).
+Total 3 topdown clustering. 
+Trig. Edge Skew=11[108,119*] N512 B17 G1 A122(121.8) L[3,3] score=19230 cpu=0:00:08.0 mem=671M 
+
+**** CK_END: TopDown Tree Construction for clk (cpu=0:00:08.9, real=0:00:09.0, mem=670.7M)
+
+
+
+**** CK_START: Update Database (mem=670.7M)
+17 Clock Buffers/Inverters inserted.
+**** CK_END: Update Database (cpu=0:00:00.0, real=0:00:00.0, mem=670.7M)
+cosntraint
+
+Refine place movement check
+============================================================
+
+
+**INFO: The distance threshold for maximum refine placement move is 3.120000 microns (5% of max driving distance).
+
+***** Start Refine Placement.....
+[CPU] RefinePlace/CRLP Init cpu time 0:00:00.0.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.2, Real Time = 0:00:01.0
+[CPU] RefinePlace/preRPlace cpu time 0:00:00.2.
+move report: preRPlace moves 372 insts, mean move: 0.74 um, max move: 6.00 um
+	max move on inst (U9704): (60.60, 10.20) --> (56.40, 12.00)
+wireLenOptFixPriorityInst 18 inst fixed
+[CPU] RefinePlace/TweakPlacement cpu time: 0:00:00.0 
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 372 insts, mean move: 0.74 um, max move: 6.00 um
+	max move on inst (U9704): (60.60, 10.20) --> (56.40, 12.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         6.00 um
+  inst (U9704) with max move: (60.6, 10.2) -> (56.4, 12)
+  mean    (X+Y) =         0.74 um
+Total instances moved : 372
+*** cpu=0:00:00.2   mem=676.6M  mem(used)=0.1M***
+[CPU] RefinePlace/total cpu time 0:00:00.2.
+***** Refine Placement Finished (CPU Time: 0:00:00.2  MEM: 676.512M)
+**WARN: (ENCCK-6323):	The placement of U9704 was moved by 6 microns during refinePlace. Original location : (60.6, 10.2), Refined location : (56.4, 12)
+**WARN: (ENCCK-6323):	The placement of clk__L2_I14 was moved by 5.8 microns during refinePlace. Original location : (60.6, 10.2), Refined location : (58.4, 13.8)
+**WARN: (ENCCK-6323):	The placement of U9630 was moved by 5.4 microns during refinePlace. Original location : (64.4, 10.2), Refined location : (68, 12)
+**WARN: (ENCCK-6323):	The placement of U9751 was moved by 5.4 microns during refinePlace. Original location : (61.2, 12), Refined location : (57.6, 13.8)
+**WARN: (ENCCK-6323):	The placement of clk__L2_I15 was moved by 5.2 microns during refinePlace. Original location : (60.6, 10.2), Refined location : (57.2, 12)
+**WARN: (ENCCK-6323):	The placement of U9683 was moved by 4.8 microns during refinePlace. Original location : (62, 12), Refined location : (60.8, 15.6)
+**WARN: (ENCCK-6323):	The placement of U9705 was moved by 4.8 microns during refinePlace. Original location : (57.2, 10.2), Refined location : (54.2, 12)
+**WARN: (ENCCK-6323):	The placement of U9695 was moved by 4.8 microns during refinePlace. Original location : (58, 10.2), Refined location : (55, 12)
+**WARN: (ENCCK-6323):	The placement of U10191 was moved by 4.4 microns during refinePlace. Original location : (64.4, 55.2), Refined location : (68.8, 55.2)
+**WARN: (ENCCK-6323):	The placement of U9647 was moved by 4 microns during refinePlace. Original location : (60, 13.8), Refined location : (57.8, 15.6)
+**WARN: (ENCCK-6324):	More than 10 instances moved during refinePlace by a value exceeding threshold value of 3.12 microns.
+Refer to file "CTS_RP_MOVE.txt" for complete detail.
+
+
+**INFO: Total instances moved beyond threshold limit during refinePlace are 19...
+
+
+Refine place movement check finished, CPU=0:00:00.3 
+============================================================
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+
+**** Clock Tree clk Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clk delay[0(ps) 0(ps)] (  clk__L1_I0/I )
+Level 3 (Total=512	Sink=512)
+Level 2 (Total=16	Sink=0	CKBD16=16)
+Level 1 (Total=1	Sink=0	CKBD24=1)
+Total Sinks		: 512
+
+# Analysis View: worst_analysis
+********** Clock clk Pre-Route Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 512
+Nr. of Buffer                  : 17
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 0.1(ps)
+Root Fall Input Tran           : 0.1(ps)
+Max trig. edge delay at sink(R): voq2_map_reg[7][4]/CP 120.3(ps)
+Min trig. edge delay at sink(R): voq7_map_reg[7][0]/CP 109.2(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 109.2~120.3(ps)        0~10000(ps)         
+Fall Phase Delay               : 113.7~124.9(ps)        0~10000(ps)         
+Trig. Edge Skew                : 11.1(ps)               300(ps)             
+Rise Skew                      : 11.1(ps)               
+Fall Skew                      : 11.2(ps)               
+Max. Rise Buffer Tran.         : 45.8(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 40.3(ps)               400(ps)             
+Max. Rise Sink Tran.           : 36.1(ps)               400(ps)             
+Max. Fall Sink Tran.           : 32.5(ps)               400(ps)             
+Min. Rise Buffer Tran.         : 45.2(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 39.6(ps)               0(ps)               
+Min. Rise Sink Tran.           : 32.7(ps)               0(ps)               
+Min. Fall Sink Tran.           : 29.9(ps)               0(ps)               
+
+view worst_analysis : skew = 11.1ps (required = 300ps)
+
+
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+All-RC-Corners-Per-Net-In-Memory is turned OFF...
+Switching to the default view 'worst_analysis'...
+*** Look For Reconvergent Clock Component ***
+The clock tree clk has no reconvergent cell.
+Reducing the latency of clock tree 'clk' in 'worst_analysis' view ...
+
+Calculating pre-route downstream delay for clock tree 'clk'...
+*** Look For PreservePin And Optimized CrossOver Root Pin ***
+moving 'clk__L1_I0' from (112800 20400) to (120400 78000)
+MaxTriggerDelay: 116 (ps)
+MinTriggerDelay: 109.9 (ps)
+Skew: 6.1 (ps)
+*** Finished Latency Reduction ((cpu=0:00:00.1 real=0:00:00.0 mem=676.5M) ***
+Reducing the skew of clock tree 'clk' in 'worst_analysis' view ...
+
+MaxTriggerDelay: 116 (ps)
+MinTriggerDelay: 109.9 (ps)
+Skew: 6.1 (ps)
+*** Finished Skew Reduction ((cpu=0:00:00.0 real=0:00:00.0 mem=676.5M) ***
+Resized (CKBD16->CKBD20): clk__L2_I3
+resized 1 standard cell(s).
+inserted 0 standard cell(s).
+deleted 0 standard cell(s).
+moved 1 standard cell(s).
+*** Optimized Clock Tree Latency (cpu=0:00:00.1 real=0:00:00.0 mem=676.5M) ***
+Doing the final refine placement ...
+***** Start Refine Placement.....
+[CPU] RefinePlace/CRLP Init cpu time 0:00:00.0.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.2, Real Time = 0:00:00.0
+[CPU] RefinePlace/preRPlace cpu time 0:00:00.2.
+move report: preRPlace moves 96 insts, mean move: 0.39 um, max move: 3.80 um
+	max move on inst (U10283): (64.80, 39.00) --> (66.80, 37.20)
+wireLenOptFixPriorityInst 18 inst fixed
+[CPU] RefinePlace/TweakPlacement cpu time: 0:00:00.0 
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 96 insts, mean move: 0.39 um, max move: 3.80 um
+	max move on inst (U10283): (64.80, 39.00) --> (66.80, 37.20)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         3.80 um
+  inst (U10283) with max move: (64.8, 39) -> (66.8, 37.2)
+  mean    (X+Y) =         0.39 um
+Total instances moved : 96
+*** cpu=0:00:00.2   mem=676.6M  mem(used)=0.1M***
+[CPU] RefinePlace/total cpu time 0:00:00.2.
+***** Refine Placement Finished (CPU Time: 0:00:00.2  MEM: 676.574M)
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+
+**** Clock Tree clk Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clk delay[0(ps) 0(ps)] (  clk__L1_I0/I )
+Level 3 (Total=512	Sink=512)
+Level 2 (Total=16	Sink=0	CKBD16=15	CKBD20=1)
+Level 1 (Total=1	Sink=0	CKBD24=1)
+Total Sinks		: 512
+
+# Analysis View: worst_analysis
+********** Clock clk Pre-Route Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 512
+Nr. of Buffer                  : 17
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 0.1(ps)
+Root Fall Input Tran           : 0.1(ps)
+Max trig. edge delay at sink(R): voq2_map_reg[3][3]/CP 116.5(ps)
+Min trig. edge delay at sink(R): voq5_map_reg[1][5]/CP 110.2(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 110.2~116.5(ps)        0~10000(ps)         
+Fall Phase Delay               : 114.7~121(ps)          0~10000(ps)         
+Trig. Edge Skew                : 6.3(ps)                300(ps)             
+Rise Skew                      : 6.3(ps)                
+Fall Skew                      : 6.3(ps)                
+Max. Rise Buffer Tran.         : 45.7(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 40(ps)                 400(ps)             
+Max. Rise Sink Tran.           : 36.1(ps)               400(ps)             
+Max. Fall Sink Tran.           : 32.5(ps)               400(ps)             
+Min. Rise Buffer Tran.         : 45.6(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 39.9(ps)               0(ps)               
+Min. Rise Sink Tran.           : 31.3(ps)               0(ps)               
+Min. Fall Sink Tran.           : 28.8(ps)               0(ps)               
+
+view worst_analysis : skew = 6.3ps (required = 300ps)
+
+
+Generating Clock Analysis Report clock_report/clock.report ....
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+All-RC-Corners-Per-Net-In-Memory is turned OFF...
+*** ckSynthesis Opt Latency (cpu=0:00:00.4 real=0:00:00.0 mem=676.8M) ***
+***** Start Refine Placement.....
+[CPU] RefinePlace/CRLP Init cpu time 0:00:00.0.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.1, Real Time = 0:00:00.0
+[CPU] RefinePlace/preRPlace cpu time 0:00:00.1.
+move report: preRPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+wireLenOptFixPriorityInst 18 inst fixed
+[CPU] RefinePlace/TweakPlacement cpu time: 0:00:00.0 
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         0.00 um
+  mean    (X+Y) =         0.00 um
+Total instances moved : 0
+*** cpu=0:00:00.1   mem=676.9M  mem(used)=0.0M***
+[CPU] RefinePlace/total cpu time 0:00:00.1.
+***** Refine Placement Finished (CPU Time: 0:00:00.1  MEM: 676.824M)
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+
+**** Clock Tree clk Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clk delay[0(ps) 0(ps)] (  clk__L1_I0/I )
+Level 3 (Total=512	Sink=512)
+Level 2 (Total=16	Sink=0	CKBD16=15	CKBD20=1)
+Level 1 (Total=1	Sink=0	CKBD24=1)
+Total Sinks		: 512
+
+# Analysis View: worst_analysis
+********** Clock clk Pre-Route Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 512
+Nr. of Buffer                  : 17
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 0.1(ps)
+Root Fall Input Tran           : 0.1(ps)
+Max trig. edge delay at sink(R): voq2_map_reg[3][3]/CP 116.5(ps)
+Min trig. edge delay at sink(R): voq5_map_reg[1][5]/CP 110.2(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 110.2~116.5(ps)        0~10000(ps)         
+Fall Phase Delay               : 114.7~121(ps)          0~10000(ps)         
+Trig. Edge Skew                : 6.3(ps)                300(ps)             
+Rise Skew                      : 6.3(ps)                
+Fall Skew                      : 6.3(ps)                
+Max. Rise Buffer Tran.         : 45.7(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 40(ps)                 400(ps)             
+Max. Rise Sink Tran.           : 36.1(ps)               400(ps)             
+Max. Fall Sink Tran.           : 32.5(ps)               400(ps)             
+Min. Rise Buffer Tran.         : 45.6(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 39.9(ps)               0(ps)               
+Min. Rise Sink Tran.           : 31.3(ps)               0(ps)               
+Min. Fall Sink Tran.           : 28.8(ps)               0(ps)               
+
+view worst_analysis : skew = 6.3ps (required = 300ps)
+
+
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+All-RC-Corners-Per-Net-In-Memory is turned OFF...
+
+globalDetailRoute
+
+#Start globalDetailRoute on Thu Mar 19 00:50:04 2020
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 676.00 (Mb)
+Initializing multi-corner resistance tables ...
+#NanoRoute Version v11.12-s009 NR120919-1551/11_10_USR2-UB
+#Start routing data preparation.
+#WARNING (NREX-37) No permittivity value was specified in the process LEF file. Default permittivity value 3.900000 will be used.
+#WARNING (NREX-6) No Extended Cap Table was imported, an approximate Extended Cap Table database will be used.
+# M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.185
+# M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M6           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M7           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M8           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# M9           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# AP           V   Track-Pitch = 6.500    Line-2-Via Pitch = 6.500
+#Done routing data preparation.
+#cpu time = 00:00:04, elapsed time = 00:00:04, memory = 774.00 (Mb)
+#Merging special wires...
+#reading routing guides ......
+#Number of eco nets is 0
+#
+#Start data preparation...
+#Force regenerating Ggrids.
+#Auto generating G-grids with size=15 tracks, using layer M2's pitch = 0.200.
+#Using automatically generated G-grids.
+#
+#Data preparation is done on Thu Mar 19 00:50:09 2020
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Thu Mar 19 00:50:09 2020
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         597          26        1764    74.26%
+#  Metal 2        V         598          26        1764     0.00%
+#  Metal 3        H         623           0        1764     0.00%
+#  Metal 4        V         624           0        1764     0.00%
+#  Metal 5        H         623           0        1764     0.00%
+#  Metal 6        V         624           0        1764     0.00%
+#  Metal 7        H         623           0        1764     0.00%
+#  Metal 8        V         155           0        1764     0.00%
+#  Metal 9        H         156           0        1764     0.00%
+#  Metal 10       V          18           0        1764    57.43%
+#  --------------------------------------------------------------
+#  Total                   4641       0.83%  17640    13.17%
+#
+#  18 nets (0.39%) with 1 preferred extra spacing.
+#
+#
+#Routing guide is on.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 774.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 774.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 774.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 774.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)   (0.00%)
+#  Metal 10      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 18
+#Total wire length = 2712 um.
+#Total half perimeter of net bounding box = 1985 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 0 um.
+#Total wire length on LAYER M3 = 1983 um.
+#Total wire length on LAYER M4 = 729 um.
+#Total wire length on LAYER M5 = 0 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 1286
+#Up-Via Summary (total 1286):
+#           
+#-----------------------
+#  Metal 1          469
+#  Metal 2          470
+#  Metal 3          347
+#-----------------------
+#                  1286 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#start post global routing...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 774.00 (Mb)
+#Cpu time = 00:00:04
+#Elapsed time = 00:00:04
+#Increased memory = 20.00 (Mb)
+#Total memory = 774.00 (Mb)
+#Peak memory = 807.00 (Mb)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+# ECO: 0.0% of the total area was rechecked for DRC, and 100.0% required routing.
+#    number of violations = 0
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 777.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 777.00 (Mb)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 18
+#Total wire length = 2840 um.
+#Total half perimeter of net bounding box = 1985 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 188 um.
+#Total wire length on LAYER M3 = 1941 um.
+#Total wire length on LAYER M4 = 711 um.
+#Total wire length on LAYER M5 = 0 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 1478
+#Total number of multi-cut vias = 17 (  1.2%)
+#Total number of single cut vias = 1461 ( 98.8%)
+#Up-Via Summary (total 1478):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1         532 ( 96.9%)        17 (  3.1%)        549
+#  Metal 2         519 (100.0%)         0 (  0.0%)        519
+#  Metal 3         410 (100.0%)         0 (  0.0%)        410
+#-----------------------------------------------------------
+#                 1461 ( 98.8%)        17 (  1.2%)       1478 
+#
+#Total number of DRC violations = 0
+#detailRoute Statistics:
+#Cpu time = 00:00:05
+#Elapsed time = 00:00:05
+#Increased memory = 1.00 (Mb)
+#Total memory = 775.00 (Mb)
+#Peak memory = 807.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:10
+#Elapsed time = 00:00:10
+#Increased memory = 93.00 (Mb)
+#Total memory = 769.00 (Mb)
+#Peak memory = 807.00 (Mb)
+#Number of warnings = 2
+#Total number of warnings = 2
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu Mar 19 00:50:14 2020
+#
+*** Look For Un-Routed Clock Tree Net ***
+
+Routing correlation check
+============================================================
+
+Min length threshold value is :: 40 microns
+
+Allowed deviation from route guide is 50%
+
+
+Routing correlation check finished, CPU=0:00:00.0 
+============================================================
+
+Wire resistance checks
+============================================================
+Calculating clock delays in preRoute mode...
+Calculating clock delays in clkRouteOnly mode...
+**WARN: (ENCCK-6350):	Clock net clk__L2_N0 has 24.1975 percent resistance deviation between preRoute resistance (271.323 ohm) and after route resistance (357.934 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N9 has 23.2723 percent resistance deviation between preRoute resistance (276.704 ohm) and after route resistance (360.631 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N2 has 23.0469 percent resistance deviation between preRoute resistance (273.217 ohm) and after route resistance (355.044 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N8 has 22.951 percent resistance deviation between preRoute resistance (283.355 ohm) and after route resistance (367.759 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N14 has 22.8666 percent resistance deviation between preRoute resistance (284.84 ohm) and after route resistance (369.282 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N13 has 22.1195 percent resistance deviation between preRoute resistance (295.365 ohm) and after route resistance (379.254 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N1 has 21.9675 percent resistance deviation between preRoute resistance (289.209 ohm) and after route resistance (370.626 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N6 has 21.9242 percent resistance deviation between preRoute resistance (260.497 ohm) and after route resistance (333.646 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N12 has 21.7914 percent resistance deviation between preRoute resistance (300.487 ohm) and after route resistance (384.212 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N15 has 21.7848 percent resistance deviation between preRoute resistance (271.151 ohm) and after route resistance (346.673 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L1_N0 has 21.6211 percent resistance deviation between preRoute resistance (245.817 ohm) and after route resistance (313.626 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N7 has 21.3603 percent resistance deviation between preRoute resistance (240.718 ohm) and after route resistance (306.102 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N5 has 21.1161 percent resistance deviation between preRoute resistance (298.808 ohm) and after route resistance (378.795 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N3 has 20.7951 percent resistance deviation between preRoute resistance (298.615 ohm) and after route resistance (377.015 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N11 has 20.6715 percent resistance deviation between preRoute resistance (308.989 ohm) and after route resistance (389.505 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+**WARN: (ENCCK-6350):	Clock net clk__L2_N4 has 20.087 percent resistance deviation between preRoute resistance (283.807 ohm) and after route resistance (355.145 ohm) values. This may indicate correlation issues like jogging in routing for this net.
+
+Wire resistance checks Finished, CPU=0:00:00.0 
+============================================================
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+
+**** Clock Tree clk Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clk delay[0(ps) 0(ps)] (  clk__L1_I0/I )
+Level 3 (Total=512	Sink=512)
+Level 2 (Total=16	Sink=0	CKBD16=15	CKBD20=1)
+Level 1 (Total=1	Sink=0	CKBD24=1)
+Total Sinks		: 512
+
+# Analysis View: worst_analysis
+********** Clock clk Clk-Route-Only Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 512
+Nr. of Buffer                  : 17
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 0.1(ps)
+Root Fall Input Tran           : 0.1(ps)
+Max trig. edge delay at sink(R): voq2_map_reg[1][2]/CP 118.7(ps)
+Min trig. edge delay at sink(R): voq5_map_reg[1][5]/CP 111.8(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 111.8~118.7(ps)        0~10000(ps)         
+Fall Phase Delay               : 116.2~122.9(ps)        0~10000(ps)         
+Trig. Edge Skew                : 6.9(ps)                300(ps)             
+Rise Skew                      : 6.9(ps)                
+Fall Skew                      : 6.7(ps)                
+Max. Rise Buffer Tran.         : 46.4(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 40.7(ps)               400(ps)             
+Max. Rise Sink Tran.           : 36.7(ps)               400(ps)             
+Max. Fall Sink Tran.           : 33(ps)                 400(ps)             
+Min. Rise Buffer Tran.         : 46.2(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 40.5(ps)               0(ps)               
+Min. Rise Sink Tran.           : 31.9(ps)               0(ps)               
+Min. Fall Sink Tran.           : 29.3(ps)               0(ps)               
+
+view worst_analysis : skew = 6.9ps (required = 300ps)
+
+
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+All-RC-Corners-Per-Net-In-Memory is turned OFF...
+setting up for view 'worst_analysis'...
+Selecting the worst MMMC view of clock tree 'clk' ...
+resized 0 standard cell(s).
+inserted 0 standard cell(s).
+*** Non-Gated Clock Tree Optimization (cpu=0:00:00.0 real=0:00:00.0 mem=769.4M) ***
+*** Finished Clock Tree Skew Optimization (cpu=0:00:00.0 real=0:00:00.0 mem=769.4M) ***
+
+None of the clock tree buffers/gates are modified by the skew optimization.
+
+Switching to the default view 'worst_analysis' ...
+
+*** None of the buffer chains at roots are modified by the fine-tune process.
+
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+*** Look For Reconvergent Clock Component ***
+The clock tree clk has no reconvergent cell.
+
+**** Clock Tree clk Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clk delay[0(ps) 0(ps)] (  clk__L1_I0/I )
+Level 3 (Total=512	Sink=512)
+Level 2 (Total=16	Sink=0	CKBD16=15	CKBD20=1)
+Level 1 (Total=1	Sink=0	CKBD24=1)
+Total Sinks		: 512
+
+# Analysis View: worst_analysis
+********** Clock clk Clk-Route-Only Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 512
+Nr. of Buffer                  : 17
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 0.1(ps)
+Root Fall Input Tran           : 0.1(ps)
+Max trig. edge delay at sink(R): voq2_map_reg[1][2]/CP 118.7(ps)
+Min trig. edge delay at sink(R): voq5_map_reg[1][5]/CP 111.8(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 111.8~118.7(ps)        0~10000(ps)         
+Fall Phase Delay               : 116.2~122.9(ps)        0~10000(ps)         
+Trig. Edge Skew                : 6.9(ps)                300(ps)             
+Rise Skew                      : 6.9(ps)                
+Fall Skew                      : 6.7(ps)                
+Max. Rise Buffer Tran.         : 46.4(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 40.7(ps)               400(ps)             
+Max. Rise Sink Tran.           : 36.7(ps)               400(ps)             
+Max. Fall Sink Tran.           : 33(ps)                 400(ps)             
+Min. Rise Buffer Tran.         : 46.2(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 40.5(ps)               0(ps)               
+Min. Rise Sink Tran.           : 31.9(ps)               0(ps)               
+Min. Fall Sink Tran.           : 29.3(ps)               0(ps)               
+
+view worst_analysis : skew = 6.9ps (required = 300ps)
+
+
+Clock clk has been routed. Routing guide will not be generated.
+Generating Clock Analysis Report clock_report/clock.report ....
+Generating Clock Routing Guide arbiter.rguide ....
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+All-RC-Corners-Per-Net-In-Memory is turned OFF...
+
+Clock gating checks
+============================================================
+
+Clock gating Checks Finished, CPU=0:00:00.0 
+============================================================
+
+#############################################################################
+#
+# Summary of During-Synthesis Checks
+#
+#############################################################################
+
+
+Types of Check                                    :          Number of warnings
+----------------------------------------------------------------------------
+
+Check RefinePlacement move distance               :          19
+Check route layer follows preference              :          0
+Check route follows guide                         :          0
+clock gating checks                               :          0
+Wire resistance checks                            :          16
+
+*** End ckSynthesis (cpu=0:00:20.0, real=0:00:20.0, mem=768.6M) ***
+<clockDesign CMD> specifyClockTree -update {AutoCTSRootPin * PostOpt YES}
+<clockDesign CMD> ckECO -postCTS -useSpecFileCellsOnly -report clock_report/clock.postCTS.report
+Redoing specifyClockTree ...
+Checking spec file integrity...
+List of dont use cells: GTIEL GTIEH BHD GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 BUFFD20 CKBD20 CKBD24 BUFFD24 BUFTD20 BUFTD24 CKLHQD20 CKLHQD24 CKLNQD24 CKLNQD20 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 CKND20 INVD20 INVD24 CKND24 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GDCAP GDCAP10 GDCAP2 GDCAP3 GDCAP4 GDFCNQD1 GDFQD1 GFILL GFILL10 GFILL2 GFILL3 GFILL4 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 
+List of dont touch cells: GTIEL GTIEH BHD GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 BUFFD20 CKBD20 CKBD24 BUFFD24 BUFTD20 BUFTD24 CKLHQD20 CKLHQD24 CKLNQD24 CKLNQD20 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 CKND20 INVD20 INVD24 CKND24 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GDCAP GDCAP10 GDCAP2 GDCAP3 GDCAP4 GDFCNQD1 GDFQD1 GFILL GFILL10 GFILL2 GFILL3 GFILL4 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 
+List of valid cells: CKBD1 CKBD8 CKBD16 CKBD20 CKBD24 
+***** Doing trialRoute -handlePreroute.
+
+*** Starting trialRoute (mem=769.4M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -handlePreroute -noPinGuide
+
+Nr of prerouted/Fixed nets = 18
+
+Phase 1a-1d Overflow: 0.00% H + 0.39% V (0:00:00.0 773.7M)
+
+Phase 1e-1f Overflow: 0.00% H + 0.10% V (0:00:00.0 774.2M)
+
+Phase 1l Overflow: 0.02% H + 0.03% V (0:00:00.0 774.2M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -2:	1	 0.01%	0	 0.00%
+ -1:	0	 0.00%	2	 0.03%
+--------------------------------------
+  0:	0	 0.00%	5	 0.06%
+  1:	0	 0.00%	6	 0.08%
+  2:	0	 0.00%	9	 0.11%
+  3:	0	 0.00%	28	 0.36%
+  4:	0	 0.00%	37	 0.47%
+  5:	7880	99.99%	7794	98.90%
+
+
+Total length: 5.483e+04um, number of vias: 24878
+M1(H) length: 1.998e+02um, number of vias: 11342
+M2(V) length: 1.666e+04um, number of vias: 10028
+M3(H) length: 2.154e+04um, number of vias: 2345
+M4(V) length: 8.897e+03um, number of vias: 596
+M5(H) length: 3.658e+03um, number of vias: 300
+M6(V) length: 2.585e+03um, number of vias: 173
+M7(H) length: 1.183e+03um, number of vias: 58
+M8(V) length: 8.620e+01um, number of vias: 35
+M9(H) length: 1.547e+01um, number of vias: 1
+M10(V) length: 6.000e-01um
+
+Peak Memory Usage was 779.7M 
+*** Finished trialRoute (cpu=0:00:00.3 mem=769.4M) ***
+
+Extraction called for design 'arbiter' of instances=2869 and nets=4564 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+PreRoute RC Extraction called for design arbiter.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This would result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 769.410M)
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+setting up for view 'worst_analysis'...
+
+**** Clock Tree clk Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clk delay[0(ps) 0(ps)] (  clk__L1_I0/I )
+Level 3 (Total=512	Sink=512)
+Level 2 (Total=16	Sink=0	CKBD16=15	CKBD20=1)
+Level 1 (Total=1	Sink=0	CKBD24=1)
+Total Sinks		: 512
+
+# Analysis View: worst_analysis
+********** Clock clk Post-CTS Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 512
+Nr. of Buffer                  : 17
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 0.1(ps)
+Root Fall Input Tran           : 0.1(ps)
+Max trig. edge delay at sink(R): voq2_map_reg[7][3]/CP 110.7(ps)
+Min trig. edge delay at sink(R): voq7_map_reg[7][0]/CP 104.4(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 104.4~110.7(ps)        0~10000(ps)         
+Fall Phase Delay               : 109.4~115.6(ps)        0~10000(ps)         
+Trig. Edge Skew                : 6.3(ps)                300(ps)             
+Rise Skew                      : 6.3(ps)                
+Fall Skew                      : 6.2(ps)                
+Max. Rise Buffer Tran.         : 44.9(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 39.5(ps)               400(ps)             
+Max. Rise Sink Tran.           : 34(ps)                 400(ps)             
+Max. Fall Sink Tran.           : 31(ps)                 400(ps)             
+Min. Rise Buffer Tran.         : 44.6(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 39.2(ps)               0(ps)               
+Min. Rise Sink Tran.           : 29.9(ps)               0(ps)               
+Min. Fall Sink Tran.           : 27.8(ps)               0(ps)               
+
+view worst_analysis : skew = 6.3ps (required = 300ps)
+
+
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+Switching to the default view 'worst_analysis' ...
+*** Finished Rebuilding Buffer Chain (cpu=0:00:00.0 real=0:00:00.0 mem=778.7M) ***
+
+*** None of the buffer chains at roots are modified by the re-build process.
+
+Selecting the worst MMMC view of clock tree 'clk' ...
+resized 0 standard cell(s).
+inserted 0 standard cell(s).
+*** Non-Gated Clock Tree Optimization (cpu=0:00:00.0 real=0:00:00.0 mem=778.7M) ***
+*** Finished Clock Tree Skew Optimization (cpu=0:00:00.0 real=0:00:00.0 mem=778.7M) ***
+
+*** None of the clock tree buffers/gates are modified by the skew optimization.
+
+Switching to the default view 'worst_analysis' ...
+
+*** None of the buffer chains at roots are modified by the fine-tune process.
+
+*** Look For Reconvergent Clock Component ***
+The clock tree clk has no reconvergent cell.
+
+**** Clock Tree clk Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clk delay[0(ps) 0(ps)] (  clk__L1_I0/I )
+Level 3 (Total=512	Sink=512)
+Level 2 (Total=16	Sink=0	CKBD16=15	CKBD20=1)
+Level 1 (Total=1	Sink=0	CKBD24=1)
+Total Sinks		: 512
+
+# Analysis View: worst_analysis
+********** Clock clk Post-CTS Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 512
+Nr. of Buffer                  : 17
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 0.1(ps)
+Root Fall Input Tran           : 0.1(ps)
+Max trig. edge delay at sink(R): voq2_map_reg[7][3]/CP 110.7(ps)
+Min trig. edge delay at sink(R): voq7_map_reg[7][0]/CP 104.4(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 104.4~110.7(ps)        0~10000(ps)         
+Fall Phase Delay               : 109.4~115.6(ps)        0~10000(ps)         
+Trig. Edge Skew                : 6.3(ps)                300(ps)             
+Rise Skew                      : 6.3(ps)                
+Fall Skew                      : 6.2(ps)                
+Max. Rise Buffer Tran.         : 44.9(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 39.5(ps)               400(ps)             
+Max. Rise Sink Tran.           : 34(ps)                 400(ps)             
+Max. Fall Sink Tran.           : 31(ps)                 400(ps)             
+Min. Rise Buffer Tran.         : 44.6(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 39.2(ps)               0(ps)               
+Min. Rise Sink Tran.           : 29.9(ps)               0(ps)               
+Min. Fall Sink Tran.           : 27.8(ps)               0(ps)               
+
+view worst_analysis : skew = 6.3ps (required = 300ps)
+
+
+Generating Clock Analysis Report clock_report/clock.postCTS.report ....
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+All-RC-Corners-Per-Net-In-Memory is turned OFF...
+*** End ckECO (cpu=0:00:00.5, real=0:00:01.0, mem=777.9M) ***
+**clockDesign ... cpu = 0:00:21, real = 0:00:21, mem = 777.9M **
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+Begin checking placement ... (start mem=779.3M, init mem=779.3M)
+*info: Placed = 2869
+*info: Unplaced = 0
+Placement Density:71.27%(10058/14112)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=779.3M)
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (18) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=779.3M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Thu Mar 19 00:50:36 2020
+#
+Initializing multi-corner resistance tables ...
+#NanoRoute Version v11.12-s009 NR120919-1551/11_10_USR2-UB
+#Start routing data preparation.
+#WARNING (NREX-37) No permittivity value was specified in the process LEF file. Default permittivity value 3.900000 will be used.
+#WARNING (NREX-6) No Extended Cap Table was imported, an approximate Extended Cap Table database will be used.
+# M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.185
+# M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M6           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M7           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M8           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# M9           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# AP           V   Track-Pitch = 6.500    Line-2-Via Pitch = 6.500
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 782.00 (Mb)
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#Force regenerating Ggrids.
+#Auto generating G-grids with size=15 tracks, using layer M2's pitch = 0.200.
+#Using automatically generated G-grids.
+#
+#Data preparation is done on Thu Mar 19 00:50:37 2020
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Thu Mar 19 00:50:37 2020
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         597          26        1764    74.26%
+#  Metal 2        V         598          26        1764     0.00%
+#  Metal 3        H         623           0        1764     0.00%
+#  Metal 4        V         624           0        1764     0.00%
+#  Metal 5        H         623           0        1764     0.00%
+#  Metal 6        V         624           0        1764     0.00%
+#  Metal 7        H         623           0        1764     0.00%
+#  Metal 8        V         155           0        1764     0.00%
+#  Metal 9        H         156           0        1764     0.00%
+#  Metal 10       V          18           0        1764    57.43%
+#  --------------------------------------------------------------
+#  Total                   4641       0.83%  17640    13.17%
+#
+#  18 nets (0.39%) with 1 preferred extra spacing.
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 782.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 789.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 790.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 790.00 (Mb)
+#
+#start global routing iteration 4...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 790.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer         (1-2)         (3-4)         (5-6)         (7-9)   OverCon
+#  --------------------------------------------------------------------------
+#   Metal 1      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 2     18(1.02%)      0(0.00%)      0(0.00%)      0(0.00%)   (1.02%)
+#   Metal 3      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)      0(0.00%)      0(0.00%)      1(0.06%)   (0.06%)
+#  Metal 10      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  --------------------------------------------------------------------------
+#     Total     18(0.12%)      0(0.00%)      0(0.00%)      1(0.01%)   (0.12%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 9
+#WARNING (NRGR-164) This design is over congested and will have routability problem. Correct the placement to fix congestion problem.
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 18
+#Total wire length = 54240 um.
+#Total half perimeter of net bounding box = 50275 um.
+#Total wire length on LAYER M1 = 48 um.
+#Total wire length on LAYER M2 = 14643 um.
+#Total wire length on LAYER M3 = 20104 um.
+#Total wire length on LAYER M4 = 10368 um.
+#Total wire length on LAYER M5 = 4898 um.
+#Total wire length on LAYER M6 = 2349 um.
+#Total wire length on LAYER M7 = 1374 um.
+#Total wire length on LAYER M8 = 267 um.
+#Total wire length on LAYER M9 = 173 um.
+#Total wire length on LAYER AP = 15 um.
+#Total number of vias = 19979
+#Total number of multi-cut vias = 17 (  0.1%)
+#Total number of single cut vias = 19962 ( 99.9%)
+#Up-Via Summary (total 19979):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1        9109 ( 99.8%)        17 (  0.2%)       9126
+#  Metal 2        7139 (100.0%)         0 (  0.0%)       7139
+#  Metal 3        2376 (100.0%)         0 (  0.0%)       2376
+#  Metal 4         748 (100.0%)         0 (  0.0%)        748
+#  Metal 5         313 (100.0%)         0 (  0.0%)        313
+#  Metal 6         191 (100.0%)         0 (  0.0%)        191
+#  Metal 7          50 (100.0%)         0 (  0.0%)         50
+#  Metal 8          35 (100.0%)         0 (  0.0%)         35
+#  Metal 9           1 (100.0%)         0 (  0.0%)          1
+#-----------------------------------------------------------
+#                19962 ( 99.9%)        17 (  0.1%)      19979 
+#
+#Max overcon = 9 tracks.
+#Total overcon = 0.12%.
+#Worst layer Gcell overcon rate = 0.06%.
+#start post global routing...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 790.00 (Mb)
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 5.00 (Mb)
+#Total memory = 786.00 (Mb)
+#Peak memory = 807.00 (Mb)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 33
+#cpu time = 00:00:13, elapsed time = 00:00:13, memory = 798.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 6
+#    number of process antenna violations = 1
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 798.00 (Mb)
+#start 2nd optimization iteration ...
+#    number of violations = 4
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 798.00 (Mb)
+#start 3rd optimization iteration ...
+#    number of violations = 1
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 798.00 (Mb)
+#start 4th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 798.00 (Mb)
+#start 5th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 798.00 (Mb)
+#start 6th optimization iteration ...
+#    number of violations = 2
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 798.00 (Mb)
+#start 7th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 3
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 798.00 (Mb)
+#start 8th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 798.00 (Mb)
+#start 9th optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 798.00 (Mb)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 18
+#Total wire length = 54229 um.
+#Total half perimeter of net bounding box = 50275 um.
+#Total wire length on LAYER M1 = 326 um.
+#Total wire length on LAYER M2 = 15915 um.
+#Total wire length on LAYER M3 = 21252 um.
+#Total wire length on LAYER M4 = 8278 um.
+#Total wire length on LAYER M5 = 4085 um.
+#Total wire length on LAYER M6 = 2441 um.
+#Total wire length on LAYER M7 = 1441 um.
+#Total wire length on LAYER M8 = 201 um.
+#Total wire length on LAYER M9 = 282 um.
+#Total wire length on LAYER AP = 9 um.
+#Total number of vias = 26021
+#Total number of multi-cut vias = 57 (  0.2%)
+#Total number of single cut vias = 25964 ( 99.8%)
+#Up-Via Summary (total 26021):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1       11148 ( 99.8%)        17 (  0.2%)      11165
+#  Metal 2       11039 (100.0%)         0 (  0.0%)      11039
+#  Metal 3        2534 (100.0%)         0 (  0.0%)       2534
+#  Metal 4         700 (100.0%)         0 (  0.0%)        700
+#  Metal 5         320 (100.0%)         0 (  0.0%)        320
+#  Metal 6         137 ( 77.4%)        40 ( 22.6%)        177
+#  Metal 7          50 (100.0%)         0 (  0.0%)         50
+#  Metal 8          35 (100.0%)         0 (  0.0%)         35
+#  Metal 9           1 (100.0%)         0 (  0.0%)          1
+#-----------------------------------------------------------
+#                25964 ( 99.8%)        57 (  0.2%)      26021 
+#
+#Total number of DRC violations = 0
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 796.00 (Mb)
+#
+#Total number of nets with non-default rule or having extra spacing = 18
+#Total wire length = 54229 um.
+#Total half perimeter of net bounding box = 50275 um.
+#Total wire length on LAYER M1 = 326 um.
+#Total wire length on LAYER M2 = 15915 um.
+#Total wire length on LAYER M3 = 21252 um.
+#Total wire length on LAYER M4 = 8278 um.
+#Total wire length on LAYER M5 = 4085 um.
+#Total wire length on LAYER M6 = 2441 um.
+#Total wire length on LAYER M7 = 1441 um.
+#Total wire length on LAYER M8 = 201 um.
+#Total wire length on LAYER M9 = 282 um.
+#Total wire length on LAYER AP = 9 um.
+#Total number of vias = 26021
+#Total number of multi-cut vias = 57 (  0.2%)
+#Total number of single cut vias = 25964 ( 99.8%)
+#Up-Via Summary (total 26021):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1       11148 ( 99.8%)        17 (  0.2%)      11165
+#  Metal 2       11039 (100.0%)         0 (  0.0%)      11039
+#  Metal 3        2534 (100.0%)         0 (  0.0%)       2534
+#  Metal 4         700 (100.0%)         0 (  0.0%)        700
+#  Metal 5         320 (100.0%)         0 (  0.0%)        320
+#  Metal 6         137 ( 77.4%)        40 ( 22.6%)        177
+#  Metal 7          50 (100.0%)         0 (  0.0%)         50
+#  Metal 8          35 (100.0%)         0 (  0.0%)         35
+#  Metal 9           1 (100.0%)         0 (  0.0%)          1
+#-----------------------------------------------------------
+#                25964 ( 99.8%)        57 (  0.2%)      26021 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 1
+#
+#
+#start delete and reroute for process antenna violation fix ...
+#WARNING (NRGR-164) This design is over congested and will have routability problem. Correct the placement to fix congestion problem.
+#WARNING (NRGR-164) This design is over congested and will have routability problem. Correct the placement to fix congestion problem.
+#WARNING (NRGR-164) This design is over congested and will have routability problem. Correct the placement to fix congestion problem.
+#WARNING (NRGR-164) This design is over congested and will have routability problem. Correct the placement to fix congestion problem.
+#cpu time = 00:00:21, elapsed time = 00:00:21, memory = 794.00 (Mb)
+#Total number of nets with non-default rule or having extra spacing = 18
+#Total wire length = 54220 um.
+#Total half perimeter of net bounding box = 50275 um.
+#Total wire length on LAYER M1 = 326 um.
+#Total wire length on LAYER M2 = 15915 um.
+#Total wire length on LAYER M3 = 21252 um.
+#Total wire length on LAYER M4 = 8280 um.
+#Total wire length on LAYER M5 = 4085 um.
+#Total wire length on LAYER M6 = 2441 um.
+#Total wire length on LAYER M7 = 1439 um.
+#Total wire length on LAYER M8 = 201 um.
+#Total wire length on LAYER M9 = 275 um.
+#Total wire length on LAYER AP = 7 um.
+#Total number of vias = 26021
+#Total number of multi-cut vias = 58 (  0.2%)
+#Total number of single cut vias = 25963 ( 99.8%)
+#Up-Via Summary (total 26021):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1       11148 ( 99.8%)        17 (  0.2%)      11165
+#  Metal 2       11039 (100.0%)         0 (  0.0%)      11039
+#  Metal 3        2534 (100.0%)         0 (  0.0%)       2534
+#  Metal 4         700 (100.0%)         0 (  0.0%)        700
+#  Metal 5         320 (100.0%)         0 (  0.0%)        320
+#  Metal 6         137 ( 77.4%)        40 ( 22.6%)        177
+#  Metal 7          50 (100.0%)         0 (  0.0%)         50
+#  Metal 8          34 ( 97.1%)         1 (  2.9%)         35
+#  Metal 9           1 (100.0%)         0 (  0.0%)          1
+#-----------------------------------------------------------
+#                25963 ( 99.8%)        58 (  0.2%)      26021 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 1
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:39
+#Elapsed time = 00:00:39
+#Increased memory = 8.00 (Mb)
+#Total memory = 794.00 (Mb)
+#Peak memory = 842.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:41
+#Elapsed time = 00:00:41
+#Increased memory = 9.00 (Mb)
+#Total memory = 788.00 (Mb)
+#Peak memory = 842.00 (Mb)
+#Number of warnings = 7
+#Total number of warnings = 9
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu Mar 19 00:51:17 2020
+#
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postRoute
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 789.1M, totSessionCpu=0:02:16 **
+#Created 856 library cell signatures
+#Created 4564 NETS and 0 SPECIALNETS signatures
+#Created 2870 instance signatures
+Begin checking placement ... (start mem=789.4M, init mem=789.4M)
+*info: Placed = 2850
+*info: Unplaced = 0
+Placement Density:71.27%(10058/14112)
+Finished checkPlace (cpu: total=0:00:00.1, vio checks=0:00:00.0; mem=789.4M)
+Setting latch borrow mode to budget during optimization.
+setExtractRCMode -engine postRoute -coupled false
+*** optDesign -postRoute ***
+DRC Margin: user margin 0.0; extra margin 0
+Setup Target Slack: user slack 0
+Hold Target Slack: user slack 0
+Opt: RC extraction mode changed to 'detail'
+Creating information for LVT Only Flow
+Multi-VT timing optimization disabled based on library information.
+Extraction called for design 'arbiter' of instances=2869 and nets=4564 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+PostRoute (effortLevel low) RC Extraction called for design arbiter.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This would result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+**WARN: (ENCEXT-3032):	Since cap. table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.18
+      Min Width        : 0.09
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 7 - M7
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 8 - M8
+      Thickness        : 0.9
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 9 - M9
+      Thickness        : 0.9
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 10 - M10
+      Thickness        : 1.45
+      Min Width        : 3
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile ./arbiter_dHvDzL_16631.rcdb.d  -basic
+RC Mode: PostRoute effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 790.4M)
+Creating parasitic data file './arbiter_dHvDzL_16631.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.0048% (CPU Time= 0:00:00.0  MEM= 800.4M)
+Extracted 20.0052% (CPU Time= 0:00:00.0  MEM= 800.4M)
+Extracted 30.0056% (CPU Time= 0:00:00.1  MEM= 800.4M)
+Extracted 40.0061% (CPU Time= 0:00:00.1  MEM= 800.4M)
+Extracted 50.0065% (CPU Time= 0:00:00.1  MEM= 800.4M)
+Extracted 60.007% (CPU Time= 0:00:00.1  MEM= 800.4M)
+Extracted 70.0074% (CPU Time= 0:00:00.1  MEM= 800.4M)
+Extracted 80.0078% (CPU Time= 0:00:00.1  MEM= 800.4M)
+Extracted 90.0083% (CPU Time= 0:00:00.1  MEM= 800.4M)
+Extracted 100% (CPU Time= 0:00:00.2  MEM= 800.4M)
+Nr. Extracted Resistors     : 49040
+Nr. Extracted Ground Cap.   : 52424
+Nr. Extracted Coupling Cap. : 0
+Opening parasitic data file './arbiter_dHvDzL_16631.rcdb.d/header.da' for reading.
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 790.723M)
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 790.7M, InitMEM = 790.7M)
+Start delay calculation (mem=790.723M)...
+delayCal using detail RC...
+Opening parasitic data file './arbiter_dHvDzL_16631.rcdb.d/header.da' for reading.
+RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 792.7M)
+Initializing multi-corner resistance tables ...
+Delay calculation completed. (cpu=0:00:00.2 real=0:00:01.0 mem=793.129M 0)
+*** CDM Built up (cpu=0:00:00.2  real=0:00:01.0  mem= 793.1M) ***
+Found active setup analysis view worst_analysis
+Found active hold analysis view worst_analysis
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| -1.479  |
+|           TNS (ns):| -73.833 |
+|    Violating Paths:|   74    |
+|          All Paths:|  1024   |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |     27 (27)      |   -0.019   |     27 (27)      |
+|   max_tran     |     26 (571)     |   -0.340   |     26 (571)     |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.269%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:01, real = 0:00:02, mem = 794.0M, totSessionCpu=0:02:17 **
+**INFO: Start fixing DRV (Mem = 794.08M) ...
+**INFO: Options = -postRoute -maxCap -maxTran -noMaxFanout -noSensitivity -backward -maxIter 1
+**INFO: Start fixing DRV iteration 1 ...
+*** Starting dpFixDRCViolation (794.1M)
+*info: 18 clock nets excluded
+*info: 2 special nets excluded.
+*info: 605 no-driver nets excluded.
+*info: There are 17 candidate Buffer cells
+*info: There are 15 candidate Inverter cells
+Initializing placement sections/sites ...
+Density before buffering = 0.712686
+Start fixing design rules ... (0:00:00.0 794.2M)
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Initializing multi-corner resistance tables ...
+Topological Sorting (CPU = 0:00:00.0, MEM = 794.7M, InitMEM = 794.7M)
+Finished fixing design rule (0:00:03.0 794.9M)
+
+Summary:
+18 buffers added on 18 nets (with 13 drivers resized)
+
+Density after buffering = 0.715492
+[CPU] RefinePlace/CRLP Init cpu time 0:00:00.0.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, post-route mode.
+Finished Phase I. CPU Time = 0:00:00.1, Real Time = 0:00:00.0
+[CPU] RefinePlace/preRPlace cpu time 0:00:00.1.
+move report: preRPlace moves 19 insts, mean move: 0.33 um, max move: 0.80 um
+	max move on inst (U11777): (45.40, 53.40) --> (44.60, 53.40)
+wireLenOptFixPriorityInst 512 inst fixed
+[CPU] RefinePlace/TweakPlacement cpu time: 0:00:00.0 
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 19 insts, mean move: 0.33 um, max move: 0.80 um
+	max move on inst (U11777): (45.40, 53.40) --> (44.60, 53.40)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         0.80 um
+  inst (U11777) with max move: (45.4, 53.4) -> (44.6, 53.4)
+  mean    (X+Y) =         0.33 um
+Total instances moved : 19
+*** cpu=0:00:00.1   mem=795.0M  mem(used)=0.1M***
+[CPU] RefinePlace/total cpu time 0:00:00.1.
+*** Completed dpFixDRCViolation (0:00:03.1 795.0M)
+
+End  of fixDrcViolation iteration 1.
+*** Starting dpFixDRCViolation (795.0M)
+*info: 18 clock nets excluded
+*info: 2 special nets excluded.
+*info: 605 no-driver nets excluded.
+Start fixing design rules ... (0:00:00.0 795.0M)
+Initializing multi-corner resistance tables ...
+Finished fixing design rule (0:00:00.1 795.0M)
+
+Summary:
+0 buffer added on 0 net (with 0 driver resized)
+
+Density after buffering = 0.716053
+*** Completed dpFixDRCViolation (0:00:00.1 795.0M)
+
+*info:
+**INFO: Completed fixing DRV (CPU Time = 0:00:03, Mem = 794.96M).
+Found active setup analysis view worst_analysis
+Found active hold analysis view worst_analysis
+
+------------------------------------------------------------
+     Summary (cpu=0.05min real=0.05min mem=795.0M)                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| -0.831  |
+|           TNS (ns):| -35.589 |
+|    Violating Paths:|   72    |
+|          All Paths:|  1024   |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.605%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:05, real = 0:00:05, mem = 795.0M, totSessionCpu=0:02:20 **
+*** Timing NOT met, worst failing slack is -0.831
+*** Check timing (0:00:00.0)
+*** Timing NOT met, worst failing slack is -0.831
+*** Check timing (0:00:00.0)
+Info: 18 clock nets excluded from IPO operation.
+
+*** Start Post Route Setup Fixing (cpu=0:00:00.0 mem=795.0M) ***
+
+Time Engine : CTE
+SSTA Mode   : off
+MMMC mode   : on (1 views)
+Incr. DC    : on
+Incr POM Mode        : on
+On Demand POM Mode   : on
+CTE SubNetWork Mode   : on
+Up Size     : on
+Down Size   : on
+Resize FFs  : on
+Add Buffer  : off
+Del Buffer  : off
+Pin Swap    : off
+Add InvPair : off
+LegalLoc GS : off
+Speedup  GS : off
+Crit. Range : 20%
+
+density before = 71.605%
+total 4018 net, 0 ipo_ignored
+total 12157 term, 0 ipo_ignored
+total 2375 comb inst, 19 fixed, 2 dont_touch, 2 no_footp
+total 512 seq inst, 0 fixed, 0 dont_touch, 0 no_footp
+total 181 footprint(s)
+  10 footprint(s) with 0 cell(s)
+  10 footprint(s) with 1 cell(s)
+  12 footprint(s) with 2 cell(s)
+  30 footprint(s) with 3 cell(s)
+  74 footprint(s) with 4 cell(s)
+   8 footprint(s) with 5 cell(s)
+  21 footprint(s) with 6 cell(s)
+   0 footprint(s) with 7 cell(s)
+   9 footprint(s) with 8 cell(s)
+   2 footprint(s) with 9 cell(s)
+   5 footprint(s) with 10+ cell(s)
+
+
+Estimated WNS = -0.831ns, TNS = -35.589ns (cpu=0:00:00.2 mem=795.1M)
+
+Iter 0 ...
+
+Collected 534 nets for fixing
+Evaluate 708(465) resize, Select 285 cand. (cpu=0:00:04.2 mem=795.1M)
+
+Commit 9 cand, 9 upSize, 0 downSize, 0 sameSize, 0 addBuf, 0 delBuf, 0 pinSwap (cpu=0:00:07.3 mem=795.1M)
+
+Calc. DC (cpu=0:00:07.3 mem=795.1M) ***
+
+Estimated WNS = -0.330ns, TNS = -3.006ns (cpu=0:00:07.3 mem=795.1M)
+
+Iter 1 ...
+
+Collected 120 nets for fixing
+Evaluate 224(217) resize, Select 85 cand. (cpu=0:00:09.0 mem=795.1M)
+
+Commit 2 cand, 2 upSize, 0 downSize, 0 sameSize, 0 addBuf, 0 delBuf, 0 pinSwap (cpu=0:00:10.0 mem=795.1M)
+
+Calc. DC (cpu=0:00:10.0 mem=795.1M) ***
+
+Estimated WNS = 0.003ns, TNS = 0.000ns (cpu=0:00:10.0 mem=795.1M)
+
+Calc. DC (cpu=0:00:10.0 mem=795.1M) ***
+*summary:     11 instances changed cell type
+density after = 71.960%
+
+*** Finish Post Route Setup Fixing (cpu=0:00:10.0 mem=795.1M) ***
+
+Info: 18 clock nets excluded from IPO operation.
+
+*** Start Post Route Setup Fixing (cpu=0:00:00.0 mem=795.1M) ***
+
+Time Engine : CTE
+SSTA Mode   : off
+MMMC mode   : on (1 views)
+Incr. DC    : on
+Incr POM Mode        : on
+On Demand POM Mode   : on
+CTE SubNetWork Mode   : on
+Up Size     : on
+Down Size   : on
+Resize FFs  : on
+Add Buffer  : on
+Del Buffer  : on
+Pin Swap    : off
+Add InvPair : off
+LegalLoc GS : off
+Speedup  GS : off
+Crit. Range : 20%
+
+density before = 71.960%
+total 4018 net, 0 ipo_ignored
+total 12157 term, 0 ipo_ignored
+total 2375 comb inst, 19 fixed, 2 dont_touch, 2 no_footp
+total 512 seq inst, 0 fixed, 0 dont_touch, 0 no_footp
+total 181 footprint(s)
+  10 footprint(s) with 0 cell(s)
+  10 footprint(s) with 1 cell(s)
+  12 footprint(s) with 2 cell(s)
+  30 footprint(s) with 3 cell(s)
+  74 footprint(s) with 4 cell(s)
+   8 footprint(s) with 5 cell(s)
+  21 footprint(s) with 6 cell(s)
+   0 footprint(s) with 7 cell(s)
+   9 footprint(s) with 8 cell(s)
+   2 footprint(s) with 9 cell(s)
+   5 footprint(s) with 10+ cell(s)
+
+BUFFER FOOTPRINT (BUFFD1) :
+  CKBD0(s) BUFFD0 BUFFD1 GBUFFD1(st) CKBD1
+  CKBD2 GBUFFD2(st) BUFFD2 CKBD3 GBUFFD3(st)
+  BUFFD3 GBUFFD4(st) BUFFD4 CKBD4 CKBD6
+  BUFFD6 GBUFFD8(st) CKBD8 BUFFD8 BUFFD12
+  CKBD12 CKBD16 BUFFD16 BUFFD20(st) CKBD20(st)
+  CKBD24(st) BUFFD24(st)
+
+DELAY FOOTPRINT (DEL0) :
+  DEL4 DEL3 DEL1 DEL2 DEL0
+  DEL02 DEL015 DEL005 DEL01
+
+
+Estimated WNS = 0.003ns, TNS = 0.000ns (cpu=0:00:00.1 mem=795.5M)
+*summary:      0 instances changed cell type
+density after = 71.960%
+
+*** Finish Post Route Setup Fixing (cpu=0:00:00.1 mem=795.1M) ***
+
+Initializing multi-corner resistance tables ...
+*** Timing Is met
+*** Check timing (0:00:00.0)
+[CPU] RefinePlace/CRLP Init cpu time 0:00:00.0.
+Starting refinePlace ...
+  Spread Effort: high, post-route mode.
+Finished Phase I. CPU Time = 0:00:00.1, Real Time = 0:00:00.0
+[CPU] RefinePlace/preRPlace cpu time 0:00:00.1.
+move report: preRPlace moves 80 insts, mean move: 0.60 um, max move: 2.20 um
+	max move on inst (U10647): (84.80, 100.20) --> (84.40, 102.00)
+wireLenOptFixPriorityInst 512 inst fixed
+[CPU] RefinePlace/TweakPlacement cpu time: 0:00:00.0 
+[CPU] RefinePlace/Legalization cpu time: 0:00:00.0
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 80 insts, mean move: 0.60 um, max move: 2.20 um
+	max move on inst (U10647): (84.80, 100.20) --> (84.40, 102.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         2.20 um
+  inst (U10647) with max move: (84.8, 100.2) -> (84.4, 102)
+  mean    (X+Y) =         0.60 um
+Total instances moved : 80
+*** cpu=0:00:00.1   mem=795.2M  mem(used)=0.0M***
+[CPU] RefinePlace/total cpu time 0:00:00.1.
+Total net length = 5.010e+04 (2.570e+04 2.441e+04) (ext = 1.472e+04)
+default core: bins with density >  0.75 = 34.7 % ( 17 / 49 )
+Found active setup analysis view worst_analysis
+Found active hold analysis view worst_analysis
+
+------------------------------------------------------------
+     Summary (cpu=0.17min real=0.17min mem=795.1M)                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):|  0.003  |
+|           TNS (ns):|  0.000  |
+|    Violating Paths:|    0    |
+|          All Paths:|  1024   |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.960%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:15, real = 0:00:16, mem = 795.1M, totSessionCpu=0:02:31 **
+Effort level <high> specified for reg2reg path_group
+-routeWithEco false                      # bool, default=false
+-routeWithEco true                       # bool, default=false, user setting
+-routeSelectedNetOnly false              # bool, default=false
+-routeWithTimingDriven false             # bool, default=false, user setting
+-routeWithSiDriven false                 # bool, default=false, user setting
+-drouteStartIteration 0                  # int, default=0, user setting
+-drouteStartIteration 0                  # int, default=0
+
+globalDetailRoute
+
+#Start globalDetailRoute on Thu Mar 19 00:51:52 2020
+#
+Closing parasitic data file './arbiter_dHvDzL_16631.rcdb.d'. 3416 times net's RC data read were performed.
+Initializing multi-corner resistance tables ...
+#NanoRoute Version v11.12-s009 NR120919-1551/11_10_USR2-UB
+#Loading the last recorded routing design signature
+#Created 523 NETS and 0 SPECIALNETS new signatures
+#Summary of the placement changes since last routing:
+#  Number of instances added (including moved) = 116
+#  Number of instances deleted (including moved) = 98
+#  Number of instances resized = 9
+#  Total number of placement changes (moved instances are counted twice) = 223
+#Start routing data preparation.
+#WARNING (NREX-37) No permittivity value was specified in the process LEF file. Default permittivity value 3.900000 will be used.
+#WARNING (NREX-6) No Extended Cap Table was imported, an approximate Extended Cap Table database will be used.
+# M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.185
+# M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M6           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M7           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M8           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# M9           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# AP           V   Track-Pitch = 6.500    Line-2-Via Pitch = 6.500
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 806.00 (Mb)
+#Merging special wires...
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (100.745 48.870) on M1 for NET FE_OFCN0_n8750. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN I at (84.515 32.880) on M1 for NET FE_OFCN10_N24327. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (100.885 36.300) on M1 for NET FE_OFCN10_N24327. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (100.100 61.515) on M1 for NET FE_OFCN11_N24335. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (25.420 56.080) on M1 for NET FE_OFCN12_N24521. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (61.100 117.280) on M1 for NET FE_OFCN13_N24614. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (98.900 83.115) on M1 for NET FE_OFCN14_N24689. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN B2 at (119.100 90.315) on M1 for NET FE_OFCN15_n9370. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN B2 at (113.500 90.315) on M1 for NET FE_OFCN15_n9370. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN B2 at (110.900 90.315) on M1 for NET FE_OFCN15_n9370. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (103.500 115.515) on M1 for NET FE_OFCN15_n9370. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (22.900 41.680) on M1 for NET FE_OFCN16_n9021. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (27.100 41.680) on M1 for NET FE_OFCN17_N24893. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (96.550 83.100) on M1 for NET FE_OFCN1_n8762. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (25.145 68.725) on M1 for NET FE_OFCN2_n8757. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN B2 at (36.305 32.705) on M1 for NET FE_OFCN3_n8934. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN B2 at (40.095 32.705) on M1 for NET FE_OFCN3_n8934. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN Z at (37.685 39.900) on M1 for NET FE_OFCN3_n8934. The NET is considered partially routed.
+#WARNING (NRDB-1005) Can not establish connection to PIN A1 at (97.105 32.685) on M1 for NET FE_OFCN4_n10237. The NET is considered partially routed.
+#WARNING (NRDB-1005 Repeated 20 times. Will be suppressed.) Can not establish connection to PIN Z at (106.885 56.100) on M1 for NET FE_OFCN4_n10237. The NET is considered partially routed.
+#WARNING (EMS-27) Message (NRDB-1005) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#WARNING (NRDB-874) Some WIRE segments on routed NET n9080 are dangling and deleted.
+#WARNING (NRDB-874) Some WIRE segments on routed NET n9476 are dangling and deleted.
+#758 routed nets are extracted.
+#    343 (7.49%) extracted nets are partially routed.
+#2678 routed nets are imported.
+#1146 routed nets are fixed|skipped|trivial (not extracted).
+#Total number of nets = 4582.
+#Number of eco nets is 343
+#
+#Start data preparation...
+#Force regenerating Ggrids.
+#Auto generating G-grids with size=15 tracks, using layer M2's pitch = 0.200.
+#Using automatically generated G-grids.
+#
+#Data preparation is done on Thu Mar 19 00:51:53 2020
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Thu Mar 19 00:51:53 2020
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         597          26        1764    74.72%
+#  Metal 2        V         598          26        1764     0.00%
+#  Metal 3        H         623           0        1764     0.00%
+#  Metal 4        V         624           0        1764     0.00%
+#  Metal 5        H         623           0        1764     0.00%
+#  Metal 6        V         624           0        1764     0.00%
+#  Metal 7        H         623           0        1764     0.00%
+#  Metal 8        V         155           0        1764     0.00%
+#  Metal 9        H         156           0        1764     0.00%
+#  Metal 10       V          18           0        1764    57.43%
+#  --------------------------------------------------------------
+#  Total                   4641       0.83%  17640    13.21%
+#
+#  18 nets (0.39%) with 1 preferred extra spacing.
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 806.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 808.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer         (1-2)         (3-4)         (5-6)         (7-9)   OverCon
+#  --------------------------------------------------------------------------
+#   Metal 1     11(1.55%)      1(0.14%)      0(0.00%)      0(0.00%)   (1.69%)
+#   Metal 2     75(4.25%)     32(1.81%)     15(0.85%)      0(0.00%)   (6.92%)
+#   Metal 3     28(1.59%)     13(0.74%)      0(0.00%)      1(0.06%)   (2.38%)
+#   Metal 4      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)      0(0.00%)      0(0.00%)      1(0.06%)   (0.06%)
+#  Metal 10      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  --------------------------------------------------------------------------
+#     Total    114(0.73%)     46(0.30%)     15(0.10%)      2(0.01%)   (1.14%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 9
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 18
+#Total wire length = 54319 um.
+#Total half perimeter of net bounding box = 50697 um.
+#Total wire length on LAYER M1 = 317 um.
+#Total wire length on LAYER M2 = 15944 um.
+#Total wire length on LAYER M3 = 21324 um.
+#Total wire length on LAYER M4 = 8286 um.
+#Total wire length on LAYER M5 = 4085 um.
+#Total wire length on LAYER M6 = 2441 um.
+#Total wire length on LAYER M7 = 1439 um.
+#Total wire length on LAYER M8 = 201 um.
+#Total wire length on LAYER M9 = 275 um.
+#Total wire length on LAYER AP = 7 um.
+#Total number of vias = 25962
+#Total number of multi-cut vias = 58 (  0.2%)
+#Total number of single cut vias = 25904 ( 99.8%)
+#Up-Via Summary (total 25962):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1       11102 ( 99.8%)        17 (  0.2%)      11119
+#  Metal 2       11024 (100.0%)         0 (  0.0%)      11024
+#  Metal 3        2536 (100.0%)         0 (  0.0%)       2536
+#  Metal 4         700 (100.0%)         0 (  0.0%)        700
+#  Metal 5         320 (100.0%)         0 (  0.0%)        320
+#  Metal 6         137 ( 77.4%)        40 ( 22.6%)        177
+#  Metal 7          50 (100.0%)         0 (  0.0%)         50
+#  Metal 8          34 ( 97.1%)         1 (  2.9%)         35
+#  Metal 9           1 (100.0%)         0 (  0.0%)          1
+#-----------------------------------------------------------
+#                25904 ( 99.8%)        58 (  0.2%)      25962 
+#
+#Max overcon = 9 tracks.
+#Total overcon = 1.14%.
+#Worst layer Gcell overcon rate = 2.38%.
+#start post global routing...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 808.00 (Mb)
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 12.00 (Mb)
+#Total memory = 808.00 (Mb)
+#Peak memory = 842.00 (Mb)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+# ECO: 0.0% of the total area was rechecked for DRC, and 57.1% required routing.
+#    number of violations = 44
+#125 out of 2887 instances need to be verified(marked ipoed).
+#37.8% of the total area is being checked for drcs
+#37.8% of the total area was checked
+#    number of violations = 59
+#cpu time = 00:00:05, elapsed time = 00:00:05, memory = 820.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 3
+#    number of process antenna violations = 1
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 820.00 (Mb)
+#start 2nd optimization iteration ...
+#    number of violations = 2
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 3rd optimization iteration ...
+#    number of violations = 2
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 4th optimization iteration ...
+#    number of violations = 1
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 5th optimization iteration ...
+#    number of violations = 1
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 6th optimization iteration ...
+#    number of violations = 1
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 7th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 8th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 9th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 10th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 11th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#start 12th optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 820.00 (Mb)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 18
+#Total wire length = 54299 um.
+#Total half perimeter of net bounding box = 50697 um.
+#Total wire length on LAYER M1 = 317 um.
+#Total wire length on LAYER M2 = 15929 um.
+#Total wire length on LAYER M3 = 21282 um.
+#Total wire length on LAYER M4 = 8305 um.
+#Total wire length on LAYER M5 = 4101 um.
+#Total wire length on LAYER M6 = 2443 um.
+#Total wire length on LAYER M7 = 1438 um.
+#Total wire length on LAYER M8 = 203 um.
+#Total wire length on LAYER M9 = 275 um.
+#Total wire length on LAYER AP = 7 um.
+#Total number of vias = 26211
+#Total number of multi-cut vias = 64 (  0.2%)
+#Total number of single cut vias = 26147 ( 99.8%)
+#Up-Via Summary (total 26211):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1       11188 ( 99.8%)        23 (  0.2%)      11211
+#  Metal 2       11151 (100.0%)         0 (  0.0%)      11151
+#  Metal 3        2561 (100.0%)         0 (  0.0%)       2561
+#  Metal 4         707 (100.0%)         0 (  0.0%)        707
+#  Metal 5         318 (100.0%)         0 (  0.0%)        318
+#  Metal 6         137 ( 77.4%)        40 ( 22.6%)        177
+#  Metal 7          50 (100.0%)         0 (  0.0%)         50
+#  Metal 8          34 ( 97.1%)         1 (  2.9%)         35
+#  Metal 9           1 (100.0%)         0 (  0.0%)          1
+#-----------------------------------------------------------
+#                26147 ( 99.8%)        64 (  0.2%)      26211 
+#
+#Total number of DRC violations = 0
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 825.00 (Mb)
+#
+#Total number of nets with non-default rule or having extra spacing = 18
+#Total wire length = 54299 um.
+#Total half perimeter of net bounding box = 50697 um.
+#Total wire length on LAYER M1 = 317 um.
+#Total wire length on LAYER M2 = 15929 um.
+#Total wire length on LAYER M3 = 21282 um.
+#Total wire length on LAYER M4 = 8305 um.
+#Total wire length on LAYER M5 = 4101 um.
+#Total wire length on LAYER M6 = 2443 um.
+#Total wire length on LAYER M7 = 1438 um.
+#Total wire length on LAYER M8 = 203 um.
+#Total wire length on LAYER M9 = 275 um.
+#Total wire length on LAYER AP = 7 um.
+#Total number of vias = 26211
+#Total number of multi-cut vias = 64 (  0.2%)
+#Total number of single cut vias = 26147 ( 99.8%)
+#Up-Via Summary (total 26211):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1       11188 ( 99.8%)        23 (  0.2%)      11211
+#  Metal 2       11151 (100.0%)         0 (  0.0%)      11151
+#  Metal 3        2561 (100.0%)         0 (  0.0%)       2561
+#  Metal 4         707 (100.0%)         0 (  0.0%)        707
+#  Metal 5         318 (100.0%)         0 (  0.0%)        318
+#  Metal 6         137 ( 77.4%)        40 ( 22.6%)        177
+#  Metal 7          50 (100.0%)         0 (  0.0%)         50
+#  Metal 8          34 ( 97.1%)         1 (  2.9%)         35
+#  Metal 9           1 (100.0%)         0 (  0.0%)          1
+#-----------------------------------------------------------
+#                26147 ( 99.8%)        64 (  0.2%)      26211 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 1
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:10
+#Elapsed time = 00:00:10
+#Increased memory = 15.00 (Mb)
+#Total memory = 823.00 (Mb)
+#Peak memory = 863.00 (Mb)
+#Updating routing design signature
+#Created 856 library cell signatures
+#Created 4582 NETS and 0 SPECIALNETS signatures
+#Created 2888 instance signatures
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:12
+#Elapsed time = 00:00:12
+#Increased memory = 13.00 (Mb)
+#Total memory = 808.00 (Mb)
+#Peak memory = 863.00 (Mb)
+#Number of warnings = 25
+#Total number of warnings = 34
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu Mar 19 00:52:03 2020
+#
+**optDesign ... cpu = 0:00:27, real = 0:00:27, mem = 808.1M, totSessionCpu=0:02:43 **
+-routeWithEco false                      # bool, default=false
+-routeSelectedNetOnly false              # bool, default=false
+-routeWithTimingDriven false             # bool, default=false, user setting
+-routeWithSiDriven false                 # bool, default=false, user setting
+-drouteStartIteration 0                  # int, default=0, user setting
+Extraction called for design 'arbiter' of instances=2887 and nets=4582 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+PostRoute (effortLevel low) RC Extraction called for design arbiter.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This would result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+**WARN: (ENCEXT-3032):	Since cap. table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.18
+      Min Width        : 0.09
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 7 - M7
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 8 - M8
+      Thickness        : 0.9
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 9 - M9
+      Thickness        : 0.9
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 10 - M10
+      Thickness        : 1.45
+      Min Width        : 3
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile ./arbiter_dHvDzL_16631.rcdb.d -maxResLength 200  -basic
+RC Mode: PostRoute effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 808.1M)
+Creating parasitic data file './arbiter_dHvDzL_16631.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.0078% (CPU Time= 0:00:00.1  MEM= 817.8M)
+Extracted 20.0069% (CPU Time= 0:00:00.1  MEM= 817.8M)
+Extracted 30.006% (CPU Time= 0:00:00.1  MEM= 817.8M)
+Extracted 40.0052% (CPU Time= 0:00:00.1  MEM= 817.8M)
+Extracted 50.0086% (CPU Time= 0:00:00.1  MEM= 817.8M)
+Extracted 60.0078% (CPU Time= 0:00:00.1  MEM= 817.8M)
+Extracted 70.0069% (CPU Time= 0:00:00.1  MEM= 817.8M)
+Extracted 80.006% (CPU Time= 0:00:00.2  MEM= 817.8M)
+Extracted 90.0052% (CPU Time= 0:00:00.2  MEM= 817.8M)
+Extracted 100% (CPU Time= 0:00:00.2  MEM= 817.8M)
+Nr. Extracted Resistors     : 49383
+Nr. Extracted Ground Cap.   : 52785
+Nr. Extracted Coupling Cap. : 0
+Opening parasitic data file './arbiter_dHvDzL_16631.rcdb.d/header.da' for reading.
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.3  Real Time: 0:00:01.0  MEM: 808.098M)
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 817.4M, InitMEM = 817.4M)
+Start delay calculation (mem=817.387M)...
+delayCal using detail RC...
+Opening parasitic data file './arbiter_dHvDzL_16631.rcdb.d/header.da' for reading.
+RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 819.4M)
+Initializing multi-corner resistance tables ...
+Delay calculation completed. (cpu=0:00:00.2 real=0:00:00.0 mem=819.793M 0)
+*** CDM Built up (cpu=0:00:00.3  real=0:00:00.0  mem= 819.8M) ***
+*** Timing NOT met, worst failing slack is -0.026
+*** Check timing (0:00:00.5)
+Clearing footprints for all libraries
+Loading footprints for all corners
+Design State:
+    #signal nets       :  4018
+    #routed signal nets:  3418
+    #clock nets        :  18
+    #routed clock nets :  18
+Info: 18 clock nets excluded from IPO operation.
+*** Starting new resizing ***
+density before resizing = 71.962%
+start postIPO sizing
+3 instances have been resized
+*summary:      3 instances changed cell type
+density after resizing = 71.962%
+*** Finish new resizing (cpu=0:00:00.1 mem=820.7M) ***
+*** Starting resizing for timing improvement ***
+0 instances have been resized
+density change = 0.000%
+*summary:      0 instances changed cell type
+*** Finish resizing for timing improvement (cpu=0:00:00.1 mem=820.7M) ***
+*** Starting sequential cell resizing ***
+density before resizing = 71.962%
+*summary:      0 instances changed cell type
+density after resizing = 71.962%
+*** Finish sequential cell resizing (cpu=0:00:00.1 mem=820.7M) ***
+Instances Resized for DRV   : 0
+Instances Resized for Timing: 3
+Total Instances Resized     : 3
+Current TNS:  0.000    Prev TNS:  -0.026 
+Current WNS:  0.040    Prev WNS:  -0.026 
+Restoring original footprint information
+Clearing footprints for all libraries
+Loading footprints for all corners
+Latch borrow mode reset to max_borrow
+Reported timing to dir ./timingReports
+**optDesign ... cpu = 0:00:29, real = 0:00:29, mem = 819.9M, totSessionCpu=0:02:44 **
+Found active setup analysis view worst_analysis
+Found active hold analysis view worst_analysis
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.040  |  0.040  |  0.286  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|  1024   |  1024   |  1024   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.960%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:29, real = 0:00:30, mem = 820.7M, totSessionCpu=0:02:45 **
+Opt: RC extraction mode changed to 'detail'
+*** Finished optDesign ***
+Removing temporary dont_use automatically set for cells with technology sites with no row.
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix arbiter_preCTS -outDir timingReports
+Closing parasitic data file './arbiter_dHvDzL_16631.rcdb.d'. 3434 times net's RC data read were performed.
+**WARN: (ENCEXT-3493):	Extraction mode changed by calling extraction setup command 'setExtractRCMode'. Therefore, parasitic data in the tool generated as per previous mode is deleted. Call of extractRC/spefIn will generate/bring parasitic data in the tool as per current mode.
+*** Starting trialRoute (mem=809.0M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets will be rerouted.
+Options:  -handlePreroute -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+
+Phase 1a-1d Overflow: 0.00% H + 0.40% V (0:00:00.1 813.3M)
+
+Phase 1e-1f Overflow: 0.00% H + 0.09% V (0:00:00.0 813.9M)
+
+Phase 1l Overflow: 0.02% H + 0.06% V (0:00:00.0 813.9M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -2:	1	 0.01%	1	 0.01%
+ -1:	0	 0.00%	3	 0.04%
+--------------------------------------
+  0:	0	 0.00%	1	 0.01%
+  1:	0	 0.00%	6	 0.08%
+  2:	0	 0.00%	15	 0.19%
+  3:	0	 0.00%	25	 0.32%
+  4:	0	 0.00%	39	 0.49%
+  5:	7880	99.99%	7791	98.86%
+
+
+Total length: 5.472e+04um, number of vias: 25397
+M1(H) length: 2.000e+02um, number of vias: 11375
+M2(V) length: 1.637e+04um, number of vias: 10104
+M3(H) length: 2.110e+04um, number of vias: 2637
+M4(V) length: 8.812e+03um, number of vias: 691
+M5(H) length: 4.214e+03um, number of vias: 321
+M6(V) length: 2.744e+03um, number of vias: 177
+M7(H) length: 1.173e+03um, number of vias: 56
+M8(V) length: 7.980e+01um, number of vias: 35
+M9(H) length: 1.547e+01um, number of vias: 1
+M10(V) length: 6.000e-01um
+
+Peak Memory Usage was 819.4M 
+*** Finished trialRoute (cpu=0:00:00.4 mem=809.1M) ***
+
+Extraction called for design 'arbiter' of instances=2887 and nets=4582 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+PreRoute RC Extraction called for design arbiter.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This would result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 809.062M)
+Found active setup analysis view worst_analysis
+Found active hold analysis view worst_analysis
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.992  |  0.992  |  1.117  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|  1024   |  1024   |  1024   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.960%
+Routing Overflow: 0.02% H and 0.06% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.16 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 818.742188 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix arbiter_postRoute -outDir timingReports
+**WARN: (ENCEXT-3493):	Extraction mode changed by calling extraction setup command 'setExtractRCMode'. Therefore, parasitic data in the tool generated as per previous mode is deleted. Call of extractRC/spefIn will generate/bring parasitic data in the tool as per current mode.
+Extraction called for design 'arbiter' of instances=2887 and nets=4582 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+PostRoute (effortLevel low) RC Extraction called for design arbiter.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This would result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+**WARN: (ENCEXT-3032):	Since cap. table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.18
+      Min Width        : 0.09
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 7 - M7
+      Thickness        : 0.22
+      Min Width        : 0.1
+      Layer Dielectric : 4.1
+* Layer Id             : 8 - M8
+      Thickness        : 0.9
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 9 - M9
+      Thickness        : 0.9
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 10 - M10
+      Thickness        : 1.45
+      Min Width        : 3
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile ./arbiter_dHvDzL_16631.rcdb.d -maxResLength 200  -basic
+RC Mode: PostRoute effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 809.1M)
+Creating parasitic data file './arbiter_dHvDzL_16631.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.0081% (CPU Time= 0:00:00.1  MEM= 818.9M)
+Extracted 20.0072% (CPU Time= 0:00:00.1  MEM= 818.9M)
+Extracted 30.0063% (CPU Time= 0:00:00.1  MEM= 818.9M)
+Extracted 40.0054% (CPU Time= 0:00:00.1  MEM= 818.9M)
+Extracted 50.009% (CPU Time= 0:00:00.1  MEM= 818.9M)
+Extracted 60.0081% (CPU Time= 0:00:00.1  MEM= 818.9M)
+Extracted 70.0072% (CPU Time= 0:00:00.1  MEM= 818.9M)
+Extracted 80.0063% (CPU Time= 0:00:00.2  MEM= 818.9M)
+Extracted 90.0054% (CPU Time= 0:00:00.2  MEM= 818.9M)
+Extracted 100% (CPU Time= 0:00:00.2  MEM= 818.9M)
+Nr. Extracted Resistors     : 47619
+Nr. Extracted Ground Cap.   : 51051
+Nr. Extracted Coupling Cap. : 0
+Opening parasitic data file './arbiter_dHvDzL_16631.rcdb.d/header.da' for reading.
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.3  Real Time: 0:00:00.0  MEM: 809.211M)
+Found active setup analysis view worst_analysis
+Found active hold analysis view worst_analysis
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):| -0.011  | -0.011  |  0.239  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):| -0.016  | -0.016  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    3    |    3    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|  1024   |  1024   |  1024   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      1 (1)       |   -0.000   |      1 (1)       |
+|   max_tran     |      1 (11)      |   -0.007   |      1 (11)      |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.960%
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.09 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 821.0 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix arbiter_preCTS -outDir timingReports
+Closing parasitic data file './arbiter_dHvDzL_16631.rcdb.d'. 3434 times net's RC data read were performed.
+**WARN: (ENCEXT-3493):	Extraction mode changed by calling extraction setup command 'setExtractRCMode'. Therefore, parasitic data in the tool generated as per previous mode is deleted. Call of extractRC/spefIn will generate/bring parasitic data in the tool as per current mode.
+*** Starting trialRoute (mem=809.3M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=809.3M) ***
+
+Extraction called for design 'arbiter' of instances=2887 and nets=4582 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+PreRoute RC Extraction called for design arbiter.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This would result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 809.270M)
+Found active setup analysis view worst_analysis
+Found active hold analysis view worst_analysis
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.992  |  0.992  |  1.117  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|  1024   |  1024   |  1024   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.960%
+Routing Overflow: 0.02% H and 0.06% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.92 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 818.949219 Mbytes
+<CMD> reportGateCount -level 5 -limit 100 -outfile arbiter.gateCount
+Gate area 1.0800 um^2
+[0] arbiter Gates=9404 Cells=2887 Area=10156.3 um^2

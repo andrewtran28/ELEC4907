@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov 24 03:16:45 2019
+# Process ID: 13952
+# Current directory: C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.runs/arb_v2_synth_1
+# Command line: vivado.exe -log arb_v2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arb_v2.tcl
+# Log file: C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.runs/arb_v2_synth_1/arb_v2.vds
+# Journal file: C:/Users/vladimirmilicevic/Desktop/ANN2/ANN2.runs/arb_v2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source arb_v2.tcl -notrace

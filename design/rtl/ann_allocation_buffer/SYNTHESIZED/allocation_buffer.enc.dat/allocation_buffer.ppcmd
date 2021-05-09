@@ -1,0 +1,72 @@
+# PPCMD 1 
+# sroute -connect { blockPin padPin padRing corePin } -layerChangeRange { M1 AP } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer AP -crossoverViaTopLayer AP -targetViaBottomLayer M1 -nets { VDD VSS }
+# 4 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addRing -spacing_bottom 0.16 -width_left 1 -width_bottom 1 -width_top 1 -spacing_top 0.16 -layer_bottom M1 -stacked_via_top_layer AP -width_right 1 -around core -jog_distance 0.1 -offset_bottom 0.1 -layer_top M1 -threshold 0.1 -offset_left 0.1 -spacing_right 0.16 -spacing_left 0.16 -offset_right 0.1 -offset_top 0.1 -layer_right M2 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer_left M2
+# 3 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 2000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 49200 2480 49200 81520 
+# END_RING_PT_INFO_LIST 
+# VSS 2000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 2480 42000 95920 42000 
+# END_RING_PT_INFO_LIST 
+# VDD 2000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 49200 4800 49200 79200 
+# END_RING_PT_INFO_LIST 
+# VDD 2000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 4800 42000 93600 42000 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# addRing -spacing_bottom 0.16 -width_left .9 -width_bottom .9 -width_top .9 -spacing_top 0.16 -layer_bottom M1 -stacked_via_top_layer AP -width_right .9 -around core -jog_distance 0.1 -offset_bottom 0.1 -layer_top M1 -threshold 0.1 -offset_left 0.1 -spacing_right 0.16 -spacing_left 0.16 -offset_right 0.1 -offset_top 0.1 -layer_right M2 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer_left M2
+# 2 
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# addRing -spacing_bottom 0.16 -width_left 1 -width_bottom 1 -width_top 1 -spacing_top 0.16 -layer_bottom M1 -stacked_via_top_layer AP -width_right 1 -around core -jog_distance 0.1 -offset_bottom 0.1 -layer_top M1 -threshold 0.1 -offset_left 0.1 -spacing_right 0.16 -spacing_left 0.16 -offset_right 0.1 -offset_top 0.1 -layer_right M2 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer_left M2
+# 1 
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+

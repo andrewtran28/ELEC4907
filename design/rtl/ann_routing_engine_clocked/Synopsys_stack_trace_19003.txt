@@ -1,0 +1,140 @@
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-115.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Attaching to process 19003
+Reading symbols from /CMC/tools/synopsys/syn_vH-2013.03-SP5-2/linux/syn/bin/common_shell_exec...(no debugging symbols found)...done.
+Reading symbols from /lib/libpthread.so.0...(no debugging symbols found)...done.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+Loaded symbols for /lib/libpthread.so.0
+Reading symbols from /lib/libncurses.so.5...Reading symbols from /lib/libncurses.so.5...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libncurses.so.5
+Reading symbols from /lib/librt.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib/librt.so.1
+Reading symbols from /lib/libX11.so.6...Reading symbols from /lib/libX11.so.6...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libX11.so.6
+Reading symbols from /lib/libXext.so.6...Reading symbols from /lib/libXext.so.6...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libXext.so.6
+Reading symbols from /lib/libXi.so.6...Reading symbols from /lib/libXi.so.6...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libXi.so.6
+Reading symbols from /lib/libXrender.so.1...Reading symbols from /lib/libXrender.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libXrender.so.1
+Reading symbols from /lib/libXrandr.so.2...Reading symbols from /lib/libXrandr.so.2...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libXrandr.so.2
+Reading symbols from /lib/libSM.so.6...Reading symbols from /lib/libSM.so.6...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libSM.so.6
+Reading symbols from /lib/libICE.so.6...Reading symbols from /lib/libICE.so.6...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libICE.so.6
+Reading symbols from /lib/libXft.so.2...Reading symbols from /lib/libXft.so.2...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libXft.so.2
+Reading symbols from /lib/libjpeg.so.62...Reading symbols from /lib/libjpeg.so.62...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libjpeg.so.62
+Reading symbols from /lib/libpng12.so.0...Reading symbols from /lib/libpng12.so.0...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libpng12.so.0
+Reading symbols from /lib/libm.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib/libm.so.6
+Reading symbols from /lib/libdl.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib/libdl.so.2
+Reading symbols from /lib/libc.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib/libc.so.6
+Reading symbols from /lib/ld-linux.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib/ld-linux.so.2
+Reading symbols from /lib/libfontconfig.so.1...Reading symbols from /lib/libfontconfig.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libfontconfig.so.1
+Reading symbols from /lib/libfreetype.so.6...Reading symbols from /lib/libfreetype.so.6...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libfreetype.so.6
+Reading symbols from /lib/libtinfo.so.5...Reading symbols from /lib/libtinfo.so.5...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libtinfo.so.5
+Reading symbols from /lib/libxcb.so.1...Reading symbols from /lib/libxcb.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libxcb.so.1
+Reading symbols from /lib/libuuid.so.1...Reading symbols from /lib/libuuid.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libuuid.so.1
+Reading symbols from /lib/libz.so.1...Reading symbols from /lib/libz.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libz.so.1
+Reading symbols from /lib/libexpat.so.1...Reading symbols from /lib/libexpat.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libexpat.so.1
+Reading symbols from /lib/libbz2.so.1...Reading symbols from /lib/libbz2.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libbz2.so.1
+Reading symbols from /lib/libpng15.so.15...Reading symbols from /lib/libpng15.so.15...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libpng15.so.15
+Reading symbols from /lib/libXau.so.6...Reading symbols from /lib/libXau.so.6...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libXau.so.6
+Reading symbols from /lib/libnss_files.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib/libnss_files.so.2
+Reading symbols from /lib/libnss_dns.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib/libnss_dns.so.2
+Reading symbols from /lib/libresolv.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib/libresolv.so.2
+Reading symbols from /lib/libnss_sss.so.2...Reading symbols from /lib/libnss_sss.so.2...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libnss_sss.so.2
+Reading symbols from /usr/lib/gconv/UTF-16.so...(no debugging symbols found)...done.
+Loaded symbols for /usr/lib/gconv/UTF-16.so
+Reading symbols from /lib/libXfixes.so.3...Reading symbols from /lib/libXfixes.so.3...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libXfixes.so.3
+Reading symbols from /lib/libXcursor.so.1...Reading symbols from /lib/libXcursor.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libXcursor.so.1
+Reading symbols from /lib/libXinerama.so.1...Reading symbols from /lib/libXinerama.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib/libXinerama.so.1
+0xf7709430 in __kernel_vsyscall ()
+Missing separate debuginfos, use: debuginfo-install bzip2-libs-1.0.6-13.el7.i686 expat-2.1.0-10.el7_3.i686 fontconfig-2.13.0-4.3.el7.i686 freetype-2.8-14.el7.i686 glibc-2.17-292.el7.i686 libICE-1.0.9-9.el7.i686 libSM-1.2.2-2.el7.i686 libX11-1.6.7-2.el7.i686 libXau-1.0.8-2.1.el7.i686 libXcursor-1.1.15-1.el7.i686 libXext-1.3.3-3.el7.i686 libXfixes-5.0.3-1.el7.i686 libXft-2.3.2-2.el7.i686 libXi-1.7.9-1.el7.i686 libXinerama-1.1.3-2.1.el7.i686 libXrandr-1.5.1-2.el7.i686 libXrender-0.9.10-1.el7.i686 libjpeg-turbo-1.2.90-8.el7.i686 libpng-1.5.13-7.el7_2.i686 libpng12-1.2.50-10.el7.i686 libuuid-2.23.2-61.el7.i686 libxcb-1.13-1.el7.i686 ncurses-libs-5.9-14.20130511.el7_4.i686 sssd-client-1.16.4-21.el7.i686 zlib-1.2.7-18.el7.i686
+(gdb) (gdb) #0  0xf7709430 in __kernel_vsyscall ()
+#1  0xf73333a3 in __waitpid_nocancel () from /lib/libc.so.6
+#2  0xf72b3bbe in do_system () from /lib/libc.so.6
+#3  0xf76fbd5b in system () from /lib/libpthread.so.0
+#4  0x117034a9 in SNPSee_4f1eca636f186904 ()
+#5  0x116c4f40 in SNPSee_216f3c2f4c55dbceb170dcb7639b9c2cdd496024a8e266b98132685c73531748e1eb9162e9fd7182 ()
+#6  0x08061146 in SNPSee_f1ee00d2049be34bc9fa2aabd0709c661b77ea09a2cd7785 ()
+#7  0x115c65a7 in SNPSee_b0111077a1564ec2f03c23d0bb102089 ()
+#8  0x115c6fbe in SNPSee_616b6e047c741ff1baf571efe85d35363e185f8b96f20be8 ()
+#9  0x115c643c in SNPSee_b5b74bb29e23928e271a046254d5c62e ()
+#10 <signal handler called>
+#11 0x11650ae5 in SNPSee_79a28315a584465d127cae7a4e2d615f ()
+#12 0x122d5ccb in SNPSee_632f06efc9c08233 ()
+#13 0x1221722f in SNPSee_53075bf2b44849799584d4fd0a2907057c54145336924fbd300d83730d29860f87237a9224e033e0 ()
+#14 0x1221660f in SNPSee_eeda9422e9d7b9b7a30e8530b744ab4ac7de1de86d4ab039719f973d050394302a2cd2f058e27a27472d63abee9e704c7e144013d3c3edc6457691e3f486cad74374b67a4a01c7f3 ()
+#15 0x1221670d in SNPSee_b64647d78c1d78f48088318de2f387ca72fd927bd3138d4061b190472693612a8d1225ebb5bdcfadf7e2b42d204fab671b3ea55e82bd8c46 ()
+#16 0x08649280 in SNPSee_80051c3e017cbcc0e527ada7eaf06b628ebb3290689b73b98b5c8979b8a944fddf301789f3c04ee9e18e02a6e8dc8c8cc8d90585d03a00ea2c8799e295df6dd58edeea89405a17bcdadbde37f16eda3e ()
+#17 0x12211c09 in SNPSee_4dcacb4b71fec0146d1d025e7ac65c91938c5fa7f037eb24600f7d702959a34beafe6814793ba587c8c2368ef429b0bd3d687579433b900ba822eeaf1cc1b523 ()
+#18 0x12211e9a in SNPSee_4dcacb4b71fec014726c6b2f3ad4b3d7b62fea33fafdf4011779ab7ee0024396cee17a7bc70f509a3d7198e30887bc160809d8bdd30a4955 ()
+#19 0x122167cb in SNPSee_b64647d78c1d78f48088318de2f387cab58405acb3f3d182483cb1e60ce3b03c ()
+#20 0x118d5547 in SNPSee_377043c0182fbb31fe2e5dbf4fc395247334a7867f2a4e36 ()
+#21 0x08c1f8fd in SNPSee_b81f4656f0d7d3ca1b0bca755b60caea2cb50375ef5e9df280c2a7ba1e2ca19f7750e3d580600edd04a01dc4363d697fcd6b18c4d0ab558c ()
+#22 0x08c1cb43 in SNPSee_e003b668ad4bd6447f5f39a7580dde10 ()
+#23 0x08fd9df9 in SNPSee_76d6cca1ef29382ca84b036280d53dca ()
+#24 0x08064f18 in SNPSee_a8c67c391924da59bb0a6e836c77e2d8 ()
+#25 0x08060f8b in SNPSee_5a24f30b88271223 ()
+#26 0xf728f2a3 in __libc_start_main () from /lib/libc.so.6
+#27 0x0805f431 in SNPSee_d06eed713327be76 ()
+(gdb) Detaching from program: /CMC/tools/synopsys/syn_vH-2013.03-SP5-2/linux/syn/bin/common_shell_exec, process 19003
+(gdb) 

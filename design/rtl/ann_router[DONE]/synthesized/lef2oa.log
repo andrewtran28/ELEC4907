@@ -1,0 +1,12 @@
+*****************************************************************************
+Tool:		lef2oaCDS           04.00.005
+*****************************************************************************
+Running: lef2oaCDS -logFile lef2oa.log -lib router -DMSystem oaDMFileSys -dataModel 4 -compress -compressLevel 1 -lef "/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_9lmT2.lef" -view abstract
+Started: Sat Jan 11 20:17:00 2020 (Hostname: thor.doe.carleton.ca)
+ERROR: (OALEFDEF-10022): While loading the library definitions file "/home/vladimirmilicevic/cds.lib", OpenAccess generated the message, "Unable to open library cdsDefTechLib at path /CMC/kits/tsmc_65nm/CRN65GP/TN65CMSP018K3_V1.0C/$CDSHOME/tools/dfII/etc/cdsDefTechLib: Invalid Lib Path". Specify a different library definitions file.
+Finished:	lef2oaCDS
+Time elapsed:	0.92 seconds
+CPU Time:	0.067258 seconds
+System Time:	0.024727 seconds
+Peak VM:	1347584 bytes
+Messages:	1 error, 0 warnings

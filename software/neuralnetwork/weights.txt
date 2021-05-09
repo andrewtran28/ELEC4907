@@ -1,0 +1,8 @@
+Weight 1 = -0.775362
+Weight 2 = 0.788970
+Weight 3 = -0.775362
+Weight 4 = 0.788970
+Weight 5 = 0.788970
+Weight 6 = 0.788970
+Hidden Layer Bias = 0.775361
+Output Bias = 0.999976

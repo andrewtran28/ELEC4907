@@ -1,0 +1,371 @@
+
+
+
+
+
+Tracing Clock clk
+
+****** Clock Tree (clk) Structure
+Nr. Subtrees                   : 1
+Nr. Sinks                      : 316
+Nr.          Rising  Sync Pins : 316
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+Nr. Unsync Pins                : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+DFQD2 (CP)                              160
+DFQD1 (CP)                              156
+-----------------------------------------------
+
+
+
+
+** Unsync Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (clk) Cell: (EMPTY) Net: (clk) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 316
+          Nr. of     Rising  Sync Pins  : 316
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock clk
+*DEPTH 0: clk
+ (Sync)in_input_reg[127]_inst/CP
+ (Sync)in_input_reg[126]_inst/CP
+ (Sync)in_input_reg[125]_inst/CP
+ (Sync)in_input_reg[124]_inst/CP
+ (Sync)in_input_reg[123]_inst/CP
+ (Sync)in_input_reg[122]_inst/CP
+ (Sync)in_input_reg[121]_inst/CP
+ (Sync)in_input_reg[120]_inst/CP
+ (Sync)in_input_reg[119]_inst/CP
+ (Sync)in_input_reg[118]_inst/CP
+ (Sync)in_input_reg[117]_inst/CP
+ (Sync)in_input_reg[116]_inst/CP
+ (Sync)in_input_reg[115]_inst/CP
+ (Sync)in_input_reg[114]_inst/CP
+ (Sync)in_input_reg[113]_inst/CP
+ (Sync)in_input_reg[112]_inst/CP
+ (Sync)in_input_reg[111]_inst/CP
+ (Sync)in_input_reg[110]_inst/CP
+ (Sync)in_input_reg[109]_inst/CP
+ (Sync)in_input_reg[108]_inst/CP
+ (Sync)in_input_reg[107]_inst/CP
+ (Sync)in_input_reg[106]_inst/CP
+ (Sync)in_input_reg[105]_inst/CP
+ (Sync)in_input_reg[104]_inst/CP
+ (Sync)in_input_reg[103]_inst/CP
+ (Sync)in_input_reg[102]_inst/CP
+ (Sync)in_input_reg[101]_inst/CP
+ (Sync)in_input_reg[100]_inst/CP
+ (Sync)in_input_reg[99]_inst/CP
+ (Sync)in_input_reg[98]_inst/CP
+ (Sync)in_input_reg[97]_inst/CP
+ (Sync)in_input_reg[96]_inst/CP
+ (Sync)in_input_reg[95]_inst/CP
+ (Sync)in_input_reg[94]_inst/CP
+ (Sync)in_input_reg[93]_inst/CP
+ (Sync)in_input_reg[92]_inst/CP
+ (Sync)in_input_reg[91]_inst/CP
+ (Sync)in_input_reg[90]_inst/CP
+ (Sync)in_input_reg[89]_inst/CP
+ (Sync)in_input_reg[88]_inst/CP
+ (Sync)in_input_reg[87]_inst/CP
+ (Sync)in_input_reg[86]_inst/CP
+ (Sync)in_input_reg[85]_inst/CP
+ (Sync)in_input_reg[84]_inst/CP
+ (Sync)in_input_reg[83]_inst/CP
+ (Sync)in_input_reg[82]_inst/CP
+ (Sync)in_input_reg[81]_inst/CP
+ (Sync)in_input_reg[80]_inst/CP
+ (Sync)in_input_reg[79]_inst/CP
+ (Sync)in_input_reg[78]_inst/CP
+ (Sync)in_input_reg[77]_inst/CP
+ (Sync)in_input_reg[76]_inst/CP
+ (Sync)in_input_reg[75]_inst/CP
+ (Sync)in_input_reg[74]_inst/CP
+ (Sync)in_input_reg[73]_inst/CP
+ (Sync)in_input_reg[72]_inst/CP
+ (Sync)in_input_reg[71]_inst/CP
+ (Sync)in_input_reg[70]_inst/CP
+ (Sync)in_input_reg[69]_inst/CP
+ (Sync)in_input_reg[68]_inst/CP
+ (Sync)in_input_reg[67]_inst/CP
+ (Sync)in_input_reg[66]_inst/CP
+ (Sync)in_input_reg[65]_inst/CP
+ (Sync)in_input_reg[64]_inst/CP
+ (Sync)in_input_reg[63]_inst/CP
+ (Sync)in_input_reg[62]_inst/CP
+ (Sync)in_input_reg[61]_inst/CP
+ (Sync)in_input_reg[60]_inst/CP
+ (Sync)in_input_reg[59]_inst/CP
+ (Sync)in_input_reg[58]_inst/CP
+ (Sync)in_input_reg[57]_inst/CP
+ (Sync)in_input_reg[56]_inst/CP
+ (Sync)in_input_reg[55]_inst/CP
+ (Sync)in_input_reg[54]_inst/CP
+ (Sync)in_input_reg[53]_inst/CP
+ (Sync)in_input_reg[52]_inst/CP
+ (Sync)in_input_reg[51]_inst/CP
+ (Sync)in_input_reg[50]_inst/CP
+ (Sync)in_input_reg[49]_inst/CP
+ (Sync)in_input_reg[48]_inst/CP
+ (Sync)in_input_reg[47]_inst/CP
+ (Sync)in_input_reg[46]_inst/CP
+ (Sync)in_input_reg[45]_inst/CP
+ (Sync)in_input_reg[44]_inst/CP
+ (Sync)in_input_reg[43]_inst/CP
+ (Sync)in_input_reg[42]_inst/CP
+ (Sync)in_input_reg[41]_inst/CP
+ (Sync)in_input_reg[40]_inst/CP
+ (Sync)in_input_reg[39]_inst/CP
+ (Sync)in_input_reg[38]_inst/CP
+ (Sync)in_input_reg[37]_inst/CP
+ (Sync)in_input_reg[36]_inst/CP
+ (Sync)in_input_reg[35]_inst/CP
+ (Sync)in_input_reg[34]_inst/CP
+ (Sync)in_input_reg[33]_inst/CP
+ (Sync)in_input_reg[32]_inst/CP
+ (Sync)in_input_reg[31]_inst/CP
+ (Sync)in_input_reg[30]_inst/CP
+ (Sync)in_input_reg[29]_inst/CP
+ (Sync)in_input_reg[28]_inst/CP
+ (Sync)in_input_reg[27]_inst/CP
+ (Sync)in_input_reg[26]_inst/CP
+ (Sync)in_input_reg[25]_inst/CP
+ (Sync)in_input_reg[24]_inst/CP
+ (Sync)in_input_reg[23]_inst/CP
+ (Sync)in_input_reg[22]_inst/CP
+ (Sync)in_input_reg[21]_inst/CP
+ (Sync)in_input_reg[20]_inst/CP
+ (Sync)in_input_reg[19]_inst/CP
+ (Sync)in_input_reg[18]_inst/CP
+ (Sync)in_input_reg[17]_inst/CP
+ (Sync)in_input_reg[16]_inst/CP
+ (Sync)in_input_reg[15]_inst/CP
+ (Sync)in_input_reg[14]_inst/CP
+ (Sync)in_input_reg[13]_inst/CP
+ (Sync)in_input_reg[12]_inst/CP
+ (Sync)in_input_reg[11]_inst/CP
+ (Sync)in_input_reg[10]_inst/CP
+ (Sync)in_input_reg[9]_inst/CP
+ (Sync)in_input_reg[8]_inst/CP
+ (Sync)in_input_reg[7]_inst/CP
+ (Sync)in_input_reg[6]_inst/CP
+ (Sync)in_input_reg[5]_inst/CP
+ (Sync)in_input_reg[4]_inst/CP
+ (Sync)in_input_reg[3]_inst/CP
+ (Sync)in_input_reg[2]_inst/CP
+ (Sync)in_input_reg[1]_inst/CP
+ (Sync)in_input_reg[0]_inst/CP
+ (Sync)in_control_reg[19]_inst/CP
+ (Sync)in_control_reg[18]_inst/CP
+ (Sync)in_control_reg[17]_inst/CP
+ (Sync)in_control_reg[16]_inst/CP
+ (Sync)in_control_reg[15]_inst/CP
+ (Sync)in_control_reg[14]_inst/CP
+ (Sync)in_control_reg[13]_inst/CP
+ (Sync)in_control_reg[12]_inst/CP
+ (Sync)in_control_reg[11]_inst/CP
+ (Sync)in_control_reg[10]_inst/CP
+ (Sync)in_control_reg[9]_inst/CP
+ (Sync)in_control_reg[8]_inst/CP
+ (Sync)in_control_reg[7]_inst/CP
+ (Sync)in_control_reg[6]_inst/CP
+ (Sync)in_control_reg[5]_inst/CP
+ (Sync)in_control_reg[4]_inst/CP
+ (Sync)in_control_reg[3]_inst/CP
+ (Sync)in_control_reg[2]_inst/CP
+ (Sync)in_control_reg[1]_inst/CP
+ (Sync)in_control_reg[0]_inst/CP
+ (Sync)port_en_n_reg[7]_inst/CP
+ (Sync)port_en_n_reg[6]_inst/CP
+ (Sync)port_en_n_reg[5]_inst/CP
+ (Sync)port_en_n_reg[4]_inst/CP
+ (Sync)port_en_n_reg[3]_inst/CP
+ (Sync)port_en_n_reg[2]_inst/CP
+ (Sync)port_en_n_reg[1]_inst/CP
+ (Sync)port_en_n_reg[0]_inst/CP
+ (Sync)out_output_reg[0]/CP
+ (Sync)out_output_reg[1]/CP
+ (Sync)out_output_reg[2]/CP
+ (Sync)out_output_reg[3]/CP
+ (Sync)out_output_reg[4]/CP
+ (Sync)out_output_reg[5]/CP
+ (Sync)out_output_reg[6]/CP
+ (Sync)out_output_reg[7]/CP
+ (Sync)out_output_reg[8]/CP
+ (Sync)out_output_reg[9]/CP
+ (Sync)out_output_reg[10]/CP
+ (Sync)out_output_reg[11]/CP
+ (Sync)out_output_reg[12]/CP
+ (Sync)out_output_reg[13]/CP
+ (Sync)out_output_reg[14]/CP
+ (Sync)out_output_reg[15]/CP
+ (Sync)out_output_reg[16]/CP
+ (Sync)out_output_reg[17]/CP
+ (Sync)out_output_reg[18]/CP
+ (Sync)out_output_reg[19]/CP
+ (Sync)out_output_reg[20]/CP
+ (Sync)out_output_reg[21]/CP
+ (Sync)out_output_reg[22]/CP
+ (Sync)out_output_reg[23]/CP
+ (Sync)out_output_reg[24]/CP
+ (Sync)out_output_reg[25]/CP
+ (Sync)out_output_reg[26]/CP
+ (Sync)out_output_reg[27]/CP
+ (Sync)out_output_reg[28]/CP
+ (Sync)out_output_reg[29]/CP
+ (Sync)out_output_reg[30]/CP
+ (Sync)out_output_reg[31]/CP
+ (Sync)out_output_reg[32]/CP
+ (Sync)out_output_reg[33]/CP
+ (Sync)out_output_reg[34]/CP
+ (Sync)out_output_reg[35]/CP
+ (Sync)out_output_reg[36]/CP
+ (Sync)out_output_reg[37]/CP
+ (Sync)out_output_reg[38]/CP
+ (Sync)out_output_reg[39]/CP
+ (Sync)out_output_reg[40]/CP
+ (Sync)out_output_reg[41]/CP
+ (Sync)out_output_reg[42]/CP
+ (Sync)out_output_reg[43]/CP
+ (Sync)out_output_reg[44]/CP
+ (Sync)out_output_reg[45]/CP
+ (Sync)out_output_reg[46]/CP
+ (Sync)out_output_reg[47]/CP
+ (Sync)out_output_reg[48]/CP
+ (Sync)out_output_reg[49]/CP
+ (Sync)out_output_reg[50]/CP
+ (Sync)out_output_reg[51]/CP
+ (Sync)out_output_reg[52]/CP
+ (Sync)out_output_reg[53]/CP
+ (Sync)out_output_reg[54]/CP
+ (Sync)out_output_reg[55]/CP
+ (Sync)out_output_reg[56]/CP
+ (Sync)out_output_reg[57]/CP
+ (Sync)out_output_reg[58]/CP
+ (Sync)out_output_reg[59]/CP
+ (Sync)out_output_reg[60]/CP
+ (Sync)out_output_reg[61]/CP
+ (Sync)out_output_reg[62]/CP
+ (Sync)out_output_reg[63]/CP
+ (Sync)out_output_reg[64]/CP
+ (Sync)out_output_reg[65]/CP
+ (Sync)out_output_reg[66]/CP
+ (Sync)out_output_reg[67]/CP
+ (Sync)out_output_reg[68]/CP
+ (Sync)out_output_reg[69]/CP
+ (Sync)out_output_reg[70]/CP
+ (Sync)out_output_reg[71]/CP
+ (Sync)out_output_reg[72]/CP
+ (Sync)out_output_reg[73]/CP
+ (Sync)out_output_reg[74]/CP
+ (Sync)out_output_reg[75]/CP
+ (Sync)out_output_reg[76]/CP
+ (Sync)out_output_reg[77]/CP
+ (Sync)out_output_reg[78]/CP
+ (Sync)out_output_reg[79]/CP
+ (Sync)out_output_reg[80]/CP
+ (Sync)out_output_reg[81]/CP
+ (Sync)out_output_reg[82]/CP
+ (Sync)out_output_reg[83]/CP
+ (Sync)out_output_reg[84]/CP
+ (Sync)out_output_reg[85]/CP
+ (Sync)out_output_reg[86]/CP
+ (Sync)out_output_reg[87]/CP
+ (Sync)out_output_reg[88]/CP
+ (Sync)out_output_reg[89]/CP
+ (Sync)out_output_reg[90]/CP
+ (Sync)out_output_reg[91]/CP
+ (Sync)out_output_reg[92]/CP
+ (Sync)out_output_reg[93]/CP
+ (Sync)out_output_reg[94]/CP
+ (Sync)out_output_reg[95]/CP
+ (Sync)out_output_reg[96]/CP
+ (Sync)out_output_reg[97]/CP
+ (Sync)out_output_reg[98]/CP
+ (Sync)out_output_reg[99]/CP
+ (Sync)out_output_reg[100]/CP
+ (Sync)out_output_reg[101]/CP
+ (Sync)out_output_reg[102]/CP
+ (Sync)out_output_reg[103]/CP
+ (Sync)out_output_reg[104]/CP
+ (Sync)out_output_reg[105]/CP
+ (Sync)out_output_reg[106]/CP
+ (Sync)out_output_reg[107]/CP
+ (Sync)out_output_reg[108]/CP
+ (Sync)out_output_reg[109]/CP
+ (Sync)out_output_reg[110]/CP
+ (Sync)out_output_reg[111]/CP
+ (Sync)out_output_reg[112]/CP
+ (Sync)out_output_reg[113]/CP
+ (Sync)out_output_reg[114]/CP
+ (Sync)out_output_reg[115]/CP
+ (Sync)out_output_reg[116]/CP
+ (Sync)out_output_reg[117]/CP
+ (Sync)out_output_reg[118]/CP
+ (Sync)out_output_reg[119]/CP
+ (Sync)out_output_reg[120]/CP
+ (Sync)out_output_reg[121]/CP
+ (Sync)out_output_reg[122]/CP
+ (Sync)out_output_reg[123]/CP
+ (Sync)out_output_reg[124]/CP
+ (Sync)out_output_reg[125]/CP
+ (Sync)out_output_reg[126]/CP
+ (Sync)out_output_reg[127]/CP
+ (Sync)out_output_reg[128]/CP
+ (Sync)out_output_reg[129]/CP
+ (Sync)out_output_reg[130]/CP
+ (Sync)out_output_reg[131]/CP
+ (Sync)out_output_reg[132]/CP
+ (Sync)out_output_reg[133]/CP
+ (Sync)out_output_reg[134]/CP
+ (Sync)out_output_reg[135]/CP
+ (Sync)out_output_reg[136]/CP
+ (Sync)out_output_reg[137]/CP
+ (Sync)out_output_reg[138]/CP
+ (Sync)out_output_reg[139]/CP
+ (Sync)out_output_reg[140]/CP
+ (Sync)out_output_reg[141]/CP
+ (Sync)out_output_reg[142]/CP
+ (Sync)out_output_reg[143]/CP
+ (Sync)out_output_reg[144]/CP
+ (Sync)out_output_reg[145]/CP
+ (Sync)out_output_reg[146]/CP
+ (Sync)out_output_reg[147]/CP
+ (Sync)out_output_reg[148]/CP
+ (Sync)out_output_reg[149]/CP
+ (Sync)out_output_reg[150]/CP
+ (Sync)out_output_reg[151]/CP
+ (Sync)out_output_reg[152]/CP
+ (Sync)out_output_reg[153]/CP
+ (Sync)out_output_reg[154]/CP
+ (Sync)out_output_reg[155]/CP
+ (Sync)out_output_reg[156]/CP
+ (Sync)out_output_reg[157]/CP
+ (Sync)out_output_reg[158]/CP
+ (Sync)out_output_reg[159]/CP

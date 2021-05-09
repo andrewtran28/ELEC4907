@@ -1,0 +1,72 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : benes
+Version: H-2013.03-SP5-2
+Date   : Sun Dec 29 22:51:00 2019
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+benes                  ZeroWireload      tcbn65gpluswc
+crossbar_0             ZeroWireload      tcbn65gpluswc
+crossbar_1             ZeroWireload      tcbn65gpluswc
+crossbar_2             ZeroWireload      tcbn65gpluswc
+crossbar_3             ZeroWireload      tcbn65gpluswc
+crossbar_4             ZeroWireload      tcbn65gpluswc
+crossbar_5             ZeroWireload      tcbn65gpluswc
+crossbar_6             ZeroWireload      tcbn65gpluswc
+crossbar_7             ZeroWireload      tcbn65gpluswc
+crossbar_8             ZeroWireload      tcbn65gpluswc
+crossbar_9             ZeroWireload      tcbn65gpluswc
+crossbar_10            ZeroWireload      tcbn65gpluswc
+crossbar_11            ZeroWireload      tcbn65gpluswc
+crossbar_12            ZeroWireload      tcbn65gpluswc
+crossbar_13            ZeroWireload      tcbn65gpluswc
+crossbar_14            ZeroWireload      tcbn65gpluswc
+crossbar_15            ZeroWireload      tcbn65gpluswc
+crossbar_16            ZeroWireload      tcbn65gpluswc
+crossbar_17            ZeroWireload      tcbn65gpluswc
+crossbar_18            ZeroWireload      tcbn65gpluswc
+crossbar_19            ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 309.3232 uW   (13%)
+  Net Switching Power  =   1.9909 mW   (87%)
+                         ---------
+Total Dynamic Power    =   2.3002 mW  (100%)
+
+Cell Leakage Power     =  15.4437 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.3093            1.9909        1.5443e+04            2.3156  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              0.3093 mW         1.9909 mW     1.5443e+04 nW         2.3156 mW

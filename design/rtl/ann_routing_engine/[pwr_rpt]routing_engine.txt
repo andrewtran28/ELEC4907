@@ -1,0 +1,52 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : routing_engine
+Version: H-2013.03-SP5-2
+Date   : Sun Dec 29 22:22:06 2019
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+routing_engine         ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 109.3662 uW   (31%)
+  Net Switching Power  = 247.5410 uW   (69%)
+                         ---------
+Total Dynamic Power    = 356.9073 uW  (100%)
+
+Cell Leakage Power     =   3.5040 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential     1.4384e-02        1.3238e-02          627.8511        2.8250e-02  (   7.84%)
+combinational  9.4982e-02            0.2343        2.8747e+03            0.3322  (  92.16%)
+--------------------------------------------------------------------------------------------------
+Total              0.1094 mW         0.2475 mW     3.5025e+03 nW         0.3604 mW

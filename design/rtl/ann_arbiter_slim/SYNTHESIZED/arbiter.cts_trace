@@ -1,0 +1,79 @@
+
+
+
+
+
+Tracing Clock clk
+
+****** Clock Tree (clk) Structure
+Nr. Subtrees                   : 1
+Nr. Sinks                      : 24
+Nr.          Rising  Sync Pins : 24
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+Nr. Unsync Pins                : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+DFQD1 (CP)                              21
+EDFQD1 (CP)                             3
+-----------------------------------------------
+
+
+
+
+** Unsync Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (clk) Cell: (EMPTY) Net: (clk) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 24
+          Nr. of     Rising  Sync Pins  : 24
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock clk
+*DEPTH 0: clk
+ (Sync)fifo_7_ptr_reg[2]/CP
+ (Sync)fifo_7_ptr_reg[1]/CP
+ (Sync)fifo_7_ptr_reg[0]/CP
+ (Sync)fifo_2_ptr_reg[2]/CP
+ (Sync)fifo_2_ptr_reg[1]/CP
+ (Sync)fifo_2_ptr_reg[0]/CP
+ (Sync)fifo_1_ptr_reg[2]/CP
+ (Sync)fifo_1_ptr_reg[1]/CP
+ (Sync)fifo_1_ptr_reg[0]/CP
+ (Sync)fifo_0_ptr_reg[2]/CP
+ (Sync)fifo_0_ptr_reg[1]/CP
+ (Sync)fifo_0_ptr_reg[0]/CP
+ (Sync)fifo_3_ptr_reg[2]/CP
+ (Sync)fifo_3_ptr_reg[1]/CP
+ (Sync)fifo_3_ptr_reg[0]/CP
+ (Sync)fifo_5_ptr_reg[2]/CP
+ (Sync)fifo_5_ptr_reg[1]/CP
+ (Sync)fifo_5_ptr_reg[0]/CP
+ (Sync)fifo_4_ptr_reg[2]/CP
+ (Sync)fifo_4_ptr_reg[1]/CP
+ (Sync)fifo_4_ptr_reg[0]/CP
+ (Sync)fifo_6_ptr_reg[2]/CP
+ (Sync)fifo_6_ptr_reg[1]/CP
+ (Sync)fifo_6_ptr_reg[0]/CP

@@ -1,0 +1,97 @@
+
+
+
+
+
+Tracing Clock clk
+
+****** Clock Tree (clk) Structure
+Nr. Subtrees                   : 1
+Nr. Sinks                      : 39
+Nr.          Rising  Sync Pins : 39
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+Nr. Unsync Pins                : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+DFQD1 (CP)                              26
+EDFQD1 (CP)                             6
+DFXQD1 (CP)                             4
+DFKCNQD1 (CP)                           2
+DFD1 (CP)                               1
+-----------------------------------------------
+
+
+
+
+** Unsync Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (clk) Cell: (EMPTY) Net: (clk) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 39
+          Nr. of     Rising  Sync Pins  : 39
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock clk
+*DEPTH 0: clk
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[6][1]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[2][0]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[4][0]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[4][2]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[2][2]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[2][1]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[4][1]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[0][0]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[1][1]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[1][0]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[3][2]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[1][2]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[6][2]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[7][0]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[0][1]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[0][2]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[3][0]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[6][0]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[5][1]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[5][0]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[5][2]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[7][1]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[0][2]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[1][2]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[0][1]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[2][1]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[6][1]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[2][2]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[3][2]/CP
+ (Sync)u_fwd_routing_engine/dst_reg[4][1]/CP
+ (Sync)u_fwd_routing_engine/stage_0_sw_ctl_reg[1]/CP
+ (Sync)u_fwd_routing_engine/stage_0_sw_ctl_reg[2]/CP
+ (Sync)u_fwd_routing_engine/stage_1_sw_ctl_reg[3]/CP
+ (Sync)u_fwd_routing_engine/stage_1_sw_ctl_reg[1]/CP
+ (Sync)u_fwd_routing_engine/stage_0_sw_ctl_reg[3]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[4][0]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[0][0]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[5][0]/CP
+ (Sync)u_fwd_routing_engine/stage_1_output_reg[1][0]/CP

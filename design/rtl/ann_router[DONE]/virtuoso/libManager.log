@@ -1,0 +1,23 @@
+\o Program:		@(#)$CDS: libManager version 32.10 11/11/2011 13:43 (cat91amd) $
+\o Sub version:		sub-version  s008 
+\o Arguments:		-mpssession virtuoso2386 -mpshost thor.doe.carleton.ca 
+\o Working Directory:	thor.doe.carleton.ca:/home/vladimirmilicevic/ann_router/virtuoso
+\o 64-bit offsets
+\o Qt version: 		4.5.3
+\o Log file is "/home/vladimirmilicevic/ann_router/virtuoso/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(76 381 930 448))
+\o changeWorkingDir("/home/vladimirmilicevic/ann_router/virtuoso") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a cdsLibManager->libListBox->value = "router_library"
+\a cdsLibManager->libListBox->value = "router"
+\a cdsLibManager->libListBox->value = "tsmcN65"
+\a cdsLibManager->libLineEdit->value = "tsmcN65"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\o libManager is exiting.
+\a exit(0)

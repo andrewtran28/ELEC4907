@@ -1,0 +1,2 @@
+INCLUDE tech.lib
+DEFINE router /home/vladimirmilicevic/ann_router/synthesized/router

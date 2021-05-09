@@ -1,0 +1,3 @@
+AutoCTSRootPin clk 
+Buffer CKBD1 CKBD8 CKBD16 CKBD20 CKBD24 
+END

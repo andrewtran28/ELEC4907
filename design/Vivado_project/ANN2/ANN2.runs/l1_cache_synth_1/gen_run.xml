@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="l1_cache_synth_1" LaunchPart="xc7a100tcsg324-2L" LaunchTime="1574583402">
+  <File Type="PA-TCL" Name="l1_cache.tcl"/>
+  <File Type="REPORTS-TCL" Name="l1_cache_reports.tcl"/>
+  <File Type="RDS-RDS" Name="l1_cache.vds"/>
+  <File Type="RDS-DCP" Name="l1_cache.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/l1_cache">
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/cache/memory_map.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/cache/memory_map.vh"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/cache/l1_cache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/cache/l1_cache.v"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/l1_cache/new/l1_cache_ooc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="l1_cache"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/design/rtl/cache/l1_cache.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/l1_cache">
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/cache/memory_map.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/cache/memory_map.vh"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/cache/l1_cache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/cache/l1_cache.v"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/l1_cache/new/l1_cache_ooc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="l1_cache"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/design/rtl/cache/l1_cache.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

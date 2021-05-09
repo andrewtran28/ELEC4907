@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="10000001fs"></ZoomEndTime>
+      <Cursor1Time time="10000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="204"></NameColumnWidth>
+      <ValueColumnWidth column_width="173"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="45" />
+   <wvobject fp_name="/top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/voq0" type="array">
+      <obj_property name="ElementShortName">voq0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">voq0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/voq1" type="array">
+      <obj_property name="ElementShortName">voq1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">voq1[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/voq2" type="array">
+      <obj_property name="ElementShortName">voq2[127:0]</obj_property>
+      <obj_property name="ObjectShortName">voq2[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/voq3" type="array">
+      <obj_property name="ElementShortName">voq3[127:0]</obj_property>
+      <obj_property name="ObjectShortName">voq3[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/voq4" type="array">
+      <obj_property name="ElementShortName">voq4[127:0]</obj_property>
+      <obj_property name="ObjectShortName">voq4[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/voq5" type="array">
+      <obj_property name="ElementShortName">voq5[127:0]</obj_property>
+      <obj_property name="ObjectShortName">voq5[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/voq6" type="array">
+      <obj_property name="ElementShortName">voq6[127:0]</obj_property>
+      <obj_property name="ObjectShortName">voq6[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/voq7" type="array">
+      <obj_property name="ElementShortName">voq7[127:0]</obj_property>
+      <obj_property name="ObjectShortName">voq7[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/en0" type="array">
+      <obj_property name="ElementShortName">en0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">en0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/en1" type="array">
+      <obj_property name="ElementShortName">en1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">en1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/en2" type="array">
+      <obj_property name="ElementShortName">en2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">en2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/en3" type="array">
+      <obj_property name="ElementShortName">en3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">en3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/en4" type="array">
+      <obj_property name="ElementShortName">en4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">en4[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/en5" type="array">
+      <obj_property name="ElementShortName">en5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">en5[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/en6" type="array">
+      <obj_property name="ElementShortName">en6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">en6[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/en7" type="array">
+      <obj_property name="ElementShortName">en7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">en7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/out0" type="array">
+      <obj_property name="ElementShortName">out0[19:0]</obj_property>
+      <obj_property name="ObjectShortName">out0[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/out1" type="array">
+      <obj_property name="ElementShortName">out1[19:0]</obj_property>
+      <obj_property name="ObjectShortName">out1[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/out2" type="array">
+      <obj_property name="ElementShortName">out2[19:0]</obj_property>
+      <obj_property name="ObjectShortName">out2[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/out3" type="array">
+      <obj_property name="ElementShortName">out3[19:0]</obj_property>
+      <obj_property name="ObjectShortName">out3[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/out4" type="array">
+      <obj_property name="ElementShortName">out4[19:0]</obj_property>
+      <obj_property name="ObjectShortName">out4[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/out5" type="array">
+      <obj_property name="ElementShortName">out5[19:0]</obj_property>
+      <obj_property name="ObjectShortName">out5[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/out6" type="array">
+      <obj_property name="ElementShortName">out6[19:0]</obj_property>
+      <obj_property name="ObjectShortName">out6[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/out7" type="array">
+      <obj_property name="ElementShortName">out7[19:0]</obj_property>
+      <obj_property name="ObjectShortName">out7[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/port_map" type="array">
+      <obj_property name="ElementShortName">port_map[7:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">port_map[7:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq0_map" type="array">
+      <obj_property name="ElementShortName">voq0_map[7:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">voq0_map[7:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq1_map" type="array">
+      <obj_property name="ElementShortName">voq1_map[7:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">voq1_map[7:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq2_map" type="array">
+      <obj_property name="ElementShortName">voq2_map[7:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">voq2_map[7:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq3_map" type="array">
+      <obj_property name="ElementShortName">voq3_map[7:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">voq3_map[7:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq4_map" type="array">
+      <obj_property name="ElementShortName">voq4_map[7:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">voq4_map[7:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq5_map" type="array">
+      <obj_property name="ElementShortName">voq5_map[7:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">voq5_map[7:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq6_map" type="array">
+      <obj_property name="ElementShortName">voq6_map[7:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">voq6_map[7:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq7_map" type="array">
+      <obj_property name="ElementShortName">voq7_map[7:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">voq7_map[7:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq_sel" type="array">
+      <obj_property name="ElementShortName">voq_sel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">voq_sel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/port_map_flag" type="logic">
+      <obj_property name="ElementShortName">port_map_flag</obj_property>
+      <obj_property name="ObjectShortName">port_map_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq0_flag" type="logic">
+      <obj_property name="ElementShortName">voq0_flag</obj_property>
+      <obj_property name="ObjectShortName">voq0_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq1_flag" type="logic">
+      <obj_property name="ElementShortName">voq1_flag</obj_property>
+      <obj_property name="ObjectShortName">voq1_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq2_flag" type="logic">
+      <obj_property name="ElementShortName">voq2_flag</obj_property>
+      <obj_property name="ObjectShortName">voq2_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq3_flag" type="logic">
+      <obj_property name="ElementShortName">voq3_flag</obj_property>
+      <obj_property name="ObjectShortName">voq3_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq4_flag" type="logic">
+      <obj_property name="ElementShortName">voq4_flag</obj_property>
+      <obj_property name="ObjectShortName">voq4_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq5_flag" type="logic">
+      <obj_property name="ElementShortName">voq5_flag</obj_property>
+      <obj_property name="ObjectShortName">voq5_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq6_flag" type="logic">
+      <obj_property name="ElementShortName">voq6_flag</obj_property>
+      <obj_property name="ObjectShortName">voq6_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/u_arbiter/voq7_flag" type="logic">
+      <obj_property name="ElementShortName">voq7_flag</obj_property>
+      <obj_property name="ObjectShortName">voq7_flag</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="layer_controller_dut_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="layer_controller_dut" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="70508266fs"></ZoomStartTime>
+      <ZoomEndTime time="71908267fs"></ZoomEndTime>
+      <Cursor1Time time="100000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="186"></NameColumnWidth>
+      <ValueColumnWidth column_width="210"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="56" />
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/layer_data_in" type="array">
+      <obj_property name="ElementShortName">layer_data_in[159:0]</obj_property>
+      <obj_property name="ObjectShortName">layer_data_in[159:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/layer_data_out" type="array">
+      <obj_property name="ElementShortName">layer_data_out[159:0]</obj_property>
+      <obj_property name="ObjectShortName">layer_data_out[159:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/addr" type="array">
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/len" type="array">
+      <obj_property name="ElementShortName">len[3:0]</obj_property>
+      <obj_property name="ObjectShortName">len[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/RE" type="logic">
+      <obj_property name="ElementShortName">RE</obj_property>
+      <obj_property name="ObjectShortName">RE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/op_done" type="logic">
+      <obj_property name="ElementShortName">op_done</obj_property>
+      <obj_property name="ObjectShortName">op_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/layer_en" type="logic">
+      <obj_property name="ElementShortName">layer_en</obj_property>
+      <obj_property name="ObjectShortName">layer_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/layer_done" type="logic">
+      <obj_property name="ElementShortName">layer_done</obj_property>
+      <obj_property name="ObjectShortName">layer_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_value" type="array">
+      <obj_property name="ElementShortName">input_value[7:0][127:0]</obj_property>
+      <obj_property name="ObjectShortName">input_value[7:0][127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_value[7]" type="array">
+         <obj_property name="ElementShortName">[7][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_value[6]" type="array">
+         <obj_property name="ElementShortName">[6][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_value[5]" type="array">
+         <obj_property name="ElementShortName">[5][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_value[4]" type="array">
+         <obj_property name="ElementShortName">[4][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_value[3]" type="array">
+         <obj_property name="ElementShortName">[3][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_value[2]" type="array">
+         <obj_property name="ElementShortName">[2][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_value[1]" type="array">
+         <obj_property name="ElementShortName">[1][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_value[0]" type="array">
+         <obj_property name="ElementShortName">[0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_weight" type="array">
+      <obj_property name="ElementShortName">input_weight[7:0][127:0]</obj_property>
+      <obj_property name="ObjectShortName">input_weight[7:0][127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/input_bias" type="array">
+      <obj_property name="ElementShortName">input_bias[7:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">input_bias[7:0][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/forward_network" type="array">
+      <obj_property name="ElementShortName">forward_network[7:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">forward_network[7:0][31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/reverse_network" type="array">
+      <obj_property name="ElementShortName">reverse_network[7:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reverse_network[7:0][31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/en" type="array">
+      <obj_property name="ElementShortName">en[7:0]</obj_property>
+      <obj_property name="ObjectShortName">en[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/srdy" type="array">
+      <obj_property name="ElementShortName">srdy[7:0]</obj_property>
+      <obj_property name="ObjectShortName">srdy[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/cycle_done" type="logic">
+      <obj_property name="ElementShortName">cycle_done</obj_property>
+      <obj_property name="ObjectShortName">cycle_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/mem_cycle_done" type="logic">
+      <obj_property name="ElementShortName">mem_cycle_done</obj_property>
+      <obj_property name="ObjectShortName">mem_cycle_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/output_value" type="array">
+      <obj_property name="ElementShortName">output_value[7:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">output_value[7:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/drdy" type="array">
+      <obj_property name="ElementShortName">drdy[7:0]</obj_property>
+      <obj_property name="ObjectShortName">drdy[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/done" type="array">
+      <obj_property name="ElementShortName">done[7:0]</obj_property>
+      <obj_property name="ObjectShortName">done[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/cur_state" type="array">
+      <obj_property name="ElementShortName">cur_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/nxt_state" type="array">
+      <obj_property name="ElementShortName">nxt_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">nxt_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/mem_cur_state" type="array">
+      <obj_property name="ElementShortName">mem_cur_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_cur_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/mem_nxt_state" type="array">
+      <obj_property name="ElementShortName">mem_nxt_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_nxt_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/layer_BAR" type="array">
+      <obj_property name="ElementShortName">layer_BAR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">layer_BAR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/neuron_BAR" type="array">
+      <obj_property name="ElementShortName">neuron_BAR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">neuron_BAR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_arbiter_port_dst" type="array">
+      <obj_property name="ElementShortName">fwd_arbiter_port_dst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fwd_arbiter_port_dst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_arbiter_srdy" type="logic">
+      <obj_property name="ElementShortName">fwd_arbiter_srdy</obj_property>
+      <obj_property name="ObjectShortName">fwd_arbiter_srdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_arbiter_en" type="logic">
+      <obj_property name="ElementShortName">fwd_arbiter_en</obj_property>
+      <obj_property name="ObjectShortName">fwd_arbiter_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_arbiter_drdy" type="logic">
+      <obj_property name="ElementShortName">fwd_arbiter_drdy</obj_property>
+      <obj_property name="ObjectShortName">fwd_arbiter_drdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_routing_engine_port_dest" type="array">
+      <obj_property name="ElementShortName">fwd_routing_engine_port_dest[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fwd_routing_engine_port_dest[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_routing_engine_control" type="array">
+      <obj_property name="ElementShortName">fwd_routing_engine_control[19:0]</obj_property>
+      <obj_property name="ObjectShortName">fwd_routing_engine_control[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_routing_engine_done" type="logic">
+      <obj_property name="ElementShortName">fwd_routing_engine_done</obj_property>
+      <obj_property name="ObjectShortName">fwd_routing_engine_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_benes_in_control" type="array">
+      <obj_property name="ElementShortName">fwd_benes_in_control[19:0]</obj_property>
+      <obj_property name="ObjectShortName">fwd_benes_in_control[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_benes_out_output" type="array">
+      <obj_property name="ElementShortName">fwd_benes_out_output[159:0]</obj_property>
+      <obj_property name="ObjectShortName">fwd_benes_out_output[159:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_layer_controller/fwd_benes_port_en_n" type="array">
+      <obj_property name="ElementShortName">fwd_benes_port_en_n[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fwd_benes_port_en_n[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider271">
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/master_data_out" type="array">
+      <obj_property name="ElementShortName">master_data_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">master_data_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/master_data_in" type="array">
+      <obj_property name="ElementShortName">master_data_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">master_data_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/master_addr" type="array">
+      <obj_property name="ElementShortName">master_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">master_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/master_len" type="array">
+      <obj_property name="ElementShortName">master_len[3:0]</obj_property>
+      <obj_property name="ObjectShortName">master_len[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/master_WE" type="logic">
+      <obj_property name="ElementShortName">master_WE</obj_property>
+      <obj_property name="ObjectShortName">master_WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/master_RE" type="logic">
+      <obj_property name="ElementShortName">master_RE</obj_property>
+      <obj_property name="ObjectShortName">master_RE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/master_op_done" type="logic">
+      <obj_property name="ElementShortName">master_op_done</obj_property>
+      <obj_property name="ObjectShortName">master_op_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/layer_0_data_out" type="array">
+      <obj_property name="ElementShortName">layer_0_data_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">layer_0_data_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/layer_0_data_in" type="array">
+      <obj_property name="ElementShortName">layer_0_data_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">layer_0_data_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/layer_0_addr" type="array">
+      <obj_property name="ElementShortName">layer_0_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">layer_0_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/layer_0_len" type="array">
+      <obj_property name="ElementShortName">layer_0_len[3:0]</obj_property>
+      <obj_property name="ObjectShortName">layer_0_len[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/layer_0_WE" type="logic">
+      <obj_property name="ElementShortName">layer_0_WE</obj_property>
+      <obj_property name="ObjectShortName">layer_0_WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/layer_0_RE" type="logic">
+      <obj_property name="ElementShortName">layer_0_RE</obj_property>
+      <obj_property name="ObjectShortName">layer_0_RE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/layer_0_op_done" type="logic">
+      <obj_property name="ElementShortName">layer_0_op_done</obj_property>
+      <obj_property name="ObjectShortName">layer_0_op_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/layer_controller_dut/dut_cache/Mem" type="array">
+      <obj_property name="ElementShortName">Mem[815:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">Mem[815:0][7:0]</obj_property>
+      <obj_property name="Reversed">false</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

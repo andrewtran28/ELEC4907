@@ -1,0 +1,4 @@
+INCLUDE tech.lib
+DEFINE routing_engine_library /home/vladimirmilicevic/ann_routing_engine/routing_engine_library
+DEFINE fdsa /home/vladimirmilicevic/ann_routing_engine/fdsa
+DEFINE avTech /CMC/tools/cadence/ASSURA04.12.021-615_lnx86/tools/assura/etc/avtech/avTech

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2L" LaunchTime="1574583402">
+  <File Type="PA-TCL" Name="layer_controller_dut.tcl"/>
+  <File Type="REPORTS-TCL" Name="layer_controller_dut_reports.tcl"/>
+  <File Type="RDS-RDS" Name="layer_controller_dut.vds"/>
+  <File Type="RDS-DCP" Name="layer_controller_dut.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/cache/memory_map.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/cache/memory_map.vh"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/neuron/layer_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/neuron/layer_controller.v"/>
+        <Attr Name="ImportTime" Val="1574566183"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/layer/layer_controller_dut.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/layer/layer_controller_dut.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/arb/arb_dut.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/arb/arb_dut.v"/>
+        <Attr Name="ImportTime" Val="1574574655"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/host_controller.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/ANN/ANN/ANN.srcs/sources_1/new/host_controller.v"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/host/host_controller.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/host/host_controller.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/cache/l1_cache_dut.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/cache/l1_cache_dut.v"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/intrc/routing_engine_dut.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/intrc/routing_engine_dut.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/neuron/neuron_dut.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/neuron/neuron_dut.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/neuron/layer_controller_dut.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/neuron/layer_controller_dut.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/fma/fma_top_tb.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/fma/fma_top_tb.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/rtl/arb/arb.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/arb/arb.v"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/ANN/ANN/ANN.srcs/arbiter/new/arbiter_ooc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/ANN/ANN/ANN.srcs/arbiter/new/arbiter_ooc.xdc"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="layer_controller_dut"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="benes"/>
+  <BlockFileSet Type="BlockSrcs" Name="routing_engine"/>
+  <BlockFileSet Type="BlockSrcs" Name="neuron"/>
+  <BlockFileSet Type="BlockSrcs" Name="arb_v2"/>
+  <BlockFileSet Type="BlockSrcs" Name="l1_cache"/>
+</GenRun>

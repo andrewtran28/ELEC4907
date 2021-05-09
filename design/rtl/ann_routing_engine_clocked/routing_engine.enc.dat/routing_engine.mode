@@ -1,0 +1,12 @@
+setAnalysisMode -analysisType bcwc -clkSrcPath true -clockPropagation sdcControl
+setTrialRouteMode -fixAirConnect true
+setOptMode -drcMargin 0 -fixCap true -fixFanoutLoad false -fixTran true
+setExtractRCMode  -engine preRoute
+setDelayCalMode -engine default
+setCTSMode -moveGateLimit 25
+catch {setNanoRouteMode -quiet -routeExpSignatureEco false}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven false}
+
+setPlaceMode -congRepairForceTrialRoute false -fp false -ignoreScan true -relaxSoftBlockageMode 2 -timingDriven false
+setIlmMode -highFanoutPort true -loopBack false 

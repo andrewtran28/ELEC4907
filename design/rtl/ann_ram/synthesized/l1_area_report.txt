@@ -1,0 +1,89 @@
+ 
+****************************************
+Report : area
+Design : RamChip
+Version: H-2013.03-SP5-2
+Date   : Fri Feb 21 00:16:05 2020
+****************************************
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+Number of ports:                           58
+Number of nets:                         11023
+Number of cells:                        11013
+Number of combinational cells:           4821
+Number of sequential cells:              6192
+Number of macros/black boxes:               0
+Number of buf/inv:                        950
+Number of references:                      15
+
+Combinational area:              12025.080403
+Buf/Inv area:                     1342.800053
+Noncombinational area:           31155.839767
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 43180.920171
+Total area:                 undefined
+Loading db file '/CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db'
+Information: Updating design information... (UID-85)
+Warning: Design 'RamChip' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : RamChip
+Version: H-2013.03-SP5-2
+Date   : Fri Feb 21 00:26:03 2020
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RamChip                ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.1310 mW   (95%)
+  Net Switching Power  =  54.3515 uW    (5%)
+                         ---------
+Total Dynamic Power    =   1.1854 mW  (100%)
+
+Cell Leakage Power     = 304.0837 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         1.1112        1.2348e-03        2.8129e+05            1.3937  (  93.71%)
+combinational  1.9813e-02        5.0968e-02        2.2791e+04        9.3572e-02  (   6.29%)
+--------------------------------------------------------------------------------------------------
+Total              1.1310 mW     5.2203e-02 mW     3.0408e+05 nW         1.4873 mW

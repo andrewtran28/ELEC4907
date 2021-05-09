@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1583710027 source:c:\users\andrew\documents\codeblocks\multilayerneuralnetwork\main.c
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+

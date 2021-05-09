@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1572028153 source:c:\users\andrew\documents\codeblocks\backpropagation\derivrelu.c
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+
+1572023433 source:c:\users\andrew\documents\codeblocks\backpropagation\relu.c
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+
+1574796596 source:c:\users\andrew\documents\codeblocks\backpropagation\main.c
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+

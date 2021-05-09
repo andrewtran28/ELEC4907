@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1574568647 source:c:\users\andrew\documents\codeblocks\neuralnetwork\main.c
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+
+1571966870 source:c:\users\andrew\documents\codeblocks\neuralnetwork\relu.c
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+
+1571968286 source:c:\users\andrew\documents\codeblocks\neuralnetwork\derivrelu.c
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+
+1571968794 source:c:\users\andrew\documents\codeblocks\neuralnetwork\backpropagation.c
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+

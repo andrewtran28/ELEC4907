@@ -1,0 +1,36 @@
+synthesized/encounter.log:defined if any area ratio antenna attribute is defined on any layer.
+synthesized/encounter.log:Total standard cell length = 46.1114 (mm), area = 0.0830 (mm^2)
+synthesized/encounter.log:       = stdcell_area 230557 (83001 um^2) / alloc_area 330812 (119092 um^2).
+synthesized/encounter.log:            = total # of pins 81270 / total Instance area 230557.
+synthesized/encounter.log:# ECO: 3.0% of the total area was rechecked for DRC, and 54.5% required routing.
+synthesized/encounter.log:# ECO: 0.0% of the total area was rechecked for DRC, and 29.5% required routing.
+synthesized/encounter.log:#14.9% of the total area is being checked for drcs
+synthesized/encounter.log:#14.9% of the total area was checked
+synthesized/encounter.log:<CMD> setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000 -warning 50
+synthesized/encounter.log:Gate area 1.0800 um^2
+synthesized/encounter.logv:defined if any area ratio antenna attribute is defined on any layer.
+synthesized/encounter.logv:Total standard cell length = 46.1114 (mm), area = 0.0830 (mm^2)
+synthesized/encounter.logv:       = stdcell_area 230557 (83001 um^2) / alloc_area 330812 (119092 um^2).
+synthesized/encounter.logv:            = total # of pins 81270 / total Instance area 230557.
+synthesized/encounter.logv:# ECO: 3.0% of the total area was rechecked for DRC, and 54.5% required routing.
+synthesized/encounter.logv:# ECO: 0.0% of the total area was rechecked for DRC, and 29.5% required routing.
+synthesized/encounter.logv:#14.9% of the total area is being checked for drcs
+synthesized/encounter.logv:#14.9% of the total area was checked
+synthesized/encounter.logv:<CMD> setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000 -warning 50
+synthesized/encounter.logv:Gate area 1.0800 um^2
+synthesized/encounter.cmd:setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000 -warning 50
+synthesized/.layer_controller14803.rs.fp:#  BlackBox: -cell <cell_name> { -size <x> <y> |  -area <um^2> | \                  #
+synthesized/.layer_controller14803.rs.fp:#            -gatecount <count> <areapergate> <utilization> | \                     #
+synthesized/.layer_controller14803.rs.fp:#                { area=A | gatecount=N areaPerGate=A cellUtil=F |                    #
+synthesized/layer_controller.gateCount:Gate area 1.0800 um^2
+synthesized/summaryReport.rpt:Total area of Standard cells: 118506.240 um^2  
+synthesized/summaryReport.rpt:Total area of Standard cells(Subtracting Physical Cells): 84043.800 um^2  
+synthesized/summaryReport.rpt:Total area of Macros: 0.000 um^2  
+synthesized/summaryReport.rpt:Total area of Blockages: 0.000 um^2  
+synthesized/summaryReport.rpt:Total area of Pad cells: 0.000 um^2  
+synthesized/summaryReport.rpt:Total area of Core: 119128.419 um^2  
+synthesized/summaryReport.rpt:Total area of Chip: 126131.469 um^2  
+synthesized/layer_controller.enc.dat/layer_controller.metric:se::save_metric clock.clk.areaBuffer {585}
+synthesized/layer_controller.enc.dat/layer_controller.metric:se::save_metric place.filler.area {34462.4400 um^2}
+synthesized/layer_controller.enc.dat/layer_controller.mode:setVerifyGeometryMode -antenna false -area 0 0 0 0 -diffCellViol true -error 1000 -implantCheck true -insuffMetalOverlap true -maxNonPrefLength -1 -maxWidth true -mergedMGridCheck true -minArea true -minHole true -minimumCut true -minSpacing true -minStep true -minWidth true -offMGrid true -offRGrid false -overlap true -padFillerCellsOverlap true -pinInBlkg false -regRoutingOnly false -routingBlkgPinOverlap true -routingCellBlkgOverlap true -sameCellViol false -sameNet true -short true -stackedViasOnRegNet false -useNonDefaultSpacing false -viaEnclosure true -warning 50 -wireExt true
+synthesized/INTERESTING/layer_controller.gateCount:Gate area 1.0800 um^2

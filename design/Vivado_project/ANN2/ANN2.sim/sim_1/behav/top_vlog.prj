@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../../rtl/intrc/crossbar.v" --include "../../../../../rtl/cache"
+verilog xil_defaultlib  "../../../../../rtl/intrc/benes.v" --include "../../../../../rtl/cache"
+verilog xil_defaultlib  "../../../../../rtl/intrc/routing_engine.v" --include "../../../../../rtl/cache"
+verilog xil_defaultlib  "../../../../../rtl/arb/arb_dut.v" --include "../../../../../rtl/cache"
+verilog xil_defaultlib  "../../../../../rtl/neuron/neuron_fma.v" --include "../../../../../rtl/cache"
+verilog xil_defaultlib  "../../../../../rtl/neuron/neuron.v" --include "../../../../../rtl/cache"
+verilog xil_defaultlib  "../../../../../rtl/neuron/layer_controller.v" --include "../../../../../rtl/cache"
+verilog xil_defaultlib  "../../../ANN.srcs/sources_1/new/host_controller.v" --include "../../../../../rtl/cache"
+verilog xil_defaultlib  "../../../../../rtl/cache/l1_cache.v" --include "../../../../../rtl/cache"
+verilog xil_defaultlib  "../../../../../rtl/arb/arb.v" --include "../../../../../rtl/cache"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

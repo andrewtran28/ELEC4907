@@ -1,0 +1,84 @@
+se::start_metric placeDesign {}
+se::save_metric design.numStandardCell {2401}
+se::save_metric design.numNet {2558}
+se::save_metric design.numFloatBlock {0}
+se::save_metric design.numFixedBlock {0}
+se::save_metric design.numSingleRowCell {2401}
+se::save_metric design.numDoubleRowCell {0}
+se::save_metric design.numMultiRowCell {0}
+se::save_metric design.numIoInst {0}
+se::save_metric design.numFixedIo {0}
+se::save_metric design.numFloatIo {0}
+se::save_metric design.numTerm {7518}
+se::save_metric design.numTermPerNet {2.94}
+se::save_metric design.util {70.061 %}
+se::save_metric design.pinDensity {0.313}
+se::save_metric place.totalNetLength {2.03e+04 um}
+se::save_metric cputime {0:0:13}
+se::save_metric realtime {0:0:16}
+se::save_metric mem {868.1M}
+se::end_metric placeDesign {}
+se::start_metric clockDesign {-specFile ../../ann_router_pipelined/synthesized/Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::save_metric clock.clk.numBuffer {17}
+se::save_metric clock.clk.areaBuffer {179.64}
+se::save_metric clock.clk.maxLevel {2}
+se::save_metric clock.clk.maxLatency {115.6 ps}
+se::save_metric clock.clk.minLatency {108 ps}
+se::save_metric clock.clk.maxSkew.worst_analysis {7.6 ps}
+se::save_metric clock.clk.maxRiseBufferTran {45.6 ps}
+se::save_metric clock.clk.maxFallBufferTran {39.9 ps}
+se::save_metric clock.clk.maxRiseSinkTran {38.8 ps}
+se::save_metric clock.clk.maxFallSinkTran {34.6 ps}
+se::save_metric clock.clk.minRiseBufferTran {45.5 ps}
+se::save_metric clock.clk.minFallBufferTran {39.8 ps}
+se::save_metric clock.clk.minRiseSinkTran {33.7 ps}
+se::save_metric clock.clk.minFallSinkTran {30.8 ps}
+se::save_metric cputime {0:00:36}
+se::save_metric realtime {0:00:46}
+se::save_metric mem {1129.9M}
+se::end_metric clockDesign {-specFile ../../ann_router_pipelined/synthesized/Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::start_metric optDesign {-postRoute}
+se::save_metric timing.setup.WNS.all {9.712 ns }
+se::save_metric timing.setup.TNS.all {0.000 ns }
+se::save_metric timing.setup.numPaths.all {792}
+se::save_metric timing.setup.numViolatingPaths.all {0}
+se::save_metric timing.setup.WNS.reg2reg {9.712 ns }
+se::save_metric timing.setup.TNS.reg2reg {0.000 ns }
+se::save_metric timing.setup.numPaths.reg2reg {640}
+se::save_metric timing.setup.numViolatingPaths.reg2reg {0}
+se::save_metric timing.setup.WNS.in2reg {9.966 ns }
+se::save_metric timing.setup.TNS.in2reg {0.000 ns }
+se::save_metric timing.setup.numPaths.in2reg {792}
+se::save_metric timing.setup.numViolatingPaths.in2reg {0}
+se::save_metric timing.setup.WNS.reg2out {N/A}
+se::save_metric timing.setup.TNS.reg2out {N/A}
+se::save_metric timing.setup.numPaths.reg2out {N/A}
+se::save_metric timing.setup.numViolatingPaths.reg2out {N/A}
+se::save_metric timing.setup.WNS.in2out {N/A}
+se::save_metric timing.setup.TNS.in2out {N/A}
+se::save_metric timing.setup.numPaths.in2out {N/A}
+se::save_metric timing.setup.numViolatingPaths.in2out {N/A}
+se::save_metric timing.DRV.maxCap.real.nets {0}
+se::save_metric timing.DRV.maxCap.real.terms {0}
+se::save_metric timing.DRV.maxCap.real.Worst {0.000}
+se::save_metric timing.DRV.maxCap.total.nets {0}
+se::save_metric timing.DRV.maxCap.total.terms {0}
+se::save_metric timing.DRV.maxTran.real.nets {0}
+se::save_metric timing.DRV.maxTran.real.terms {0}
+se::save_metric timing.DRV.maxTran.real.Worst {0.000}
+se::save_metric timing.DRV.maxTran.total.nets {0}
+se::save_metric timing.DRV.maxTran.total.terms {0}
+se::save_metric timing.DRV.maxFanout.real.nets {0}
+se::save_metric timing.DRV.maxFanout.real.terms {0}
+se::save_metric timing.DRV.maxFanout.real.Worst {0.000}
+se::save_metric timing.DRV.maxFanout.total.nets {0}
+se::save_metric timing.DRV.maxFanout.total.terms {0}
+se::save_metric design.util {71.518 %}
+se::save_metric cputime {0:00:01.4 }
+se::save_metric realtime {0:00:03.0 }
+se::save_metric mem {1137.758 M}
+se::end_metric optDesign {-postRoute}
+se::start_metric addFiller {}
+se::save_metric place.filler.count {5256}
+se::save_metric place.filler.area {3512.8800 um^2}
+se::end_metric addFiller {}

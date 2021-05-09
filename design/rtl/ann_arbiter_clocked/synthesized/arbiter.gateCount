@@ -1,0 +1,10 @@
+Gate area 1.0800 um^2
+Level 0 Module arbiter                                  Gates=     11454 Cells=    2253 Area=   12370.7 um^2
+Level 1 Module u0_allocation_buffer                     Gates=1024       Cells=210      Area=    1106.6 um^2
+Level 1 Module u1_allocation_buffer                     Gates=1026       Cells=211      Area=    1108.4 um^2
+Level 1 Module u2_allocation_buffer                     Gates=1021       Cells=209      Area=    1103.0 um^2
+Level 1 Module u3_allocation_buffer                     Gates=1021       Cells=209      Area=    1103.4 um^2
+Level 1 Module u4_allocation_buffer                     Gates=1025       Cells=211      Area=    1107.7 um^2
+Level 1 Module u5_allocation_buffer                     Gates=1021       Cells=209      Area=    1103.0 um^2
+Level 1 Module u6_allocation_buffer                     Gates=1026       Cells=211      Area=    1108.1 um^2
+Level 1 Module u7_allocation_buffer                     Gates=1026       Cells=211      Area=    1108.4 um^2

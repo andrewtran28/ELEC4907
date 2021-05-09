@@ -1,0 +1,28 @@
+****************************************
+Report : area
+Design : routing_engine
+Version: H-2013.03-SP5-2
+Date   : Sun Dec 29 22:23:00 2019
+****************************************
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /CMC/kits/tsmc_65nm_libs/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_140b/tcbn65gpluswc.db)
+
+Number of ports:                           53
+Number of nets:                           455
+Number of cells:                          423
+Number of combinational cells:            402
+Number of sequential cells:                21
+Number of macros/black boxes:               0
+Number of buf/inv:                         88
+Number of references:                      49
+
+Combinational area:                840.600019
+Buf/Inv area:                       95.040004
+Noncombinational area:             106.920000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   947.520018
+Total area:                 undefined

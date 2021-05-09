@@ -1,0 +1,93 @@
+se::start_metric placeDesign {}
+se::save_metric design.numStandardCell {22329}
+se::save_metric design.numNet {22067}
+se::save_metric design.numFloatBlock {0}
+se::save_metric design.numFixedBlock {0}
+se::save_metric design.numSingleRowCell {22329}
+se::save_metric design.numDoubleRowCell {0}
+se::save_metric design.numMultiRowCell {0}
+se::save_metric design.numIoInst {0}
+se::save_metric design.numFixedIo {0}
+se::save_metric design.numFloatIo {0}
+se::save_metric design.numTerm {81270}
+se::save_metric design.numTermPerNet {3.68}
+se::save_metric design.util {69.694 %}
+se::save_metric design.pinDensity {0.352}
+se::save_metric place.totalNetLength {2.56e+05 um}
+se::save_metric cputime {0:1:19}
+se::save_metric realtime {0:1:19}
+se::save_metric mem {714.1M}
+se::end_metric placeDesign {}
+se::start_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::save_metric clock.clk.numBuffer {55}
+se::save_metric clock.clk.areaBuffer {585}
+se::save_metric clock.clk.maxLevel {3}
+se::save_metric clock.clk.maxLatency {177.1 ps}
+se::save_metric clock.clk.minLatency {158.9 ps}
+se::save_metric clock.clk.maxSkew.worst_analysis {18.2 ps}
+se::save_metric clock.clk.maxRiseBufferTran {55.3 ps}
+se::save_metric clock.clk.maxFallBufferTran {49.7 ps}
+se::save_metric clock.clk.maxRiseSinkTran {44.3 ps}
+se::save_metric clock.clk.maxFallSinkTran {38.8 ps}
+se::save_metric clock.clk.minRiseBufferTran {27.3 ps}
+se::save_metric clock.clk.minFallBufferTran {25.6 ps}
+se::save_metric clock.clk.minRiseSinkTran {32.3 ps}
+se::save_metric clock.clk.minFallSinkTran {29.5 ps}
+se::save_metric cputime {0:00:54}
+se::save_metric realtime {0:00:53}
+se::save_metric mem {865.3M}
+se::end_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::start_metric optDesign {-postRoute}
+se::save_metric timing.setup.WNS.all {7.146 ns }
+se::save_metric timing.setup.TNS.all {0.000 ns }
+se::save_metric timing.setup.numPaths.all {4761}
+se::save_metric timing.setup.numViolatingPaths.all {0}
+se::save_metric timing.setup.WNS.reg2reg {7.146 ns }
+se::save_metric timing.setup.TNS.reg2reg {0.000 ns }
+se::save_metric timing.setup.numPaths.reg2reg {2513}
+se::save_metric timing.setup.numViolatingPaths.reg2reg {0}
+se::save_metric timing.setup.WNS.in2reg {7.624 ns }
+se::save_metric timing.setup.TNS.in2reg {0.000 ns }
+se::save_metric timing.setup.numPaths.in2reg {4684}
+se::save_metric timing.setup.numViolatingPaths.in2reg {0}
+se::save_metric timing.setup.WNS.reg2out {N/A}
+se::save_metric timing.setup.TNS.reg2out {N/A}
+se::save_metric timing.setup.numPaths.reg2out {N/A}
+se::save_metric timing.setup.numViolatingPaths.reg2out {N/A}
+se::save_metric timing.setup.WNS.in2out {N/A}
+se::save_metric timing.setup.TNS.in2out {N/A}
+se::save_metric timing.setup.numPaths.in2out {N/A}
+se::save_metric timing.setup.numViolatingPaths.in2out {N/A}
+se::save_metric timing.DRV.maxCap.real.nets {1}
+se::save_metric timing.DRV.maxCap.real.terms {1}
+se::save_metric timing.DRV.maxCap.real.Worst {-0.067}
+se::save_metric timing.DRV.maxCap.total.nets {2}
+se::save_metric timing.DRV.maxCap.total.terms {2}
+se::save_metric timing.DRV.maxTran.real.nets {1}
+se::save_metric timing.DRV.maxTran.real.terms {38}
+se::save_metric timing.DRV.maxTran.real.Worst {-2.258}
+se::save_metric timing.DRV.maxTran.total.nets {1}
+se::save_metric timing.DRV.maxTran.total.terms {38}
+se::save_metric timing.DRV.maxFanout.real.nets {0}
+se::save_metric timing.DRV.maxFanout.real.terms {0}
+se::save_metric timing.DRV.maxFanout.real.Worst {0.000}
+se::save_metric timing.DRV.maxFanout.total.nets {0}
+se::save_metric timing.DRV.maxFanout.total.terms {0}
+se::save_metric design.util {70.570 %}
+se::save_metric cputime {0:03:55 }
+se::save_metric realtime {0:03:58 }
+se::save_metric mem {939.457 M}
+se::end_metric optDesign {-postRoute}
+se::start_metric addFiller {}
+se::save_metric place.filler.count {54063}
+se::save_metric place.filler.area {34462.4400 um^2}
+se::end_metric addFiller {}
+se::start_metric verifyGeometry {}
+se::save_metric verify.geom.cell {0}
+se::save_metric verify.geom.samenet {49}
+se::save_metric verify.geom.wiring {1}
+se::save_metric verify.geom.antenna {0}
+se::save_metric verify.geom.short {10}
+se::save_metric verify.geom.overlap {0}
+se::save_metric verify.geom.total {60}
+se::end_metric verifyGeometry {}

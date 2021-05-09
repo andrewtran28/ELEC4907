@@ -1,0 +1,473 @@
+$date
+	Tue Oct 22 19:26:59 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module layer_controller_dut $end
+$scope module dut $end
+$scope module u_neurons[0] $end
+$var wire 1 ! en $end
+$var wire 16 " input_bias [15:0] $end
+$var wire 128 # input_value [127:0] $end
+$var wire 128 $ input_weight [127:0] $end
+$var wire 1 % rst $end
+$var wire 1 & srdy $end
+$var wire 16 ' fma_z [15:0] $end
+$var wire 1 ( fma_done $end
+$var reg 4 ) cur_state [3:0] $end
+$var reg 1 * done $end
+$var reg 1 + drdy $end
+$var reg 16 , fma_a [15:0] $end
+$var reg 16 - fma_b [15:0] $end
+$var reg 16 . fma_c [15:0] $end
+$var reg 1 / fma_en $end
+$var reg 1 0 fma_mul_flag $end
+$var reg 16 1 input_bias_loc [15:0] $end
+$var reg 4 2 nxt_state [3:0] $end
+$var reg 16 3 output_value [15:0] $end
+$var reg 16 4 output_value_loc [15:0] $end
+$var reg 8 5 proc_flag_loc [7:0] $end
+$scope module u_neuron_fma $end
+$var wire 16 6 a [15:0] $end
+$var wire 16 7 b [15:0] $end
+$var wire 16 8 c [15:0] $end
+$var wire 1 / en $end
+$var wire 1 % rst $end
+$var reg 1 ( done $end
+$var reg 16 9 z [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_neurons[1] $end
+$var wire 1 : en $end
+$var wire 16 ; input_bias [15:0] $end
+$var wire 128 < input_value [127:0] $end
+$var wire 128 = input_weight [127:0] $end
+$var wire 1 > rst $end
+$var wire 1 ? srdy $end
+$var wire 16 @ fma_z [15:0] $end
+$var wire 1 A fma_done $end
+$var reg 4 B cur_state [3:0] $end
+$var reg 1 C done $end
+$var reg 1 D drdy $end
+$var reg 16 E fma_a [15:0] $end
+$var reg 16 F fma_b [15:0] $end
+$var reg 16 G fma_c [15:0] $end
+$var reg 1 H fma_en $end
+$var reg 1 I fma_mul_flag $end
+$var reg 16 J input_bias_loc [15:0] $end
+$var reg 4 K nxt_state [3:0] $end
+$var reg 16 L output_value [15:0] $end
+$var reg 16 M output_value_loc [15:0] $end
+$var reg 8 N proc_flag_loc [7:0] $end
+$scope module u_neuron_fma $end
+$var wire 16 O a [15:0] $end
+$var wire 16 P b [15:0] $end
+$var wire 16 Q c [15:0] $end
+$var wire 1 H en $end
+$var wire 1 > rst $end
+$var reg 1 A done $end
+$var reg 16 R z [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_neurons[2] $end
+$var wire 1 S en $end
+$var wire 16 T input_bias [15:0] $end
+$var wire 128 U input_value [127:0] $end
+$var wire 128 V input_weight [127:0] $end
+$var wire 1 W rst $end
+$var wire 1 X srdy $end
+$var wire 16 Y fma_z [15:0] $end
+$var wire 1 Z fma_done $end
+$var reg 4 [ cur_state [3:0] $end
+$var reg 1 \ done $end
+$var reg 1 ] drdy $end
+$var reg 16 ^ fma_a [15:0] $end
+$var reg 16 _ fma_b [15:0] $end
+$var reg 16 ` fma_c [15:0] $end
+$var reg 1 a fma_en $end
+$var reg 1 b fma_mul_flag $end
+$var reg 16 c input_bias_loc [15:0] $end
+$var reg 4 d nxt_state [3:0] $end
+$var reg 16 e output_value [15:0] $end
+$var reg 16 f output_value_loc [15:0] $end
+$var reg 8 g proc_flag_loc [7:0] $end
+$scope module u_neuron_fma $end
+$var wire 16 h a [15:0] $end
+$var wire 16 i b [15:0] $end
+$var wire 16 j c [15:0] $end
+$var wire 1 a en $end
+$var wire 1 W rst $end
+$var reg 1 Z done $end
+$var reg 16 k z [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_neurons[3] $end
+$var wire 1 l en $end
+$var wire 16 m input_bias [15:0] $end
+$var wire 128 n input_value [127:0] $end
+$var wire 128 o input_weight [127:0] $end
+$var wire 1 p rst $end
+$var wire 1 q srdy $end
+$var wire 16 r fma_z [15:0] $end
+$var wire 1 s fma_done $end
+$var reg 4 t cur_state [3:0] $end
+$var reg 1 u done $end
+$var reg 1 v drdy $end
+$var reg 16 w fma_a [15:0] $end
+$var reg 16 x fma_b [15:0] $end
+$var reg 16 y fma_c [15:0] $end
+$var reg 1 z fma_en $end
+$var reg 1 { fma_mul_flag $end
+$var reg 16 | input_bias_loc [15:0] $end
+$var reg 4 } nxt_state [3:0] $end
+$var reg 16 ~ output_value [15:0] $end
+$var reg 16 !" output_value_loc [15:0] $end
+$var reg 8 "" proc_flag_loc [7:0] $end
+$scope module u_neuron_fma $end
+$var wire 16 #" a [15:0] $end
+$var wire 16 $" b [15:0] $end
+$var wire 16 %" c [15:0] $end
+$var wire 1 z en $end
+$var wire 1 p rst $end
+$var reg 1 s done $end
+$var reg 16 &" z [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_neurons[4] $end
+$var wire 1 '" en $end
+$var wire 16 (" input_bias [15:0] $end
+$var wire 128 )" input_value [127:0] $end
+$var wire 128 *" input_weight [127:0] $end
+$var wire 1 +" rst $end
+$var wire 1 ," srdy $end
+$var wire 16 -" fma_z [15:0] $end
+$var wire 1 ." fma_done $end
+$var reg 4 /" cur_state [3:0] $end
+$var reg 1 0" done $end
+$var reg 1 1" drdy $end
+$var reg 16 2" fma_a [15:0] $end
+$var reg 16 3" fma_b [15:0] $end
+$var reg 16 4" fma_c [15:0] $end
+$var reg 1 5" fma_en $end
+$var reg 1 6" fma_mul_flag $end
+$var reg 16 7" input_bias_loc [15:0] $end
+$var reg 4 8" nxt_state [3:0] $end
+$var reg 16 9" output_value [15:0] $end
+$var reg 16 :" output_value_loc [15:0] $end
+$var reg 8 ;" proc_flag_loc [7:0] $end
+$scope module u_neuron_fma $end
+$var wire 16 <" a [15:0] $end
+$var wire 16 =" b [15:0] $end
+$var wire 16 >" c [15:0] $end
+$var wire 1 5" en $end
+$var wire 1 +" rst $end
+$var reg 1 ." done $end
+$var reg 16 ?" z [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_neurons[5] $end
+$var wire 1 @" en $end
+$var wire 16 A" input_bias [15:0] $end
+$var wire 128 B" input_value [127:0] $end
+$var wire 128 C" input_weight [127:0] $end
+$var wire 1 D" rst $end
+$var wire 1 E" srdy $end
+$var wire 16 F" fma_z [15:0] $end
+$var wire 1 G" fma_done $end
+$var reg 4 H" cur_state [3:0] $end
+$var reg 1 I" done $end
+$var reg 1 J" drdy $end
+$var reg 16 K" fma_a [15:0] $end
+$var reg 16 L" fma_b [15:0] $end
+$var reg 16 M" fma_c [15:0] $end
+$var reg 1 N" fma_en $end
+$var reg 1 O" fma_mul_flag $end
+$var reg 16 P" input_bias_loc [15:0] $end
+$var reg 4 Q" nxt_state [3:0] $end
+$var reg 16 R" output_value [15:0] $end
+$var reg 16 S" output_value_loc [15:0] $end
+$var reg 8 T" proc_flag_loc [7:0] $end
+$scope module u_neuron_fma $end
+$var wire 16 U" a [15:0] $end
+$var wire 16 V" b [15:0] $end
+$var wire 16 W" c [15:0] $end
+$var wire 1 N" en $end
+$var wire 1 D" rst $end
+$var reg 1 G" done $end
+$var reg 16 X" z [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_neurons[6] $end
+$var wire 1 Y" en $end
+$var wire 16 Z" input_bias [15:0] $end
+$var wire 128 [" input_value [127:0] $end
+$var wire 128 \" input_weight [127:0] $end
+$var wire 1 ]" rst $end
+$var wire 1 ^" srdy $end
+$var wire 16 _" fma_z [15:0] $end
+$var wire 1 `" fma_done $end
+$var reg 4 a" cur_state [3:0] $end
+$var reg 1 b" done $end
+$var reg 1 c" drdy $end
+$var reg 16 d" fma_a [15:0] $end
+$var reg 16 e" fma_b [15:0] $end
+$var reg 16 f" fma_c [15:0] $end
+$var reg 1 g" fma_en $end
+$var reg 1 h" fma_mul_flag $end
+$var reg 16 i" input_bias_loc [15:0] $end
+$var reg 4 j" nxt_state [3:0] $end
+$var reg 16 k" output_value [15:0] $end
+$var reg 16 l" output_value_loc [15:0] $end
+$var reg 8 m" proc_flag_loc [7:0] $end
+$scope module u_neuron_fma $end
+$var wire 16 n" a [15:0] $end
+$var wire 16 o" b [15:0] $end
+$var wire 16 p" c [15:0] $end
+$var wire 1 g" en $end
+$var wire 1 ]" rst $end
+$var reg 1 `" done $end
+$var reg 16 q" z [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_neurons[7] $end
+$var wire 1 r" en $end
+$var wire 16 s" input_bias [15:0] $end
+$var wire 128 t" input_value [127:0] $end
+$var wire 128 u" input_weight [127:0] $end
+$var wire 1 v" rst $end
+$var wire 1 w" srdy $end
+$var wire 16 x" fma_z [15:0] $end
+$var wire 1 y" fma_done $end
+$var reg 4 z" cur_state [3:0] $end
+$var reg 1 {" done $end
+$var reg 1 |" drdy $end
+$var reg 16 }" fma_a [15:0] $end
+$var reg 16 ~" fma_b [15:0] $end
+$var reg 16 !# fma_c [15:0] $end
+$var reg 1 "# fma_en $end
+$var reg 1 ## fma_mul_flag $end
+$var reg 16 $# input_bias_loc [15:0] $end
+$var reg 4 %# nxt_state [3:0] $end
+$var reg 16 &# output_value [15:0] $end
+$var reg 16 '# output_value_loc [15:0] $end
+$var reg 8 (# proc_flag_loc [7:0] $end
+$scope module u_neuron_fma $end
+$var wire 16 )# a [15:0] $end
+$var wire 16 *# b [15:0] $end
+$var wire 16 +# c [15:0] $end
+$var wire 1 "# en $end
+$var wire 1 v" rst $end
+$var reg 1 y" done $end
+$var reg 16 ,# z [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx ,#
+bx +#
+bx *#
+bx )#
+bx (#
+bx '#
+bx &#
+bx %#
+bx $#
+x##
+x"#
+bx !#
+bx ~"
+bx }"
+x|"
+x{"
+bx z"
+xy"
+bx x"
+zw"
+zv"
+bz u"
+bz t"
+bz s"
+zr"
+bx q"
+bx p"
+bx o"
+bx n"
+bx m"
+bx l"
+bx k"
+bx j"
+bx i"
+xh"
+xg"
+bx f"
+bx e"
+bx d"
+xc"
+xb"
+bx a"
+x`"
+bx _"
+z^"
+z]"
+bz \"
+bz ["
+bz Z"
+zY"
+bx X"
+bx W"
+bx V"
+bx U"
+bx T"
+bx S"
+bx R"
+bx Q"
+bx P"
+xO"
+xN"
+bx M"
+bx L"
+bx K"
+xJ"
+xI"
+bx H"
+xG"
+bx F"
+zE"
+zD"
+bz C"
+bz B"
+bz A"
+z@"
+bx ?"
+bx >"
+bx ="
+bx <"
+bx ;"
+bx :"
+bx 9"
+bx 8"
+bx 7"
+x6"
+x5"
+bx 4"
+bx 3"
+bx 2"
+x1"
+x0"
+bx /"
+x."
+bx -"
+z,"
+z+"
+bz *"
+bz )"
+bz ("
+z'"
+bx &"
+bx %"
+bx $"
+bx #"
+bx ""
+bx !"
+bx ~
+bx }
+bx |
+x{
+xz
+bx y
+bx x
+bx w
+xv
+xu
+bx t
+xs
+bx r
+zq
+zp
+bz o
+bz n
+bz m
+zl
+bx k
+bx j
+bx i
+bx h
+bx g
+bx f
+bx e
+bx d
+bx c
+xb
+xa
+bx `
+bx _
+bx ^
+x]
+x\
+bx [
+xZ
+bx Y
+zX
+zW
+bz V
+bz U
+bz T
+zS
+bx R
+bx Q
+bx P
+bx O
+bx N
+bx M
+bx L
+bx K
+bx J
+xI
+xH
+bx G
+bx F
+bx E
+xD
+xC
+bx B
+xA
+bx @
+z?
+z>
+bz =
+bz <
+bz ;
+z:
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+x0
+x/
+bx .
+bx -
+bx ,
+x+
+x*
+bx )
+x(
+bx '
+z&
+z%
+bz $
+bz #
+bz "
+z!
+$end

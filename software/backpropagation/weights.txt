@@ -1,0 +1,19 @@
+Initial Weights and Biases: 
+   Weight 1 = 0.001251
+   Weight 2 = 0.563585
+   Weight 3 = 0.193304
+   Weight 4 = 0.808741
+   Weight 5 = 0.479873
+   Weight 6 = 0.895962
+   Hidden Layer Bias = 0.585009
+   Output Bias = 0.822840
+
+Final Weights and Biases: 
+   Weight 1 = -0.775376
+   Weight 2 = 0.788981
+   Weight 3 = -0.775376
+   Weight 4 = 0.788981
+   Weight 5 = -1.289697
+   Weight 6 = -1.267458
+   Hidden Layer Bias = [0.775376, -0.788981]
+   Output Bias = 1.000000

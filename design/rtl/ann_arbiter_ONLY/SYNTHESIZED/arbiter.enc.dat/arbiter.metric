@@ -1,0 +1,94 @@
+se::start_metric placeDesign {}
+se::save_metric design.numStandardCell {538}
+se::save_metric design.numNet {724}
+se::save_metric design.numFloatBlock {0}
+se::save_metric design.numFixedBlock {0}
+se::save_metric design.numSingleRowCell {538}
+se::save_metric design.numDoubleRowCell {0}
+se::save_metric design.numMultiRowCell {0}
+se::save_metric design.numIoInst {0}
+se::save_metric design.numFixedIo {0}
+se::save_metric design.numFloatIo {0}
+se::save_metric design.numTerm {2308}
+se::save_metric design.numTermPerNet {3.19}
+se::save_metric design.util {70.201 %}
+se::save_metric design.pinDensity {0.270}
+se::save_metric place.totalNetLength {1.11e+04 um}
+se::save_metric cputime {0:0:9}
+se::save_metric realtime {0:0:9}
+se::save_metric mem {632.1M}
+se::end_metric placeDesign {}
+se::start_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::save_metric clock.clk.numBuffer {1}
+se::save_metric clock.clk.areaBuffer {14.04}
+se::save_metric clock.clk.maxLevel {1}
+se::save_metric clock.clk.maxLatency {111.5 ps}
+se::save_metric clock.clk.minLatency {72 ps}
+se::save_metric clock.clk.maxSkew.worst_analysis {39.5 ps}
+se::save_metric clock.clk.maxRiseBufferTran {0 ps}
+se::save_metric clock.clk.maxFallBufferTran {0 ps}
+se::save_metric clock.clk.maxRiseSinkTran {123.5 ps}
+se::save_metric clock.clk.maxFallSinkTran {109.2 ps}
+se::save_metric clock.clk.minRiseBufferTran {0 ps}
+se::save_metric clock.clk.minFallBufferTran {0 ps}
+se::save_metric clock.clk.minRiseSinkTran {96.5 ps}
+se::save_metric clock.clk.minFallSinkTran {80.4 ps}
+se::save_metric cputime {0:00:13}
+se::save_metric realtime {0:00:14}
+se::save_metric mem {750.4M}
+se::end_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::start_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::save_metric cputime {0:00:00}
+se::save_metric realtime {0:00:00}
+se::save_metric mem {750.5M}
+se::end_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::start_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::save_metric cputime {0:00:00}
+se::save_metric realtime {0:00:00}
+se::save_metric mem {750.6M}
+se::end_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::start_metric optDesign {-postRoute}
+se::save_metric timing.setup.WNS.all {4.060 ns }
+se::save_metric timing.setup.TNS.all {0.000 ns }
+se::save_metric timing.setup.numPaths.all {320}
+se::save_metric timing.setup.numViolatingPaths.all {0}
+se::save_metric timing.setup.WNS.reg2reg {4.060 ns }
+se::save_metric timing.setup.TNS.reg2reg {0.000 ns }
+se::save_metric timing.setup.numPaths.reg2reg {312}
+se::save_metric timing.setup.numViolatingPaths.reg2reg {0}
+se::save_metric timing.setup.WNS.in2reg {5.000 ns }
+se::save_metric timing.setup.TNS.in2reg {0.000 ns }
+se::save_metric timing.setup.numPaths.in2reg {168}
+se::save_metric timing.setup.numViolatingPaths.in2reg {0}
+se::save_metric timing.setup.WNS.reg2out {N/A}
+se::save_metric timing.setup.TNS.reg2out {N/A}
+se::save_metric timing.setup.numPaths.reg2out {N/A}
+se::save_metric timing.setup.numViolatingPaths.reg2out {N/A}
+se::save_metric timing.setup.WNS.in2out {N/A}
+se::save_metric timing.setup.TNS.in2out {N/A}
+se::save_metric timing.setup.numPaths.in2out {N/A}
+se::save_metric timing.setup.numViolatingPaths.in2out {N/A}
+se::save_metric timing.DRV.maxCap.real.nets {0}
+se::save_metric timing.DRV.maxCap.real.terms {0}
+se::save_metric timing.DRV.maxCap.real.Worst {0.000}
+se::save_metric timing.DRV.maxCap.total.nets {0}
+se::save_metric timing.DRV.maxCap.total.terms {0}
+se::save_metric timing.DRV.maxTran.real.nets {0}
+se::save_metric timing.DRV.maxTran.real.terms {0}
+se::save_metric timing.DRV.maxTran.real.Worst {0.000}
+se::save_metric timing.DRV.maxTran.total.nets {0}
+se::save_metric timing.DRV.maxTran.total.terms {0}
+se::save_metric timing.DRV.maxFanout.real.nets {0}
+se::save_metric timing.DRV.maxFanout.real.terms {0}
+se::save_metric timing.DRV.maxFanout.real.Worst {0.000}
+se::save_metric timing.DRV.maxFanout.total.nets {0}
+se::save_metric timing.DRV.maxFanout.total.terms {0}
+se::save_metric design.util {70.916 %}
+se::save_metric cputime {0:00:06.0 }
+se::save_metric realtime {0:00:06.0 }
+se::save_metric mem {776.977 M}
+se::end_metric optDesign {-postRoute}
+se::start_metric addFiller {}
+se::save_metric place.filler.count {1368}
+se::save_metric place.filler.area {1108.8000 um^2}
+se::end_metric addFiller {}

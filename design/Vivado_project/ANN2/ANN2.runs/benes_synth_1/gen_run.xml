@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="benes_synth_1" LaunchPart="xc7a100tcsg324-2L" LaunchTime="1574332266">
+  <File Type="PA-TCL" Name="benes.tcl"/>
+  <File Type="REPORTS-TCL" Name="benes_reports.tcl"/>
+  <File Type="RDS-RDS" Name="benes.vds"/>
+  <File Type="RDS-UTIL" Name="benes_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="benes_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="benes.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/benes">
+    <File Path="$PSRCDIR/benes/imports/intrc/crossbar.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/intrc/crossbar.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/benes/imports/intrc/benes.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/intrc/benes.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/benes/new/benes_ooc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/ANN/ANN/ANN.srcs/benes/new/benes_ooc.xdc"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="benes"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/benes/imports/intrc/benes.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/benes">
+    <File Path="$PSRCDIR/benes/imports/intrc/crossbar.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/intrc/crossbar.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/benes/imports/intrc/benes.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/rtl/intrc/benes.v"/>
+        <Attr Name="ImportTime" Val="1574332042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/benes/new/benes_ooc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ANN/ANN/design/ANN/ANN/ANN.srcs/benes/new/benes_ooc.xdc"/>
+        <Attr Name="ImportTime" Val="1574332041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="benes"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/benes/imports/intrc/benes.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
